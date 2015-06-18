@@ -72,11 +72,70 @@
 	display: inline-block
 	&.ico_fr
 		+svg(fr,20,14)
+	&.ico_pay
+		+svg(pay,45,10)
+	&.ico_mc
+		+svg(mc,64,10)
+	&.ico_visa
+		+svg(visa,33,10)
+	&.ico_am-footboll
+		+svg(am-football,16,12)
+	&.ico_au-rules
+		+svg(ausiie-rules,16,12)
+	&.ico_badminton
+		+svg(badminton,14,14)
+	&.ico_bandy
+		+svg(bandy,13,16)
+	&.ico_baseball
+		+svg(baseball,13,13)
+	&.ico_basketball
+		+svg(basketball,14,14)
+	&.ico_b-soccer
+		+svg(beach-soccer,15,14)
+	&.ico_curling
+		+svg(curling,16,13)
+	&.ico_cycling
+		+svg(cycling,18,15)
+	&.ico_darts
+		+svg(darts,21,22)
+	&.ico_floorball
+		+svg(floorball,13,19)
+	&.ico_formula-1
+		+svg(formula-1,18,10)
+	&.ico_futsal
+		+svg(futsal,18,16)
+	&.ico_handball
+		+svg(handball,17,17)
+	&.ico_ice-hockey
+		+svg(ice-hockey,15,10)
+	&.ico_motosport
+		+svg(motosport,19,9)
+	&.ico_olimpics
+		+svg(olimpics,17,10)
+	&.ico_pesapallo
+		+svg(pesapallo,18,18)
+	&.ico_rugby
+		+svg(rugby,14,14)
+	&.ico_snooker
+		+svg(snooker,15,14)
+	&.ico_soccer
+		+svg(soccer,13,13)
+	&.ico_table-tennis
+		+svg(table-tennis,17,16)
+	&.ico_tennis
+		+svg(tennis,18,19)
+	&.ico_volleyball
+		+svg(volleyball,14,14)
+	&.ico_waterpolo
+		+svg(waterpolo,20,30)
+	&.ico_wintersports
+		+svg(wintersports,14,15)
 
 .in
 	margin: 0 auto
 	padding: 0 10px
-	width: 1440px
+	max-width: 1440px
+	min-width: 960px
 	+box
 	+clr
 %in
@@ -100,7 +159,7 @@ $yellow: #FFCE00
 $orange: #FF9D00
 
 body
-	min-width: 1440px
+	min-width: 960px
 	font-size: 13px 
 	color: $gray
 	line-height: 1.4
@@ -117,13 +176,12 @@ a
 .out
 	padding-bottom: 198px
 	min-height: 364px
-	height: 100%
 	min-width: 100%
 	+box
 
 // header
 .header
-	padding: 40px 0 20px
+	padding: 40px 0 23px
 	+os
 	background: $yellow
 	.header__in
@@ -139,7 +197,7 @@ a
 	.btn
 		margin-left: 10px
 	.login
-		margin: 0 19px 0 10px
+		margin: 0 10px 0 57px
 
 // lang
 .lang
@@ -208,7 +266,7 @@ a
 
 // logo
 .logo
-	margin: -6px 0 0 10px
+	margin: -6px 0 0 0
 	vertical-align: top
 	display: inline-block
 	+svg(logo,184,42)
@@ -217,12 +275,17 @@ a
 .login
 	.login__col
 		margin-left: 8px
+		width: 140px
 		vertical-align: top
 		display: inline-block
-		+first
+		&:first-child
+			margin-left: 0
+			width: 160px
 	.login__row
 		margin-top: 6px
 		+first
+		.checkbox
+			margin-left: 18px
 	.login__forgot
 		margin-left: 16px
 		line-height: 13px
@@ -232,15 +295,16 @@ a
 .menu
 	background: $gray
 	.menu__list
+		padding-left: 0
 		font-size: 0
 		@extend %in
 	.menu__iten
 		font-size: 13px
 		display: inline-block
 	a
-		padding: 0 18px
+		padding: 0 20px
 		height: 52px
-		line-height: 50px
+		line-height: 56px
 		color: #fff
 		text-transform: uppercase
 		display: block
@@ -270,6 +334,7 @@ a
 	position: relative
 	+user-select(none)
 	cursor: pointer
+	display: block
 	input,
 	span:before
 		position: absolute
@@ -277,6 +342,12 @@ a
 		width: 13px
 		top: 0
 		left: 0
+	input
+		opacity: 0
+		z-index: 2
+		&:checked + span
+			&:after
+				display: block
 	span
 		position: relative
 		padding-left: 20px
@@ -287,7 +358,14 @@ a
 			border: 1px solid $gray
 			background: #fff
 			+box
-
+		&:after
+			position: absolute
+			content: ''
+			left: 2px
+			top: 2px
+			+svg(is-check,10,9)
+			display: none
+// btn
 .btn
 	vertical-align: top
 	display: inline-block
@@ -313,14 +391,189 @@ a
 button.btn
 	line-height: 1
 
+.btn-check,
+.btn-remove,
+.btn-turn,
+.btn-close
+	cursor: pointer
+	background-color: none
+	display: inline-block
+.btn-check
+	+svg(is-check,10,8)
+.btn-remove
+	+svg(remove,8,8)
+.btn-turn
+	+svg(turn,10,2)
+.btn-close
+	+svg(close,9,9)
+
+
+// tab
+.tab
+	margin: 9px 0
+	width: 100%
+	border: 1px solid $yellow
+	display: table
+	+box
+	.tab__item
+		border-left: 1px solid $yellow
+		display: table-cell
+		&:first-child
+			border-left: none
+	a
+		padding: 0 8px
+		height: 25px
+		line-height: 25px
+		font-size: 10px
+		text-align: center
+		text-transform: uppercase
+		display: block
+		+box
+		&:hover,
+		&.is-active
+			text-decoration: none
+			background: $yellow
+
+// nav
+.nav
+	margin: 9px 0 9px 2px
+	.nav__item
+		position: relative
+		padding: 9px 38px 8px 35px
+		line-height: 1
+		height: 29px
+		cursor: default
+		text-transform: uppercase
+		display: block
+		+box
+		&:hover,
+		&.is-active
+			background: #cccfd3
+			.btn-check,
+			.btn-remove
+				display: block
+	.ico
+		position: absolute
+		left: 13px
+		top: 50%
+		+translate(0,-50%)
+	.btn-check,
+	.btn-remove
+		position: absolute
+		top: 50%
+		+translate(0,-50%)
+		display: none
+	.btn-check
+		right: 26px
+	.btn-remove
+		right: 10px
+
+// drop
+.drop
+	position: relative
+	&.is-open
+		.drop__list
+			display: block
+		.drop__check
+			border-color: $gray
+			&:before
+				margin-top: -2px
+				+rotate(180)
+	.drop__check
+		position: relative
+		padding: 9px 20px 8px 35px
+		cursor: pointer
+		overflow: hidden
+		white-space: nowrap
+		text-overflow: ellipsis
+		text-transform: uppercase
+		border: 1px solid $light-gray
+		background: $light-gray
+		+box
+		&:before
+			position: absolute
+			content: ''
+			top: 50%
+			right: 9px
+			+translate(0,-50%)
+			+svg(lang-arr,10,6)
+	.drop__list
+		position: absolute
+		top: 100%
+		left: 0
+		right: 0
+		display: none
+		border: 1px solid $gray
+		border-top: none
+		background: $light-gray
+	.drop__item
+		padding: 5px
+		cursor: pointer
+		&:hover
+			background: #fff
+
+// banner
+.banner
+	margin: 13px 0 13px 2px
+	img
+		display: block
+
 // partners
 .partners
 	padding-left: 10px
+	.partners__title
+		font-size: 10px
 	.partners__icons
 		margin-top: 15px
 		.ico
+			position: relative
 			margin-left: 25px
+			z-index: 1
 			+first
+// age
+.age
+	display: inline-block
+	+svg(age,44,44)
+
+// wind
+.wind
+	border: 1px solid $gray
+	.wind__top
+		position: relative
+		padding: 12px 48px 9px 15px
+		line-height: 1
+		color: #fff
+		+ns
+		background: $gray
+	.wind__title
+		font-size: 10px
+		text-transform: uppercase
+		vertical-align: top
+		display: inline-block
+	.date
+		margin-left: 18px
+	.time
+		margin-left: 9px
+	.btn-turn,
+	.btn-close
+		position: absolute
+		top: 50%
+		+translate(0,-50%)
+	.btn-turn
+		right: 30px
+	.btn-close
+		right: 13px
+	.tab
+		margin-left: 5px
+		width: 282px
+
+// date, time
+.date,
+.time
+	vertical-align: top
+	font-size: 10px
+	display: inline-block
+
 // footer
 .footer
 	margin-top: -198px
@@ -328,9 +581,11 @@ button.btn
 	+ns
 	.footer__in
 		margin: 0 auto
-		max-width: 940px
+		padding: 0 10px
+		width: 960px
+		+box
 	.footer__nav
-		padding: 10px 0 12px 35px
+		padding: 10px 0 7px 35px
 		background: $light-gray
 		li
 			margin-left: 20px
@@ -339,7 +594,22 @@ button.btn
 			display: inline-block
 			+first
 	.footer__bot
-		margin-top: 46px
+		position: relative
+		margin-top: 42px
+		+clr
+	.age
+		position: relative
+		float: right
+		top: 7px
+	.partners
+		float: left
+	.copy
+		position: absolute
+		left: 108px
+		right: 0
+		bottom: 0
+		font-size: 10px
+		text-align: center
 
 
 

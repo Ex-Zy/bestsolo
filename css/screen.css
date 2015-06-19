@@ -63,6 +63,9 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 .ico.ico_hot { background: url("../img/svg/hot.svg") no-repeat 0 0; -moz-background-size: 7px 9px; -o-background-size: 7px 9px; -webkit-background-size: 7px 9px; background-size: 7px 9px; width: 7px; height: 9px; display: inline-block; }
 .ico.ico_stat { background: url("../img/svg/stat.svg") no-repeat 0 0; -moz-background-size: 8px 8px; -o-background-size: 8px 8px; -webkit-background-size: 8px 8px; background-size: 8px 8px; width: 8px; height: 8px; display: inline-block; }
 
+.flag { display: inline-block; }
+.flag .flag_tur { background: url("../img/svg/tur.svg") no-repeat 0 0; -moz-background-size: 14px 10px; -o-background-size: 14px 10px; -webkit-background-size: 14px 10px; background-size: 14px 10px; width: 14px; height: 10px; display: inline-block; }
+
 .in, .header .header__in, .menu .menu__list, .l { margin: 0 auto; padding: 0 10px; max-width: 1440px; min-width: 960px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; *zoom: 1; }
 .in:after, .header .header__in:after, .menu .menu__list:after, .l:after { content: " "; display: table; clear: both; }
 
@@ -77,7 +80,7 @@ a:hover { text-decoration: underline; }
 .header .header__right { float: right; font-size: 0; }
 .header .lang, .header .login { vertical-align: top; font-size: 13px; display: inline-block; }
 .header .btn { margin-left: 10px; }
-.header .login { margin: 0 10px 0 57px; }
+.header .login { margin: 0 0 0 57px; }
 
 .lang { position: relative; cursor: pointer; }
 .lang.is-open .lang__list { display: block; }
@@ -93,7 +96,7 @@ a:hover { text-decoration: underline; }
 .lang .lang__item:hover { color: white; background: #ff9d00; }
 .lang .lang__item .ico { position: absolute; right: 5px; top: 50%; -moz-transform: translate(0, -50%); -ms-transform: translate(0, -50%); -webkit-transform: translate(0, -50%); transform: translate(0, -50%); }
 
-.logo { margin: -6px 0 0 0; vertical-align: top; display: inline-block; background: url("../img/svg/logo.svg") no-repeat 0 0; -moz-background-size: 184px 42px; -o-background-size: 184px 42px; -webkit-background-size: 184px 42px; background-size: 184px 42px; width: 184px; height: 42px; display: inline-block; }
+.logo { margin: -6px 0 0 11px; vertical-align: top; display: inline-block; background: url("../img/svg/logo.svg") no-repeat 0 0; -moz-background-size: 184px 42px; -o-background-size: 184px 42px; -webkit-background-size: 184px 42px; background-size: 184px 42px; width: 184px; height: 42px; display: inline-block; }
 
 .login .login__col { margin-left: 8px; width: 140px; vertical-align: top; display: inline-block; }
 .login .login__col:first-child { margin-left: 0; width: 160px; }
@@ -136,7 +139,7 @@ a:hover { text-decoration: underline; }
 
 button.btn { line-height: 1; }
 
-.btn-check, .btn-remove, .btn-turn, .btn-close, .btn-square { cursor: pointer; background-color: transparent; display: inline-block; }
+.btn-check, .btn-remove, .btn-turn, .btn-close, .btn-square, .btn-smsquare { cursor: pointer; background-color: transparent; display: inline-block; }
 
 .btn-check { background: url("../img/svg/is-check.svg") no-repeat 0 0; -moz-background-size: 10px 8px; -o-background-size: 10px 8px; -webkit-background-size: 10px 8px; background-size: 10px 8px; width: 10px; height: 8px; display: inline-block; }
 
@@ -146,13 +149,17 @@ button.btn { line-height: 1; }
 
 .btn-close { background: url("../img/svg/close.svg") no-repeat 0 0; -moz-background-size: 9px 9px; -o-background-size: 9px 9px; -webkit-background-size: 9px 9px; background-size: 9px 9px; width: 9px; height: 9px; display: inline-block; }
 
-.btn-square { position: relative; height: 17px; width: 17px; line-height: 15px; text-align: center; border: 1px solid #555f6d; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-.btn-square.is-b { color: #555f6d; }
-.btn-square.is-b:before { position: absolute; top: 0; left: 0; right: 0; bottom: 0; content: "b"; text-transform: uppercase; }
-.btn-square.is-gray { background: #555f6d; color: white; }
-.btn-square.is-gray .ico_remove { background: url("../img/svg/close.svg") no-repeat 0 0; -moz-background-size: 8px 8px; -o-background-size: 8px 8px; -webkit-background-size: 8px 8px; background-size: 8px 8px; width: 8px; height: 8px; display: inline-block; }
-.btn-square.is-odds { color: #36a200; font-size: 7px; border-color: #36a200; }
-.btn-square .ico { position: absolute; top: 50%; left: 50%; -moz-transform: translate(-55%, -55%); -ms-transform: translate(-55%, -55%); -webkit-transform: translate(-55%, -55%); transform: translate(-55%, -55%); }
+.btn-square, .btn-smsquare { position: relative; height: 17px; width: 17px; line-height: 15px; text-align: center; border: 1px solid #555f6d; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.btn-square.is-b, .btn-smsquare.is-b { color: #555f6d; }
+.btn-square.is-b:before, .btn-smsquare.is-b:before { position: absolute; top: 0; left: 0; right: 0; bottom: 0; content: "b"; text-transform: uppercase; }
+.btn-square.is-gray, .btn-smsquare.is-gray { background: #555f6d; color: white; }
+.btn-square.is-gray .ico_remove, .btn-smsquare.is-gray .ico_remove { background: url("../img/svg/close.svg") no-repeat 0 0; -moz-background-size: 8px 8px; -o-background-size: 8px 8px; -webkit-background-size: 8px 8px; background-size: 8px 8px; width: 8px; height: 8px; display: inline-block; }
+.btn-square.is-more, .btn-smsquare.is-more { width: 14px; color: #36a200; font-size: 7px; border-color: #36a200; }
+.btn-square .ico, .btn-smsquare .ico { position: absolute; top: 50%; left: 50%; -moz-transform: translate(-55%, -55%); -ms-transform: translate(-55%, -55%); -webkit-transform: translate(-55%, -55%); transform: translate(-55%, -55%); }
+
+.btn-smsquare { height: 14px; width: 14px; line-height: 13px; }
+
+button.btn-smsquare { letter-spacing: -0.8px; }
 
 .tab { margin: 9px 0; width: 100%; border: 1px solid #ffce00; display: table; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .tab .tab__item { border-left: 1px solid #ffce00; display: table-cell; }
@@ -209,7 +216,7 @@ button.btn { line-height: 1; }
 .item .item__row { position: relative; margin-top: 4px; padding-left: 44px; }
 .item .item__text { margin-top: 2px; padding-right: 40px; font-size: 10px; text-transform: uppercase; font-family: "NotoSans", Arial, sans-serif; font-weight: normal; }
 .item .btn-square { position: absolute; top: 0; left: 8px; }
-.item .under { width: 109px; }
+.item .total { width: 109px; }
 .item .coeff.is-blocked { top: -4px; left: -8px; }
 
 .topic { padding: 3px 3px 3px 44px; font-size: 0; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
@@ -221,7 +228,7 @@ button.btn { line-height: 1; }
 .topic.is-center .time { margin-left: 3px; }
 .topic.is-center .date { margin: 0; text-transform: uppercase; }
 .topic .event { width: 115px; line-height: 15px; }
-.topic .minute { margin-left: 5px; }
+.topic .minute { margin-left: 5px; line-height: 15px; }
 
 .event { font-size: 13px; text-transform: uppercase; color: #36a200; }
 
@@ -231,7 +238,7 @@ button.btn { line-height: 1; }
 .status.is-hot, .legend .is-hot.legend__left { background: #ed1c24; }
 .status.is-soon, .legend .is-soon.legend__left { color: #555f6d; background: #ffce00; }
 
-.minute { color: #77a3bc; font-size: 13px; line-height: 15px; }
+.minute { color: #77a3bc; font-size: 13px; }
 .minute:before { content: "'"; color: #555f6d; }
 
 .team { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
@@ -241,18 +248,18 @@ button.btn { line-height: 1; }
 .score { width: 30px; text-align: center; color: #36a200; }
 .score.is-gray { color: #555f6d; }
 
-.under { color: #36a200; }
+.total { color: #36a200; }
+.total + .coeff.is-down { color: #ed1c24; }
+.total + .coeff.is-up { color: #36a200; }
 
-.coeff { position: relative; padding-left: 7px; text-align: center; width: 30px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.coeff { position: relative; padding-left: 7px; text-align: center; line-height: 18px; width: 30px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .coeff:before { position: absolute; content: ""; top: 4px; left: 0; }
 .coeff.is-blocked { width: 50px; height: 24px; background: #dfe4ea; border: 1px solid #555f6d; }
-.coeff.is-down { color: #ed1c24; }
 .coeff.is-down:before { width: 0px; height: 0px; border-style: solid; border-width: 4px 3.5px 0 3.5px; border-color: #ed1c24 transparent transparent transparent; }
-.coeff.is-up { color: #36a200; }
 .coeff.is-up:before { width: 0px; height: 0px; border-style: solid; border-width: 0 3.5px 4px 3.5px; border-color: transparent transparent #36a200 transparent; }
 .coeff .ico { position: absolute; top: 50%; left: 50%; -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
 
-.event, .status, .legend .legend__left, .minute, .team, .score, .under, .coeff { vertical-align: top; display: inline-block; }
+.event, .status, .legend .legend__left, .minute, .team, .score, .total, .coeff { vertical-align: top; display: inline-block; }
 
 .calc { padding: 11px 16px; }
 .calc .calc__row { margin-top: 10px; }
@@ -288,6 +295,59 @@ button.btn { line-height: 1; }
 .legend .status, .legend .legend__left, .legend .legend__left { position: absolute; top: 0; left: 0; }
 .legend .btn-square { cursor: default; }
 
+.indicators { position: relative; padding: 0 45px 7px 0; font-size: 0; }
+.indicators .indicator { vertical-align: bottom; }
+@media only screen and (max-width: 1431px) { .indicators .indicator.is-total { display: none; } }
+
+.indicator { font-size: 10px; text-transform: uppercase; vertical-align: top; display: inline-block; font-family: "NotoSans", Arial, sans-serif; font-weight: normal; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.indicator .indicator__top { margin-bottom: 4px; text-align: center; font-size: 8px; }
+.indicator .indicator__bot { width: 100%; text-align: center; display: table; }
+.indicator .indicator__item { display: table-cell; }
+.indicator.is-stat { padding-left: 11px; }
+.indicator.is-more { position: absolute; bottom: 7px; padding-left: 15px; }
+
+.is-stat { width: 48px; }
+
+.is-team { width: 109px; }
+
+.is-t-away { width: 119px; }
+
+.is-score { width: 43px; }
+
+.is-match { width: 157px; }
+
+.is-coal { margin: 0 5px; width: 157px; }
+
+.is-total { margin-right: 8px; width: 105px; }
+
+.is-more { width: 54px; }
+
+.center { max-width: 915px; overflow: hidden; }
+
+.match .match__wrap { position: relative; padding: 8px 39px 8px 5px; border: 1px solid transparent; *zoom: 1; }
+.match .match__wrap:after { content: " "; display: table; clear: both; }
+.match .match__wrap.is-hot { border-color: #ed1c24; }
+.match .match__left { float: left; width: 311px; }
+.match .match__row { position: relative; padding-left: 40px; }
+.match .match__row:first-child { margin: 0 0 9px 0; }
+.match .match__coeff { vertical-align: top; overflow: hidden; }
+.match .score { position: absolute; top: 7px; right: 11px; color: #555f6d; }
+.match .score.is-goal { color: #36a200; }
+.match .status, .match .legend .legend__left, .legend .match .legend__left { position: absolute; top: 1px; left: 0; }
+.match .btn-square { position: absolute; top: 0; left: 8px; }
+.match .btn-smsquare.is-more { position: absolute; top: 32px; left: auto; right: 9px; }
+
+.row { margin-top: 7px; font-size: 0; }
+.row:first-child { margin: 0; }
+
+.col { vertical-align: top; display: inline-block; border: 1px solid #b9c0c9; }
+.col .col__item { width: 51px; height: 25px; line-height: 25px; text-align: center; font-size: 13px; vertical-align: top; border-left: 1px solid #b9c0c9; display: inline-block; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.col .col__item:first-child { border-left: 0; }
+.col .col__item .coeff { margin-left: -7px; vertical-align: middle; }
+
+.league { padding-left: 20px; font-size: 10px; }
+.league .flag { position: absolute; top: 0; left: 0; }
+
 .date, .time { vertical-align: top; font-size: 10px; display: inline-block; }
 
 .footer { margin-top: -198px; height: 198px; font-family: "NotoSans", Arial, sans-serif; font-weight: normal; }
@@ -301,7 +361,7 @@ button.btn { line-height: 1; }
 .footer .partners { float: left; }
 .footer .copy { position: absolute; left: 108px; right: 0; bottom: 0; font-size: 10px; text-align: center; }
 
-.l { margin: 16px 0 75px; *zoom: 1; }
+.l { margin: 16px auto 75px; *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
-.l .l-col1 { float: left; width: 180px; }
+.l .l-col1 { float: left; margin-right: 7px; width: 180px; }
 .l .l-col2 { float: right; width: 295px; }

@@ -145,6 +145,11 @@
 	&.ico_stat
 		+svg(stat,8,8)
 
+.flag
+	display: inline-block
+	.flag_tur
+		+svg(tur,14,10)
+
 .in
 	margin: 0 auto
 	padding: 0 10px
@@ -216,7 +221,7 @@ a
 	.btn
 		margin-left: 10px
 	.login
-		margin: 0 10px 0 57px
+		margin: 0 0 0 57px
 
 // lang
 .lang
@@ -285,7 +290,7 @@ a
 
 // logo
 .logo
-	margin: -6px 0 0 0
+	margin: -6px 0 0 11px
 	vertical-align: top
 	display: inline-block
 	+svg(logo,184,42)
@@ -427,7 +432,8 @@ button.btn
 .btn-remove,
 .btn-turn,
 .btn-close,
-.btn-square
+.btn-square,
+.btn-smsquare
 	cursor: pointer
 	background-color: transparent
 	display: inline-block
@@ -439,7 +445,8 @@ button.btn
 	+svg(turn,10,2)
 .btn-close
 	+svg(close,9,9)
-.btn-square
+.btn-square,
+.btn-smsquare
 	position: relative
 	height: 17px
 	width: 17px
@@ -462,7 +469,8 @@ button.btn
 		color: #fff
 		.ico_remove
 			+svg(close,8,8)
-	&.is-odds
+	&.is-more
+		width: 14px
 		color: $green
 		font-size: 7px
 		border-color: $green
@@ -471,9 +479,12 @@ button.btn
 		top: 50%
 		left: 50%
 		+translate(-55%,-55%)
-
-
-
+.btn-smsquare
+	height: 14px
+	width: 14px
+	line-height: 13px
+button.btn-smsquare
+	letter-spacing: -0.8px
 
 // tab
 .tab
@@ -668,7 +679,7 @@ button.btn
 		position: absolute
 		top: 0
 		left: 8px
-	.under
+	.total
 		width: 109px
 	.coeff
 		&.is-blocked
@@ -701,6 +712,7 @@ button.btn
 		line-height: 15px
 	.minute
 		margin-left: 5px
+		line-height: 15px
 
 // event
 .event
@@ -731,7 +743,6 @@ button.btn
 .minute
 	color: $light-blue
 	font-size: 13px
-	line-height: 15px
 	&:before
 		content: "'"
 		color: $gray
@@ -762,14 +773,20 @@ button.btn
 		color: $gray
 
 // under
-.under
+.total
 	color: $green
+	& + .coeff
+		&.is-down
+			color: $red
+		&.is-up
+			color: $green
 
 // coeff
 .coeff
 	position: relative
 	padding-left: 7px
 	text-align: center
+	line-height: 18px
 	width: 30px
 	+box
 	&:before
@@ -783,11 +800,9 @@ button.btn
 		background: #DFE4EA
 		border: 1px solid $gray
 	&.is-down
-		color: $red
 		&:before
 			+arr(7,4,$red,b)
 	&.is-up
-		color: $green
 		&:before
 			+arr(7,4,$green,t)
 
@@ -802,7 +817,7 @@ button.btn
 .minute,
 .team,
 .score,
-.under,
+.total,
 .coeff
 	vertical-align: top
 	display: inline-block
@@ -937,6 +952,145 @@ button.btn
 		left: 0
 	.btn-square
 		cursor: default
+
+// indicators
+.indicators
+	position: relative
+	padding: 0 45px 7px 0
+	font-size: 0
+	.indicator
+		vertical-align: bottom
+		&.is-total
+			+r(1431)
+				display: none
+
+// indicator
+.indicator
+	font-size: 10px
+	text-transform: uppercase
+	vertical-align: top
+	display: inline-block
+	+ns
+	+box
+	.indicator__top
+		margin-bottom: 4px
+		text-align: center
+		font-size: 8px
+	.indicator__bot
+		width: 100%
+		text-align: center
+		display: table
+	.indicator__item
+		display: table-cell
+	&.is-stat
+		padding-left: 11px
+	&.is-more
+		position: absolute
+		bottom: 7px
+		padding-left: 15px
+
+// mod
+.is-stat
+	width: 48px
+.is-team
+	width: 109px
+.is-t-away
+	width: 119px
+.is-score
+	width: 43px
+.is-match
+	width: 157px
+.is-coal
+	margin: 0 5px
+	width: 157px
+.is-total
+	margin-right: 8px
+	width: 105px
+.is-more
+	width: 54px
+
+// center
+.center
+	max-width: 915px
+	overflow: hidden
+
+// match
+.match
+	.match__wrap
+		position: relative
+		padding: 8px 39px 8px 5px
+		border: 1px solid transparent
+		+clr
+		&.is-hot
+			border-color: $red
+	.match__left
+		float: left
+		width: 311px
+	.match__row
+		position: relative
+		padding-left: 40px
+		&:first-child
+			margin: 0 0 9px 0
+	.match__coeff
+		vertical-align: top
+		overflow: hidden
+	.score
+		position: absolute
+		top: 7px
+		right: 11px
+		color: $gray
+		&.is-goal
+			color: $green
+	.status
+		position: absolute
+		top: 1px
+		left: 0
+	.btn-square
+		position: absolute
+		top: 0
+		left: 8px
+	.btn-smsquare.is-more
+		position: absolute
+		top: 32px
+		left: auto
+		right: 9px
+
+
+// row
+.row
+	margin-top: 7px
+	font-size: 0
+	+first
+
+// col
+.col
+	vertical-align: top
+	display: inline-block
+	border: 1px solid $light-gray2
+	.col__item
+		width: 51px
+		height: 25px
+		line-height: 25px
+		text-align: center
+		font-size: 13px
+		vertical-align: top
+		border-left: 1px solid $light-gray2
+		display: inline-block
+		+box
+		&:first-child
+			border-left: 0
+		.coeff
+			margin-left: -7px
+			vertical-align: middle
+
+// league
+.league
+	padding-left: 20px
+	font-size: 10px
+	.flag
+		position: absolute
+		top: 0
+		left: 0
 
 // date, time
 .date,

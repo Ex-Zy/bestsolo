@@ -78,6 +78,7 @@
 	</div>
 	<!-- l -->
 	<div class="l">
+		<!-- col1 -->
 		<div class="l-col1">
 			<!-- tabs -->
 			<div class="tabs">
@@ -258,9 +259,7 @@
 				<div class="banner"><img src="img/banner.png" alt="banner"></div>
 			</div>
 		</div>
-		<div class="center">
-			
-		</div>
+		<!-- l-col2 -->
 		<div class="l-col2">
 			<!-- wind -->
 			<div class="wind">
@@ -296,7 +295,7 @@
 					</div>
 					<div class="item__row">
 						<button class="btn-square" type="button"><i class="ico ico_remove"></i></button>
-						<div class="under">Under 2.5</div>
+						<div class="total">Under 2.5</div>
 						<a href="#" class="coeff">2.4</a>
 					</div>
 				</div>
@@ -319,7 +318,7 @@
 					</div>
 					<div class="item__row">
 						<button class="btn-square" type="button"><i class="ico ico_remove"></i></button>
-						<div class="under">Under 2.5</div>
+						<div class="total">Under 2.5</div>
 						<div class="coeff is-blocked"><i class="ico ico_blocked"></i></div>
 					</div>
 				</div>
@@ -342,7 +341,7 @@
 					</div>
 					<div class="item__row">
 						<button class="btn-square is-gray" type="button"><i class="ico ico_remove"></i></button>
-						<div class="under">Under 2.5</div>
+						<div class="total">Under 2.5</div>
 						<a href="#" class="coeff is-down">2.2</a>
 					</div>
 				</div>
@@ -364,7 +363,7 @@
 					</div>
 					<div class="item__row">
 						<button class="btn-square" type="button"><i class="ico ico_remove"></i></button>
-						<div class="under">Under 2.5</div>
+						<div class="total">Under 2.5</div>
 						<a href="#" class="coeff">2.4</a>
 					</div>
 				</div>
@@ -386,7 +385,7 @@
 					</div>
 					<div class="item__row">
 						<button class="btn-square" type="button"><i class="ico ico_remove"></i></button>
-						<div class="under">Under 2.5</div>
+						<div class="total">Under 2.5</div>
 						<a href="#" class="coeff is-up">2.4</a>
 					</div>
 				</div>
@@ -408,19 +407,19 @@
 					</div>
 					<div class="item__row">
 						<button class="btn-square" type="button"><i class="ico ico_remove"></i></button>
-						<div class="under">Under 2.5</div>
+						<div class="total">Under 2.5</div>
 						<a href="#" class="coeff">2.4</a>
 						<div class="item__text">WIll be scored more than 2 scores in the game</div>
 					</div>
 					<div class="item__row">
 						<button class="btn-square" type="button"><i class="ico ico_remove"></i></button>
-						<div class="under">Under 3.5</div>
+						<div class="total">Under 3.5</div>
 						<a href="#" class="coeff">12</a>
 						<div class="item__text">WIll be scored more than 2 scores in the game</div>
 					</div>
 					<div class="item__row">
 						<button class="btn-square" type="button"><i class="ico ico_remove"></i></button>
-						<div class="under">1</div>
+						<div class="total">1</div>
 						<a href="#" class="coeff">1.6</a>
 					</div>
 				</div>
@@ -468,13 +467,13 @@
 					</div>
 					<div class="legend">
 						<div class="legend__left">
-							<span class="btn-square"><i class="ico ico_stat"></i></span>
+							<span class="btn-smsquare"><i class="ico ico_stat"></i></span>
 						</div>
 						<span>begins Match statistics</span>
 					</div>
 					<div class="legend">
 						<div class="legend__left">
-							<span class="btn-square is-odds">+61</span>
+							<span class="btn-smsquare is-more">+61</span>
 						</div>
 						<span>other odds</span>
 					</div>
@@ -497,8 +496,178 @@
 						<span>bet radar off</span>
 					</div>
 					<div class="legend">
-						<div class="status is-hot"><i class="ico ico_hot"></i>Live</div>
+						<div class="status is-hot"><i class="ico ico_hot"></i>hot</div>
 						<span>popular game</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- center -->
+		<div class="center">
+			<!-- indicators -->
+			<div class="indicators">
+				<div class="indicator is-stat">
+					stat.
+				</div>
+				<div class="indicator is-team">
+					Home team
+				</div>
+				<div class="indicator is-t-away">
+					Away team
+				</div>
+				<div class="indicator is-score">
+					score
+				</div>
+				<div class="indicator is-match">
+					<div class="indicator__top">
+						<i class="ico ico_plus"></i>
+						<span>rest of match</span>
+					</div>
+					<div class="indicator__bot">
+						<div class="indicator__item">1</div>
+						<div class="indicator__item">x</div>
+						<div class="indicator__item">2</div>
+					</div>
+				</div>
+				<div class="indicator is-coal">
+					<div class="indicator__top">
+						<i class="ico ico_plus"></i>
+						<span>next goal</span>
+					</div>
+					<div class="indicator__bot">
+						<div class="indicator__item">1</div>
+						<div class="indicator__item">x</div>
+						<div class="indicator__item">2</div>
+					</div>
+				</div>
+				<div class="indicator is-total">
+					<div class="indicator__top">
+						<i class="ico ico_plus"></i>
+						<span>under / over</span>
+					</div>
+					<div class="indicator__bot">
+						<div class="indicator__item">yes</div>
+						<div class="indicator__item">no</div>
+					</div>
+				</div>
+				<div class="indicator is-total">
+					<div class="indicator__top">
+						<i class="ico ico_plus"></i>
+						<span>under / over</span>
+					</div>
+					<div class="indicator__bot">
+						<div class="indicator__item">yes</div>
+						<div class="indicator__item">no</div>
+					</div>
+				</div>
+				<div class="indicator is-more">more</div>
+			</div>
+			<!-- match -->
+			<div class="match">
+				<div class="match__wrap is-hot">
+					<button class="btn-smsquare is-more" type="button">+61</button>
+					<div class="match__left">
+						<div class="match__row">
+							<button class="btn-square" type="button"><i class="ico ico_stat"></i></button>
+							<a href="#" class="league">
+								<i class="flag flag_tur"></i>
+								<span>Turkey / Süper Lig</span>
+							</a>
+							<div class="event"></div>
+							<div class="score is-goal">2 - 0</div>
+						</div>
+						<div class="match__row">
+							<div class="status is-hot"><i class="ico ico_hot"></i>hot</div>
+							<a href="#" class="teams">K. Karabükspor - Sivasspor</a>
+							<div class="minute">82</div>
+							<div class="score">0 - 0</div>
+						</div>
+					</div>
+					<div class="match__coeff">
+						<!-- row -->
+						<div class="row">
+							<div class="col is-match">
+								<div class="col__item">
+									<a href="#" class="coeff is-up">44</a>
+								</div>
+								<div class="col__item">
+									<a href="#" class="coeff">12</a>
+								</div>
+								<div class="col__item">
+									<a href="#" class="coeff">1.12</a>
+								</div>
+								
+							</div>
+							<div class="col is-coal">
+								<div class="col__item">
+									<a href="#" class="coeff">44</a>
+								</div>
+								<div class="col__item">
+									<a href="#" class="coeff">12</a>
+								</div>
+								<div class="col__item">
+									<a href="#" class="coeff">1.12</a>
+								</div>
+							</div>
+							<div class="col is-total">
+								<div class="col__item">
+									<a href="#" class="coeff is-down">3.1</a>
+								</div>
+								<div class="col__item">
+									<a href="#" class="coeff">1.67</a>
+								</div>
+							</div>
+							<div class="col is-total">
+								<div class="col__item">
+									<a href="#" class="coeff">3.1</a>
+								</div>
+								<div class="col__item">
+									<a href="#" class="coeff">12</a>
+								</div>
+							</div>
+						</div>
+						<!-- row -->
+						<div class="row">
+							<div class="col is-match">
+								<div class="col__item">
+									<a href="#" class="coeff is-up">44</a>
+								</div>
+								<div class="col__item">
+									<a href="#" class="coeff">12</a>
+								</div>
+								<div class="col__item">
+									<a href="#" class="coeff">1.12</a>
+								</div>
+								
+							</div>
+							<div class="col is-coal">
+								<div class="col__item">
+									<a href="#" class="coeff">44</a>
+								</div>
+								<div class="col__item">
+									<a href="#" class="coeff">12</a>
+								</div>
+								<div class="col__item">
+									<a href="#" class="coeff">1.12</a>
+								</div>
+							</div>
+							<div class="col is-total">
+								<div class="col__item">
+									<a href="#" class="coeff is-down">3.1</a>
+								</div>
+								<div class="col__item">
+									<a href="#" class="coeff">1.67</a>
+								</div>
+							</div>
+							<div class="col is-total">
+								<div class="col__item">
+									<a href="#" class="coeff">3.1</a>
+								</div>
+								<div class="col__item">
+									<a href="#" class="coeff">12</a>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

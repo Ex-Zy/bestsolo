@@ -130,6 +130,10 @@
 		+svg(waterpolo,20,30)
 	&.ico_wintersports
 		+svg(wintersports,14,15)
+	&.ico_remove
+		+svg(remove,8,8)
+	&.ico_remove-w
+		+svg(close,8,8)
 
 .in
 	margin: 0 auto
@@ -157,6 +161,10 @@ $gray: #555F6D
 $light-gray: #E6E6E6
 $yellow: #FFCE00
 $orange: #FF9D00
+$green: #36A200
+$light-green: #ebf6e5
+$red: #ED1C24
+$light-blue: #77A3BC
 
 body
 	min-width: 960px
@@ -394,9 +402,10 @@ button.btn
 .btn-check,
 .btn-remove,
 .btn-turn,
-.btn-close
+.btn-close,
+.btn-square
 	cursor: pointer
-	background-color: none
+	background-color: transparent
 	display: inline-block
 .btn-check
 	+svg(is-check,10,8)
@@ -406,6 +415,33 @@ button.btn
 	+svg(turn,10,2)
 .btn-close
 	+svg(close,9,9)
+.btn-square
+	position: relative
+	height: 17px
+	width: 17px
+	line-height: 15px
+	text-align: center
+	border: 1px solid $gray
+	+box
+	&.is-b
+		color: $gray
+		&:before
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			content: 'b'
+			text-transform: uppercase
+	&.is-gray
+		background: $gray
+		color: #fff
+	.ico
+		position: absolute
+		top: 50%
+		left: 50%
+		+translate(-55%,-55%)
+
 
 
 // tab
@@ -436,7 +472,8 @@ button.btn
 
 // nav
 .nav
-	margin: 9px 0 9px 2px
+	margin: 9px 0
+	padding: 0 2px
 	.nav__item
 		position: relative
 		padding: 9px 38px 8px 35px
@@ -566,6 +603,133 @@ button.btn
 	.tab
 		margin-left: 5px
 		width: 282px
+		border-width: 2px
+		.tab__item
+			border-width: 2px
+		a
+			padding: 0 17px
+			height: 31px
+			line-height: 31px
+			font-size: 13px
+
+// item
+.item
+	margin: 5px 0
+	padding: 0 5px 6px
+	border-bottom: 1px solid $light-gray
+	.item__row
+		position: relative
+		margin-top: 4px
+		padding-left: 44px
+	.item__text
+		font-size: 10px
+		text-transform: uppercase
+		+ns
+	.btn-square
+		position: absolute
+		top: 0
+		left: 8px
+	.under
+		width: 112px
+
+// topic
+.topic
+	padding: 3px 3px 3px 44px
+	font-size: 0
+	+box
+	&.is-goal
+		background: $light-green
+	&.is-suspensed
+		background: $light-gray
+		.status
+			background: $gray
+		.event
+			color: $gray
+	.event
+		width: 115px
+		line-height: 15px
+	.minute
+		margin-left: 5px
+
+// event
+.event
+	font-size: 13px
+	text-transform: uppercase
+	color: $green
+
+// status
+.status
+	height: 15px
+	width: 32px
+	text-align: center
+	font-size: 10px
+	text-transform: uppercase
+	color: #fff
+	line-height: 15px
+	&.is-live
+		background: $green
+	&.is-ft
+		background: $gray
+	&.is-hot
+		background: $red
+	&.is-soon
+		color: $gray
+		background: $yellow
+
+// minute
+.minute
+	color: $light-blue
+	font-size: 13px
+	line-height: 15px
+	&:before
+		content: "'"
+		color: $gray
+
+// team
+.team
+	+box
+	&.is-left
+		padding-right: 12px
+		width: 112px
+		overflow: hidden
+		white-space: nowrap
+		text-overflow: ellipsis
+		text-align: right
+	&.is-right
+		padding-left: 10px
+		width: 90px
+		overflow: hidden
+		white-space: nowrap
+		text-overflow: ellipsis
+
+// score
+.score
+	width: 30px
+	text-align: center
+	color: $green
+
+// under
+.under
+	color: $green
+
+// coeff
+.coeff
+	text-align: center
+	width: 30px
+
+.event,
+.status,
+.minute,
+.team,
+.score,
+.under,
+.coeff
+	vertical-align: top
+	display: inline-block
+
+// field
+.field
+	display: block
 
 // date, time
 .date,

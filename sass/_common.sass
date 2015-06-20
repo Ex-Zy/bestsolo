@@ -144,10 +144,12 @@
 		+svg(hot,7,9)
 	&.ico_stat
 		+svg(stat,8,8)
+	&.ico_plus
+		+svg(ico-plus,10,10)
 
 .flag
 	display: inline-block
-	.flag_tur
+	&.flag_tur
 		+svg(tur,14,10)
 
 .in
@@ -719,6 +721,8 @@ button.btn-smsquare
 	font-size: 13px
 	text-transform: uppercase
 	color: $green
+	&.is-started
+		color: #d8ae00
 
 // status
 .status
@@ -746,6 +750,22 @@ button.btn-smsquare
 	&:before
 		content: "'"
 		color: $gray
+
+// teams
+.teams
+	.teams__item
+		vertical-align: top
+		display: inline-block
+	.team
+		max-width: 95px
+		display: block
+		vertical-align: top
+		overflow: hidden
+		white-space: nowrap
+		text-overflow: ellipsis
+		display: block
+		&:first-child
+			max-width: 100px
 
 // team
 .team
@@ -795,17 +815,31 @@ button.btn-smsquare
 		top: 4px
 		left: 0
 	&.is-blocked
-		width: 50px
-		height: 24px
-		background: #DFE4EA
-		border: 1px solid $gray
+		width: 53px
+		height: 26px
+		&:before
+			position: absolute
+			left: 0
+			right: 0
+			bottom: 0
+			top: 0
+			width: 52px
+			height: 25px
+			border: 1px solid $gray
+			background: #DFE4EA
+		&:after
+			position: absolute
+			content: ''
+			top: 50%
+			left: 50%
+			+translate(-50%,-50%)
+			@extend .ico.ico_blocked
 	&.is-down
 		&:before
 			+arr(7,4,$red,b)
 	&.is-up
 		&:before
 			+arr(7,4,$green,t)
-
 	.ico
 		position: absolute
 		top: 50%
@@ -956,11 +990,12 @@ button.btn-smsquare
 // indicators
 .indicators
 	position: relative
-	padding: 0 45px 7px 0
+	padding: 0 38px 7px 0
 	font-size: 0
 	.indicator
 		vertical-align: bottom
 		&.is-total
+			margin-right: 12px
 			+r(1431)
 				display: none
 
@@ -972,22 +1007,39 @@ button.btn-smsquare
 	display: inline-block
 	+ns
 	+box
-	.indicator__top
-		margin-bottom: 4px
-		text-align: center
-		font-size: 8px
-	.indicator__bot
-		width: 100%
-		text-align: center
-		display: table
-	.indicator__item
-		display: table-cell
 	&.is-stat
 		padding-left: 11px
 	&.is-more
 		position: absolute
 		bottom: 7px
-		padding-left: 15px
+		right: 0
+		padding-left: 21px
+	&.is-mod
+		.indicator__item
+			position: relative
+			left: -29px
+			width: 106px
+	.indicator__top
+		margin-bottom: 4px
+		text-align: center
+		font-size: 8px
+		.ico
+			position: relative
+			top: 2px
+			margin-right: 5px
+	.indicator__bot
+		width: 100%
+		display: table
+		.indicator__item
+			width: auto
+			display: table-cell
+	.indicator__item
+		width: 52px
+		text-align: center
+		display: inline-block
+	.indicator__tot
+		margin-left: 3px
+		color: $green
 
 // mod
 .is-stat
@@ -1016,13 +1068,32 @@ button.btn-smsquare
 
 // match
 .match
+	& + .match
+		.ft
+			top: -2px
+	&.is-last
+		.more
+			border-bottom: 1px solid $light-gray2
+	&.is-open
+		.more
+			display: block
+		.btn-smsquare.is-more
+			color: #fff
+			background: $green
 	.match__wrap
 		position: relative
-		padding: 8px 39px 8px 5px
-		border: 1px solid transparent
+		padding: 8px 10px 8px 5px
+		border-width: 1px
+		border-style: solid
+		border-color: transparent
+		border-bottom-color: $light-gray2
 		+clr
 		&.is-hot
 			border-color: $red
+		&.is-goal
+			background: $light-green
+		&.is-started
+			background: #fffae5
 	.match__left
 		float: left
 		width: 311px
@@ -1032,6 +1103,8 @@ button.btn-smsquare
 		&:first-child
 			margin: 0 0 9px 0
 	.match__coeff
+		position: relative
+		padding-right: 29px
 		vertical-align: top
 		overflow: hidden
 	.score
@@ -1039,22 +1112,42 @@ button.btn-smsquare
 		top: 7px
 		right: 11px
 		color: $gray
-		&.is-goal
+		&.is-green
 			color: $green
 	.status
 		position: absolute
 		top: 1px
 		left: 0
-	.btn-square
+		&.is-soon
+			font-size: 8px
+	.btn-smsquare
 		position: absolute
 		top: 0
 		left: 8px
 	.btn-smsquare.is-more
 		position: absolute
-		top: 32px
+		top: 34px
 		left: auto
 		right: 9px
-
+	.coeff.is-down
+		&:before
+			top: 7px
+			left: -1px
+	.ico
+		&.ico_radon,
+		&.ico_radof
+			position: absolute
+			top: 10px
+			right: 0
+	.coeff
+		width: auto
+	.event
+		margin-left: 30px
+	.time
+		position: absolute
+		top: 18px
+		left: 4px
+		font-size: 8px
 
 // row
 .row
@@ -1065,10 +1158,21 @@ button.btn-smsquare
 // col
 .col
 	vertical-align: top
-	display: inline-block
+	font-size: 0
 	border: 1px solid $light-gray2
+	display: inline-block
+	&.is-mod
+		border: none
+		.col__item
+			margin-left: 53px
+			height: 27px
+			line-height: 24px
+			border: 1px solid $light-gray2
+			&:first-child
+				margin-left: 0
+				border-left: 1px solid $light-gray2
 	.col__item
-		width: 51px
+		width: 52px
 		height: 25px
 		line-height: 25px
 		text-align: center
@@ -1079,18 +1183,126 @@ button.btn-smsquare
 		+box
 		&:first-child
 			border-left: 0
+			width: 53px
+		&.is-green
+			position: relative
+			border-color: $green
+			&:before
+				position: absolute
+				content: ''
+				top: 0
+				left: -1px
+				bottom: 0
+				width: 1px
+				background: $green
+		&.is-gray
+			position: relative
+			+box-shadow(inset 0 3px 0 #d5d9df)
+			background: #DFE4EA
+			&:before
+				position: absolute
+				content: ''
+				top: -1px
+				left: -1px
+				right: -1px
+				bottom: -1px
+				border: 1px solid $gray
 		.coeff
 			margin-left: -7px
 			vertical-align: middle
+			&.is-blocked
+				margin-left: 0
+				width: 100%
+				height: 100%
+				&:before
+					top: -2px
+					left: -1px
+					right: -1px
+					width: auto
+				&:after
+					top: 46%
+
+// more
+.more
+	display: none
+	.more__field
+		padding: 1px 0 8px
+		border-top: 1px solid $light-gray2
+		+clr
+		&:first-child
+			border-top: none
+	.more__left
+		float: left
+		padding-right: 26px
+		text-align: right
+		width: 50%
+		+box
+	.more__right
+		float: right
+		padding-left: 24px
+		width: 50%
+		+box
+	.more__text
+		margin-top: 22px
+		letter-spacing: -0.1px
+	.indicator
+		margin-bottom: 2px
+		display: table
+	.col__item
+		width: 52px
+		&:first-child
+			width: 53px
+
+// card
+.card
+	margin-top: 5px
+	padding: 0 2px
+	margin-right: 1px
+	height: 11px
+	font-size: 7px
+	line-height: 11px
+	color: #fff
+	cursor: default
+	background: $yellow
+	vertical-align: top
+	display: inline-block
+	&.is-red
+		background: $red
+
+// ml54
+.ml54
+	margin-left: 54px
 
 // league
 .league
+	position: relative
 	padding-left: 20px
 	font-size: 10px
 	.flag
 		position: absolute
-		top: 0
+		top: 2px
 		left: 0
+
+// full time
+.ft
+	position: absolute
+	top: -1px
+	left: 310px
+	right: -1px
+	bottom: -1px
+	text-align: center
+	text-transform: uppercase
+	z-index: 2
+	border: 1px solid $gray
+	background: rgba(#fff, .7)
+	display: none
+	+vertical
+	&.is-active
+		display: block
+	.ft__text
+		font-size: 13px
+		vertical-align: middle
+		display: inline-block
 
 // date, time
 .date,
@@ -1104,10 +1316,12 @@ button.btn-smsquare
 	margin-top: -198px
 	height: 198px
 	+ns
-	.footer__in
+	.footer__wrap
 		margin: 0 auto
 		padding: 0 10px
-		width: 960px
+		max-width: 1065px
+	.footer__in
+		width: 930px
 		+box
 	.footer__nav
 		padding: 10px 0 7px 35px

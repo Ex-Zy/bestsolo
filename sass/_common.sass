@@ -156,9 +156,11 @@
 	margin: 0 auto
 	padding: 0 10px
 	max-width: 1440px
-	min-width: 960px
+	min-width: 1000px
 	+box
 	+clr
+	+r(1431)
+		max-width: 1180px
 %in
 	@extend .in
 
@@ -995,9 +997,20 @@ button.btn-smsquare
 	.indicator
 		vertical-align: bottom
 		&.is-total
-			margin-right: 12px
+			margin-right: 6px
+		&.is-coal
+			margin: 0 4px
+		&.is-match,
+		&.is-coal,
+		&.is-total
 			+r(1431)
 				display: none
+		&.is-score
+			+r(1431)
+				float: right
+		&.is-t-away
+			+r(1431)
+				margin-left: 40px
 
 // indicator
 .indicator
@@ -1015,10 +1028,10 @@ button.btn-smsquare
 		right: 0
 		padding-left: 21px
 	&.is-mod
-		.indicator__item
-			position: relative
-			left: -29px
-			width: 106px
+		position: relative
+		left: -27px
+		width: 106px
+		letter-spacing: -0.2px
 	.indicator__top
 		margin-bottom: 4px
 		text-align: center
@@ -1030,11 +1043,8 @@ button.btn-smsquare
 	.indicator__bot
 		width: 100%
 		display: table
-		.indicator__item
-			width: auto
-			display: table-cell
 	.indicator__item
-		width: 52px
+		width: 51px
 		text-align: center
 		display: inline-block
 	.indicator__tot
@@ -1058,6 +1068,8 @@ button.btn-smsquare
 .is-total
 	margin-right: 8px
 	width: 105px
+	& + .is-total
+		margin-right: 0
 .is-more
 	width: 54px
 
@@ -1071,6 +1083,9 @@ button.btn-smsquare
 	& + .match
 		.ft
 			top: -2px
+			+r(1431)
+				top: 71px
+				left: 0
 	&.is-last
 		.more
 			border-bottom: 1px solid $light-gray2
@@ -1097,6 +1112,10 @@ button.btn-smsquare
 	.match__left
 		float: left
 		width: 311px
+		+r(1431)
+			float: none
+			margin-bottom: 7px
+			width: 100%
 	.match__row
 		position: relative
 		padding-left: 40px
@@ -1107,6 +1126,10 @@ button.btn-smsquare
 		padding-right: 29px
 		vertical-align: top
 		overflow: hidden
+		+r(1431)
+			padding: 0 0 0 40px
+		+r(1152)
+			padding-left: 0
 	.score
 		position: absolute
 		top: 7px
@@ -1114,6 +1137,8 @@ button.btn-smsquare
 		color: $gray
 		&.is-green
 			color: $green
+		+r(1431)
+			right: 38px
 	.status
 		position: absolute
 		top: 1px
@@ -1129,6 +1154,8 @@ button.btn-smsquare
 		top: 34px
 		left: auto
 		right: 9px
+		+r(1431)
+			top: 82px
 	.coeff.is-down
 		&:before
 			top: 7px
@@ -1148,6 +1175,20 @@ button.btn-smsquare
 		top: 18px
 		left: 4px
 		font-size: 8px
+	.is-match,
+	.is-coal,
+	.is-total
+		vertical-align: top
+		display: inline-block
+		& > .indicator
+			padding: 4px 0
+			display: none
+	.is-total,
+	.is-coal,
+	.is-match
+		+r(1431)
+			.indicator
+				display: block
 
 // row
 .row
@@ -1159,31 +1200,41 @@ button.btn-smsquare
 .col
 	vertical-align: top
 	font-size: 0
-	border: 1px solid $light-gray2
 	display: inline-block
 	&.is-mod
 		border: none
-		.col__item
-			margin-left: 53px
-			height: 27px
-			line-height: 24px
-			border: 1px solid $light-gray2
+		.indicator
+			text-align: center
+		.col__ind
+			margin-left: 50px
+			width: 52px
+			text-align: left
+			.col__item
+				width: 52px
+				height: 27px
+				line-height: 24px
+				border-right: 1px solid $light-gray2
+				&.is-green
+					&:after
+						background: $green
 			&:first-child
 				margin-left: 0
-				border-left: 1px solid $light-gray2
+				.col__item
+					margin-left: 0
 	.col__item
 		width: 52px
-		height: 25px
+		height: 27px
 		line-height: 25px
 		text-align: center
 		font-size: 13px
 		vertical-align: top
-		border-left: 1px solid $light-gray2
+		border: 1px solid $light-gray2
+		border-right: none
 		display: inline-block
 		+box
-		&:first-child
-			border-left: 0
-			width: 53px
+		&:last-child
+			border-right: 1px solid $light-gray2
+			width: 51px
 		&.is-green
 			position: relative
 			border-color: $green
@@ -1221,16 +1272,35 @@ button.btn-smsquare
 					width: auto
 				&:after
 					top: 46%
+	.col__ind
+		text-align: center
+		vertical-align: top
+		display: inline-block
+		.col__item
+			position: relative
+			width: 51px
+			border-right: none
+			&:after
+				position: absolute
+				content: ''
+				top: -1px
+				right: -1px
+				bottom: -1px
+				width: 1px
+				background: $light-gray2
+		&:last-child
+			.col__item
+				width: 51px
+		.indicator
+			display: block
 
 // more
 .more
 	display: none
 	.more__field
 		padding: 1px 0 8px
-		border-top: 1px solid $light-gray2
+		border-bottom: 1px solid $light-gray2
 		+clr
-		&:first-child
-			border-top: none
 	.more__left
 		float: left
 		padding-right: 26px
@@ -1239,19 +1309,17 @@ button.btn-smsquare
 		+box
 	.more__right
 		float: right
-		padding-left: 24px
+		padding: 0 120px 0 22px
 		width: 50%
 		+box
+		+r(1431)
+			padding-right: 1px
 	.more__text
 		margin-top: 22px
 		letter-spacing: -0.1px
 	.indicator
 		margin-bottom: 2px
 		display: table
-	.col__item
-		width: 52px
-		&:first-child
-			width: 53px
 
 // card
 .card
@@ -1269,9 +1337,9 @@ button.btn-smsquare
 	&.is-red
 		background: $red
 
-// ml54
-.ml54
-	margin-left: 54px
+// ml51
+.ml51
+	margin-left: 51px
 
 // league
 .league
@@ -1323,6 +1391,8 @@ button.btn-smsquare
 	.footer__in
 		width: 930px
 		+box
+		+r(1431)
+			margin: 0 auto
 	.footer__nav
 		padding: 10px 0 7px 35px
 		background: $light-gray

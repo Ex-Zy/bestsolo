@@ -3,11 +3,16 @@
 	margin: 16px auto 75px
 	@extend %in
 	+clr
+	&.is-wauto
+		+r(1431)
+			max-width: 1440px
 	.l-col1
 		float: left
 		margin-right: 7px
 		width: 180px
 	.l-col2
 		float: right
-		margin-left: 7px
+		margin-left: 28px
 		width: 295px
+		+r(1431)
+			margin-left: 7px

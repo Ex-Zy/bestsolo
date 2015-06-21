@@ -146,6 +146,8 @@
 		+svg(stat,8,8)
 	&.ico_plus
 		+svg(ico-plus,10,10)
+	&.ico_sportwetten
+		+svg(sportwetten,111,143)
 
 .flag
 	display: inline-block
@@ -185,6 +187,7 @@ $green: #36A200
 $light-green: #ebf6e5
 $red: #ED1C24
 $light-blue: #77A3BC
+$yellow-brown: #c1a221
 
 body
 	min-width: 960px
@@ -415,6 +418,7 @@ a
 	&.btn_join
 		+darken($gray,5)
 	&.btn_yellow
+		padding: 0 18px
 		height: 46px
 		line-height: 46px
 		color: $gray
@@ -424,8 +428,21 @@ a
 		+box-shadow(inset 0 -2px 0 rgba(#000, .5))
 		background: $yellow
 		+nsb
+		+box
 		&:hover
 			+darken($yellow, 3)
+	&.btn_green
+		padding: 0 18px
+		height: 34px
+		width: 100%
+		line-height: 34px
+		color: #fff
+		font-size: 14px
+		text-transform: uppercase
+		+box-shadow(inset 0 -2px 0 rgba(#000, .5))
+		background: $green
+		&:hover
+			+darken($green, 3)
 	&:hover
 		+box-shadow(none)
 		text-decoration: none
@@ -490,6 +507,12 @@ button.btn
 button.btn-smsquare
 	letter-spacing: -0.8px
 
+// tabs
+.tabs
+	&.is-game
+		.tabs__wrap
+			font-size: 0
+
 // tab
 .tab
 	margin: 9px 0
@@ -497,6 +520,13 @@ button.btn-smsquare
 	border: 1px solid $yellow
 	display: table
 	+box
+	&.is-mod
+		margin-top: 0
+		width: auto
+		a
+			padding: 0 16px
+			+r(1431)
+				padding: 0 12px
 	.tab__item
 		border-left: 1px solid $yellow
 		display: table-cell
@@ -622,6 +652,10 @@ button.btn-smsquare
 .wind
 	margin-bottom: 25px
 	border: 1px solid $gray
+	&.is-yellow-brown
+		border-color: $yellow-brown
+		.wind__top
+			background: $yellow-brown
 	.wind__top
 		position: relative
 		padding: 12px 48px 9px 15px
@@ -636,6 +670,14 @@ button.btn-smsquare
 		display: inline-block
 	.wind__wrap
 		padding: 22px 18px 36px
+	.wind__in
+		padding: 12px
+		.img
+			margin: 15px 10px 0 0
+			float: left
+	.wind__text
+		padding: 20px 0
+		+ns
 	.date
 		margin-left: 18px
 	.time
@@ -669,6 +711,9 @@ button.btn-smsquare
 	margin: 5px 0
 	padding: 0 5px 6px
 	border-bottom: 1px solid $light-gray2
+	&:last-child
+		margin-bottom: 0
+		border-bottom: none
 	.item__row
 		position: relative
 		margin-top: 4px
@@ -965,6 +1010,7 @@ button.btn-smsquare
 // field
 .field
 	display: block
+	+clr
 
 // legend
 .legend
@@ -1075,7 +1121,6 @@ button.btn-smsquare
 
 // center
 .center
-	max-width: 915px
 	overflow: hidden
 
 // match
@@ -1378,6 +1423,75 @@ button.btn-smsquare
 	vertical-align: top
 	font-size: 10px
 	display: inline-block
+
+// game
+.game
+	position: relative
+	margin: 31px 31px 0 0
+	width: 185px
+	height: 135px
+	vertical-align: top
+	display: inline-block
+	img
+		width: 100%
+		display: block
+	.game__top
+		position: absolute
+		padding: 10px 10px 7px
+		top: 0
+		left: 0
+		right: 0
+		color: #fff
+		font-size: 10px
+		text-transform: uppercase
+		z-index: 1
+		background: rgba(#000, 0.7)
+	.btn
+		position: absolute
+		left: 19px
+		right: 19px
+		bottom: 12px
+		width: auto
+
+// jackpot
+.jackpot
+	display: block
+	+clr
+	.jackpot__img
+		float: left
+		margin-right: 24px
+		width: 75px
+		img
+			width: 100%
+			display: block
+		&:hover
+			& + .jackpot__right
+				.jackpot__name
+					text-decoration: underline
+	.jackpot__right
+		padding-top: 3px
+	.jackpot__name
+		font-size: 14px
+	.jackpot__sum
+		margin-top: 14px
+		font-size: 18px
+		color: $green
+		text-transform: uppercase
+
+// bonus
+.bonus
+	padding-left: 5px
+	color: $yellow-brown
+	font-size: 36px
+	line-height: 0.8
+	text-transform: uppercase
+	span
+		font-size: 52px
+	.currency
+		margin-left: 0
+		vertical-align: bottom
+		font-size: 36px
+		+ns
 
 // footer
 .footer

@@ -361,6 +361,7 @@ a
 	&:focus
 		+placeholder
 			font-size: 0
+
 .checkbox
 	position: relative
 	+user-select(none)
@@ -1493,6 +1494,163 @@ button.btn-smsquare
 		font-size: 36px
 		+ns
 
+// datepicker
+.datepicker
+	position: relative
+	padding-right: 33px
+	width: 136px
+	height: 32px
+	border: 1px solid $light-gray2
+	+box
+	button
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		width: 33px
+		text-align: center
+		border-left: 1px solid $light-gray2
+		background: none
+		img
+			height: 16px
+			width: 16px
+	input
+		padding: 0 14px
+		height: 100%
+		width: 100%
+		color: $gray
+		font-size: 12px
+		+ns
+
+// results
+.results
+	padding-bottom: 700px
+	+clr
+	.results__left
+		float: left
+		width: 50%
+	.results__right
+		float: right
+		width: 50%
+
+// select
+.select
+	width: 137px
+	height: 32px
+.chosen-container-multi
+	width: 137px
+	padding-right: 52px
+	cursor: text
+	border: 1px solid $light-gray2
+	+box
+	&:before
+		position: absolute
+		content: ''
+		top: 0
+		right: 0
+		bottom: 0
+		width: 32px
+		cursor: pointer
+		border-left: 1px solid $light-gray2
+	&:after
+		position: absolute
+		content: ''
+		top: 50%
+		right: 13px
+		+translate(0,-50%)
+		cursor: pointer
+		+arr(6,3,$light-gray2,b)
+	&.chosen-container-active
+		.chosen-choices
+			+box-shadow(none)
+	&.chosen-with-drop
+		.chosen-drop
+			left: -1px
+			right: -1px
+			width: auto
+	.chosen-choices
+		padding-left: 8px
+		height: 32px !important
+		white-space: nowrap
+		text-overflow: ellipsis
+		border: none
+		background: none
+		li.search-choice,
+		li.search-choice span
+			float: none
+			height: 29px
+			line-height: 29px !important
+			display: inline
+		li.search-choice
+			padding: 0 0 0 3px
+			margin: 0
+			border: none
+			+box-shadow(none)
+			background: none
+			&:first-child
+				padding-left: 0
+				&:before
+					display: none
+			&:before
+				position: relative
+				content: ","
+				left: -3px
+				vertical-align: top
+		li.search-field
+			position: absolute
+			top: -100px
+			// input[type="text"]
+			// 	padding-left: 8px
+			// 	height: 29px
+			// 	font-size: 12px
+			// 	color: $gray
+			// 	+ns
+	.chosen-drop
+		+box-shadow(none)
+		border: 1px solid $light-gray2
+		li
+			padding: 0 10px
+			height: 26px
+			font-size: 11px
+			color: $gray
+			line-height: 26px
+			+ns
+			+box
+			&.highlighted,
+			&.result-selected
+				color: $gray
+				background: #eeeff0
+	.chosen-results
+		max-height: 365px
+		+scrollbar
+			width: 12px
+		+scrollbar-track
+			background: #fff
+			border-left: 1px solid $light-gray2
+		+scrollbar-thumb
+			background-color: $gray
+
+.filter
+	font-size: 0
+	+ns
+	.filter__item
+		width: 50%
+		font-size: 13px
+		+box
+		&:first-child
+			padding-left: 15px
+	.filter__text
+		padding-right: 15px
+		height: 30px
+		line-height: 32px
+		text-transform: uppercase
+	.select,
+	.datepicker,
+	.filter__item,
+	.filter__text
+		vertical-align: top
+		display: inline-block
+
 // footer
 .footer
 	margin-top: -198px
@@ -1534,8 +1692,49 @@ button.btn-smsquare
 		font-size: 10px
 		text-align: center
 
-
-
+// ui-datepicker
+.ui-datepicker
+	margin-left: -1px
+	padding: 5px
+	width: 136px
+	+border-radius(0)
+	border: 1px solid $light-gray2
+	background: #fff
+	+box
+	table
+		font-size: 11px
+	th
+		padding: 0
+	td
+		padding: 2px 0
+	.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default
+		color: $gray
+		font-size: 11px
+		background: none
+		+ns
+		border: none
+		text-align: center
+	.ui-datepicker-today,
+	.ui-datepicker-current-day
+		.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight,
+		.ui-state-active
+			color: #fff
+			background: $gray
+	.ui-datepicker-prev, .ui-datepicker-next
+		height: 10px
+		width: 10px
+		&:before
+			position: absolute
+			content: ''
+			top: 50%
+			left: 50%
+			+translate(-50%,-50%)
+	.ui-datepicker-prev
+		&:before
+			+arr(3,6,$gray,l)
+	.ui-datepicker-next
+		&:before
+			+arr(3,6,$gray,r)
 
 
 

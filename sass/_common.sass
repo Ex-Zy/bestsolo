@@ -67,6 +67,31 @@
 	font-family: "Myriad-Pro", Arial, sans-serif 
 	font-weight: normal
 
+// first el
+=first
+	&:first-child
+		margin: 0
+
+// darken bg
+=darken($bg,$n)
+	background: $bg
+	&:hover
+		background: darken($bg,$n)
+
+// colors
+$gray: #555F6D
+$light-gray: #E6E6E6
+$light-gray2: #b9c0c9
+$yellow: #FFCE00
+$orange: #FF9D00
+$green: #36A200
+$light-green: #ebf6e5
+$red: #ED1C24
+$light-blue: #77A3BC
+$yellow-brown: #c1a221
+$yellow-dark: #edbc00
+$yellow-light: #ffe87c
+
 // ico
 .ico
 	display: inline-block
@@ -148,6 +173,20 @@
 		+svg(ico-plus,10,10)
 	&.ico_sportwetten
 		+svg(sportwetten,111,143)
+	&.ico_search
+		+svg(search,16,16)
+	&.ico_kick
+		+svg(kick,10,11)
+	&.ico_y-card
+		width: 10px
+		height: 15px
+		background: $yellow
+	&.ico_sub
+		+svg(ico_sub,14,12)
+	&.ico_r-card
+		width: 10px
+		height: 15px
+		background: $red
 
 .flag
 	display: inline-block
@@ -166,35 +205,17 @@
 %in
 	@extend .in
 
-// first el
-=first
-	&:first-child
-		margin: 0
-
-// darken bg
-=darken($bg,$n)
-	background: $bg
-	&:hover
-		background: darken($bg,$n)
-
-// colors
-$gray: #555F6D
-$light-gray: #E6E6E6
-$light-gray2: #b9c0c9
-$yellow: #FFCE00
-$orange: #FF9D00
-$green: #36A200
-$light-green: #ebf6e5
-$red: #ED1C24
-$light-blue: #77A3BC
-$yellow-brown: #c1a221
-
 body
 	min-width: 960px
 	font-size: 13px 
 	color: $gray
 	line-height: 1.4
 	+nsb
+	&.is-home
+		.l
+			margin-top: 16px
+		.l-col1
+			padding-top: 9px
 a
 	color: $gray
 	text-decoration: none
@@ -215,6 +236,11 @@ a
 	padding: 40px 0 23px
 	+os
 	background: $yellow
+	&.is-login
+		.login
+			margin-left: 12px
+		.lang__chosen
+			background: $yellow-light
 	.header__in
 		@extend %in
 	.header__right
@@ -229,6 +255,12 @@ a
 		margin-left: 10px
 	.login
 		margin: 0 0 0 57px
+	.btn.btn_green
+		width: auto
+		min-width: 90px
+		text-transform: inherit
+		+box-shadow(inset 0 -1px 0 rgba(0, 0, 0, 0.5))
+		+os
 
 // lang
 .lang
@@ -346,18 +378,91 @@ a
 			color: $gray
 
 // form elements
+.form
+	.form__topic
+		margin-bottom: 25px
+		text-transform: uppercase
+		+clr
+		.form__left
+			padding-left: 18px
+			padding-top: 0
+	.form__row
+		margin-top: 20px
+		+clr
+	.form__padd
+		padding: 40px 0
+	.form__left
+		float: left
+		padding-top: 8px
+		width: 180px
+		text-transform: uppercase
+		+box
+		+ns
+	.form__right
+		overflow: hidden
+		&.is-visible
+			overflow: visible
+	.form__col
+		width: 246px
+		vertical-align: top
+		display: inline-block
+		.btn
+			width: auto
+	.form__necess
+		color: $green
+		display: inline
+	.form__foot
+		margin-top: 35px
+		padding-top: 25px
+		font-size: 10px
+		+ns
+		border-top: 1px solid $light-gray2
+		+clr
+		.form__left
+			padding-top: 7px
+			text-transform: inherit
+	.is-center
+		text-align: center
+	.rating
+		margin: 0 10px
+	.chosen-container-multi,
+	.select
+		width: 100%
+
+
 .input
 	padding: 3px 13px 0
 	color: #999
-	width: 100%
 	height: 35px
 	font-size: 13px
 	border: 1px solid #4b576c
 	background: #F2F2F2
-	+box-shadow(inset 0 3px 0 $light-gray)
-	display: block
 	+mp
+
+.input-white,
+.textarea
+	padding: 0 12px
+	height: 32px
+	font-size: 12px
+	+ns
+	color: $gray
+	border: 1px solid $light-gray2
+	+placeholder-color($gray)
+	&:focus
+		border-color: $yellow
+
+.textarea
+	padding-top: 10px
+	height: 195px
+	resize: none
+
+.input,
+.input-white,
+.textarea
+	width: 100%
+	+box-shadow(inset 0 2px 0 $light-gray)
 	+box
+	display: block
 	&:focus
 		+placeholder
 			font-size: 0
@@ -444,6 +549,10 @@ a
 		background: $green
 		&:hover
 			+darken($green, 3)
+	&.btn_small
+		font-size: 12px
+		height: 34px
+		line-height: 34px
 	&:hover
 		+box-shadow(none)
 		text-decoration: none
@@ -653,6 +762,9 @@ button.btn-smsquare
 .wind
 	margin-bottom: 25px
 	border: 1px solid $gray
+	&.is-hide
+		.wind__block
+			display: none
 	&.is-yellow-brown
 		border-color: $yellow-brown
 		.wind__top
@@ -839,6 +951,9 @@ button.btn-smsquare
 	color: $green
 	&.is-gray
 		color: $gray
+	&.is-final
+		font-size: 19px
+		line-height: 1
 
 // under
 .total
@@ -1132,6 +1247,8 @@ button.btn-smsquare
 			+r(1431)
 				top: 71px
 				left: 0
+		.match__wrap
+			border-top-color: transparent
 	&.is-last
 		.more
 			border-bottom: 1px solid $light-gray2
@@ -1148,6 +1265,7 @@ button.btn-smsquare
 		border-style: solid
 		border-color: transparent
 		border-bottom-color: $light-gray2
+		border-top-color: $light-gray2
 		+clr
 		&.is-hot
 			border-color: $red
@@ -1524,14 +1642,104 @@ button.btn-smsquare
 
 // results
 .results
-	padding-bottom: 700px
 	+clr
 	.results__left
 		float: left
-		width: 50%
+		width: 47%
+		.filter__item
+			width: 53%
+			&:first-child
+				width: 47%
 	.results__right
 		float: right
-		width: 50%
+		width: 52%
+		.filter__item
+			width: 47%
+			&:first-child
+				width: 53%
+	.filter
+		margin-bottom: 20px
+	.indicator
+		font-size: 9px
+	+r(1431)
+		.results__left,
+		.results__right
+			float: none
+			width: 100%
+		.results__right
+			margin-top: 20px
+
+.table-results
+	tr
+		&.is-gray
+			background: #eaebee
+	th,
+	td
+		border-bottom: 1px solid $light-gray2
+	th
+		&:first-child
+			padding-left: 10px
+			text-align: left
+	td
+		padding: 12px 0 7px 0
+		vertical-align: top
+		+box
+		&:first-child
+			min-width: 62px
+			padding-left: 10px
+		&:last-child
+			text-align: center
+	.score
+		margin-top: 20px
+		width: 100%
+		color: $gray
+		text-align: center
+	.date,
+	.time
+		display: block
+	.date
+		margin-top: 5px
+	.time
+		font-size: 13px
+		line-height: 1.3
+	.btn-smsquare
+		margin-top: 23px
+
+// table-legen
+.table-stat
+	margin: 38px 0 0 10px
+	height: 26px
+	line-height: 26px
+	text-align: left
+	background: #eaebee
+	+ns
+	+r(1431)
+		margin: 0
+	td
+		+box
+		&:first-child
+			min-width: 72px
+			padding-left: 10px
+		&:nth-child(2)
+			min-width: 98px
+			text-align: center
+		&:nth-child(2)
+		.ico
+			margin-top: -2px
+			vertical-align: middle
+	tr
+		&:nth-child(even)
+			background: #f4f5f7
+	.table-results
+		td
+			height: auto
+			line-height: 1.4
+			text-align: left
+			border: none
+			&:nth-child(2)
+				min-width: 0
+			&:last-child
+				min-width: 90px
 
 // select
 .select
@@ -1577,9 +1785,8 @@ button.btn-smsquare
 		background: none
 		li.search-choice,
 		li.search-choice span
-			float: none
-			height: 29px
-			line-height: 29px !important
+			height: 31px
+			line-height: 30px !important
 			display: inline
 		li.search-choice
 			padding: 0 0 0 3px
@@ -1596,15 +1803,18 @@ button.btn-smsquare
 				content: ","
 				left: -3px
 				vertical-align: top
-		li.search-field
-			position: absolute
-			top: -100px
-			// input[type="text"]
-			// 	padding-left: 8px
-			// 	height: 29px
-			// 	font-size: 12px
-			// 	color: $gray
-			// 	+ns
+		li.search-field,
+		li.search-field input
+			height: 100%
+			input[type="text"]
+				margin: 0
+				padding-left: 4px
+				height: 100%
+				width: 100%
+				color: $gray
+				+ns
+				+placeholder-color($gray)
+				font-size: 14px
 	.chosen-drop
 		+box-shadow(none)
 		border: 1px solid $light-gray2
@@ -1634,22 +1844,162 @@ button.btn-smsquare
 	font-size: 0
 	+ns
 	.filter__item
+		padding-left: 12px
 		width: 50%
-		font-size: 13px
+		font-size: 12px
+		vertical-align: top
+		display: inline-block
 		+box
-		&:first-child
-			padding-left: 15px
+		+clr
+		li.search-field
+			position: absolute
+			top: -100px
+		li.search-choice,
+		li.search-choice span
+			float: none
+			height: 29px
+			line-height: 29px !important
+			display: inline
 	.filter__text
-		padding-right: 15px
+		float: left
 		height: 30px
 		line-height: 32px
 		text-transform: uppercase
-	.select,
+	.chosen-container,
 	.datepicker,
-	.filter__item,
-	.filter__text
-		vertical-align: top
+	.search
+		float: right
+
+// search
+.search
+	position: relative
+	width: 150px
+	+box
+	display: inline-block
+	.search__btn
+		position: absolute
+		top: 1px
+		right: 1px
+		bottom: 1px
+		width: 33px
+		z-index: 1
+		border-left: 1px solid $light-gray2
+		background: #fff
+		.ico
+			position: absolute
+			top: 50%
+			left: 50%
+			+translate(-50%,-50%)
+	.input-white
+		padding-right: 34px
+
+// user
+.user
+	padding: 8px 23px 0 14px
+	height: 34px
+	border: 1px solid $yellow-dark
+	+box
+	vertical-align: top
+	background: $yellow-light
+	display: inline-block
+	.user__name
+		padding: 0 28px 0 0
+	.user__money
+		font-weight: bold
+	.user__name,
+	.user__money
 		display: inline-block
+
+// cabinet
+.cabinet
+	margin: 0 auto
+	max-width: 730px
+	.menu
+		margin-bottom: 25px
+	.menu__list
+		padding: 0
+		width: 100%
+		min-width: 0
+		display: table
+		&:after
+			display: none
+	.menu__iten
+		text-align: center
+		display: table-cell
+		a
+			padding: 0 18px
+	.form
+		margin-top: 37px
+	+r(1062)
+		.menu__iten
+			a
+				padding: 0 10px
+		.form
+			.info
+				margin-top: 20px
+
+// title-bord
+.title-bord
+	position: relative
+	margin: 20px 0
+	font-size: 13px
+	text-transform: uppercase
+	letter-spacing: -0.5px
+	+nsb
+	&:before
+		position: absolute
+		content: ''
+		top: 50%
+		left: 0
+		right: 0
+		+translate(0,-50%)
+		height: 1px
+		background: $light-gray2
+	span
+		position: relative
+		padding: 0 23px 0 18px
+		z-index: 1
+		background: #fff
+		display: inline-block
+
+// rating
+.rating
+	font-size: 0
+	vertical-align: top
+	height: 32px
+	line-height: 32px
+	display: inline-block
+	.rating__item
+		margin-left: 3px
+		vertical-align: middle
+		cursor: pointer
+		display: inline-block
+		+svg(star,11,11)
+		&:first-child
+			margin-left: 0
+		&.is-active
+			+svg(star-green,11,11)
+
+// info
+.info
+	max-width: 192px
+	vertical-align: top
+	display: inline-block
+	font-size: 10px
+	letter-spacing: -0.7px
+	line-height: 1.1
+	+ns
+
+// support
+.support
+	width: 535px
+	.form__left
+		padding-right: 16px
+		width: 78px
+		text-align: right
+	.form__right
+		float: right
+		width: 457px
 
 // footer
 .footer
@@ -1692,7 +2042,7 @@ button.btn-smsquare
 		font-size: 10px
 		text-align: center
 
-// ui-datepicker
+// UI style
 .ui-datepicker
 	margin-left: -1px
 	padding: 5px
@@ -1703,11 +2053,15 @@ button.btn-smsquare
 	+box
 	table
 		font-size: 11px
+	thead
+		display: none
 	th
 		padding: 0
 	td
 		padding: 2px 0
-	.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default
+	.ui-state-default,
+	.ui-widget-content .ui-state-default,
+	.ui-widget-header .ui-state-default
 		color: $gray
 		font-size: 11px
 		background: none
@@ -1716,11 +2070,14 @@ button.btn-smsquare
 		text-align: center
 	.ui-datepicker-today,
 	.ui-datepicker-current-day
-		.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight,
+		.ui-state-highlight,
+		.ui-widget-content .ui-state-highlight,
+		.ui-widget-header .ui-state-highlight,
 		.ui-state-active
 			color: #fff
 			background: $gray
 	.ui-datepicker-prev, .ui-datepicker-next
+		top: 5px
 		height: 10px
 		width: 10px
 		&:before
@@ -1729,12 +2086,29 @@ button.btn-smsquare
 			top: 50%
 			left: 50%
 			+translate(-50%,-50%)
+		&.ui-state-hover
+			cursor: pointer
+			border: none
+			background: none
 	.ui-datepicker-prev
 		&:before
 			+arr(3,6,$gray,l)
+		&.ui-state-hover
+			margin-left: 1px
 	.ui-datepicker-next
 		&:before
 			+arr(3,6,$gray,r)
+		&.ui-state-hover
+			margin-right: 1px
+	.ui-datepicker-title
+		font-size: 11px
+		text-transform: uppercase
+		color: $gray
+		+ns
+	.ui-datepicker-header
+		padding: 0
+		border: none
+		background: none
 
 
 

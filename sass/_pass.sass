@@ -32,36 +32,91 @@
 		margin: 0 25px 32px
 
 .wind
+	&.is-note
+		padding: 10px
+		font-size: 12px
+		background: rgba(#F00, 0.05)
+		border-color: #ff0000
+		+ns
+		+box
+		+clr
 	&.is-popup
 		display: inline-block
 		width: 295px
-		height: 150px
+		min-height: 150px
 		font-size: 13px
 		text-align: center
 		vertical-align: top
+		overflow: hidden
 		.m-margin-top
-			margin-top: 30px
+			margin-top: 40px
 		.title
 			position: relative
-			margin-top: 22px
+			margin-top: 27px
 			font-size: 12px
 			text-transform: uppercase
+			&.no-margin
+				margin-top: 0
+			&.s-margin-top
+				margin-top: 11px
+			&.is-error
+				max-width: 175px
+				height: 45px
+				margin: 13px auto 0
+				padding: 6px 20px
+				text-transform: inherit
+				color: #F00
+				background: rgba(#F00, 0.1)
+				+vertical
+				+ns
+				+box
+				span
+					display: inline-block
+					font-size: 12px
+					vertical-align: middle
 		.details
 			font-size: 14px
 			text-decoration: underline
+		.warning
+			position: relative
+			text-transform: uppercase
+			span
+				+ns
 		.spin
-			margin: 15px 0 20px
+			margin: 11px 0 12px
 		.txt-small
 			font-size: 12px
 		.txt-green
 			color: #36A200
+		.btn
+			&.btn_dark
+				height: 35px
+				margin: 20px 0 10px
+				padding: 0 32px
+				font-size: 16px
+				background: #555F6D
+				color: #fff
+				box-shadow: inset 0 -2px 0 #162835
+				border-radius: 5px
+				text-transform: uppercase
+				line-height: 35px
+				+nsb
+				&:hover
+					box-shadow: none
+					background: lighten(#555F6D, 5%)
+			&.btn_yellow
+				margin: 13px 0 17px
+				padding: 0 74px
+		.btn-square
+			float: right
+			background-color: #fff
 		.checked_ico
 			position: absolute
 			top: 50%
-			left: 10px
+			left: 15px
 			width: 22px
 			height: 22px
-			margin-top: -12px
+			margin-top: -11px
 			background: #36A200
 			border-radius: 50%
 			&:before
@@ -71,5 +126,70 @@
 				left: 50%
 				margin: -4.5px 0 0 -6px
 				+svg(is-check-white, 12, 9)
+		.error_ico
+			position: absolute
+			top: 50%
+			left: -45px
+			width: 22px
+			height: 22px
+			margin-top: -11px
+			background: #ff0000
+			border-radius: 50%
+			&:before
+				content: ""
+				position: absolute
+				top: 50%
+				left: 50%
+				margin: -5px 0 0 -5px
+				+svg(close, 9, 9)
+		.warning_ico
+			position: absolute
+			top: -5px
+			left: 14px
+			+svg(warning, 25, 25)
 		.spinner_ico
-			+svg(spinner, 30, 31)
+			+svg(spinner, 30, 30)
+		.print_ico
+			margin-right: 15px
+			vertical-align: middle
+			+svg(print, 20, 20)
+
+//right column adds
+.topic
+	&.is-system
+		padding-left: 15px
+		background: #555F6D
+
+.system
+	text-transform: uppercase
+	font-size: 12px
+	color: #fff
+	&__span
+		display: inline-block
+		padding-left: 20px
+		color: #ffce00
+
+.profit
+	&.txt-green
+		color: #36A200
+
+.count
+	font-size: 0
+	&__bl
+		display: inline-block
+		width: 33.33%
+		color: #555F6D
+		font-size: 13px
+		vertical-align: top
+
+.btn.btn_yellow
+	&.inactive
+		padding: 0
+		height: 34px
+		background: #CED4DB
+		line-height: 34px
+		text-transform: none
+		border-radius: 0
+		+ns
+		&:hover
+			+darken(#CED4DB, 3)

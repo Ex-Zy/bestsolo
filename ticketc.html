@@ -251,6 +251,55 @@
 						<li class="menu__iten"><a href="#">support</a></li>
 					</ul>
 				</div>
+				<!-- t-filter -->
+				<div class="t-filter">
+					<div class="t-filter__period">
+						<span class="t-filter__label">Period</span>
+						<div class="select-wrap">
+							<select class="select" multiple data-placeholder=" ">
+								<option value="10 days">10 days</option>
+								<option value="10 days">10 days</option>
+								<option value="10 days">10 days</option>
+								<option value="10 days">10 days</option>
+								<option value="10 days">10 days</option>
+								<option value="10 days">10 days</option>
+								<option value="10 days">10 days</option>
+								<option value="10 days">10 days</option>
+								<option value="10 days">10 days</option>
+								<option value="10 days">10 days</option>
+								<option value="10 days">10 days</option>
+								<option value="10 days">10 days</option>
+								<option value="10 days">10 days</option>
+							</select>
+						</div>			
+					</div>
+					<div class="t-filter__type">
+						<span class="t-filter__label">transaction type</span>
+						<div class="select-wrap">
+							<select class="select" multiple data-placeholder="Any types of transactions">
+								<option value="Any types of transactions">Any types of transactions</option>
+								<option value="Any types of transactions1">Any types of transactions1</option>
+								<option value="Any types of transactions">Any types of transactions</option>
+								<option value="Any types of transactions1">Any types of transactions1</option>
+								<option value="Any types of transactions">Any types of transactions</option>
+								<option value="Any types of transactions1">Any types of transactions1</option>
+								<option value="Any types of transactions">Any types of transactions</option>
+								<option value="Any types of transactions1">Any types of transactions1</option>
+								<option value="Any types of transactions">Any types of transactions</option>
+								<option value="Any types of transactions1">Any types of transactions1</option>
+								<option value="Any types of transactions">Any types of transactions</option>
+								<option value="Any types of transactions1">Any types of transactions1</option>
+							</select>
+						</div>						
+					</div>
+					<div class="t-filter__search">						
+						<span class="t-filter__label">search</span>
+						<form class="search">
+							<input type="search" class="input-white" placeholder="">
+							<button class="search__btn" type="submit"><i class="ico ico_search"></i></button>
+						</form>
+					</div>
+				</div>
 			</div>
 			<!-- tickets -->
 			<div class="tickets">
@@ -260,13 +309,14 @@
 						<div class="indicator__item">overall tickets: 312</div>
 						<div class="indicator__item">overall amountts: €14 000</div>
 						<div class="indicator__item">not solved: €1 000</div>
-						<div class="indicator__item">win: €12 000</div>
+						<div class="indicator__item">win: <span class="is-green">€12 000</span></div>
 						<div class="indicator__item">loss: €16 000</div>
 						<div class="indicator__item">p/l - €4 000</div>
 					</div>
 				</div>
 				<div class="tickets__table">
 					<div class="tickets__head">
+						<div class="tickets__th"></div>
 						<div class="tickets__th">№</div>
 						<div class="tickets__th">date / time</div>
 						<div class="tickets__th">shop</div>
@@ -274,29 +324,578 @@
 						<div class="tickets__th">summ</div>
 						<div class="tickets__th">status</div>
 						<div class="tickets__th">expected win</div>
-						<div class="tickets__th">dep./withdraw №</div>
+						<div class="tickets__th"><span>dep./withdraw</span><span class="is-mob">d/w</span> № </div>
 					</div>
 					<div class="tickets__body">
 						<div class="tickets__tr">
-							<div class="tickets__td"></div>
-							<div class="tickets__td">123456789</div>
-							<div class="tickets__td">
-								<date class="date">24.05.2015</date>
-								<div class="time">17:28</div>
+							<div class="tickets__wrap">
+								<div class="tickets__td">
+									<button class="btn-smsquare is-toggle" type="button"></button>
+								</div>
+								<div class="tickets__td">123456789</div>
+								<div class="tickets__td">
+									<date class="date">24.05.2015</date>
+									<div class="time">17:28</div>
+								</div>
+								<div class="tickets__td">02 Bielefield Klimi</div>
+								<div class="tickets__td">
+									<span class="tickets__syst">1 2 6 8 12 14 16 18 19 20</span>
+									<span class="tickets__date">aus 24</span>
+								</div>
+								<div class="tickets__td">€50</div>
+								<div class="tickets__td">not solved</div>
+								<div class="tickets__td">€12 000</div>
+								<div class="tickets__td">12345678</div>
 							</div>
-							<div class="tickets__td">02 Bielefield Klimi</div>
-							<div class="tickets__td">
-								<span class="tickets__syst">1 2 6 8 12 14 16 18 19 20</span>
-								<span class="tickets__date">aus 24</span>
+						</div>
+						<div class="tickets__tr">
+							<div class="tickets__wrap">
+								<div class="tickets__td">
+									<button class="btn-smsquare is-toggle" type="button"></button>
+								</div>
+								<div class="tickets__td">123456789</div>
+								<div class="tickets__td">
+									<date class="date">24.05.2015</date>
+									<div class="time">17:28</div>
+								</div>
+								<div class="tickets__td">02 Bielefield Klimi</div>
+								<div class="tickets__td">
+								</div>
+								<div class="tickets__td">€50</div>
+								<div class="tickets__td">not solved</div>
+								<div class="tickets__td">€12 000</div>
+								<div class="tickets__td">12345678</div>
 							</div>
-							<div class="tickets__td">€50</div>
-							<div class="tickets__td">not solved</div>
-							<div class="tickets__td">€12 000</div>
-							<div class="tickets__td">12345678</div>
+						</div>
+						<div class="tickets__tr is-red">
+							<div class="tickets__wrap">
+								<div class="tickets__td">
+									<button class="btn-smsquare is-toggle" type="button"></button>
+								</div>
+								<div class="tickets__td">123456789</div>
+								<div class="tickets__td">
+									<date class="date">24.05.2015</date>
+									<div class="time">17:28</div>
+								</div>
+								<div class="tickets__td">02 Bielefield Klimi</div>
+								<div class="tickets__td">
+								</div>
+								<div class="tickets__td">€50</div>
+								<div class="tickets__td">not solved</div>
+								<div class="tickets__td">€12 000</div>
+								<div class="tickets__td">12345678</div>
+							</div>
+						</div>
+						<div class="tickets__tr is-open">
+							<div class="tickets__wrap">
+								<div class="tickets__td">
+									<button class="btn-smsquare is-toggle is-open" type="button"></button>
+								</div>
+								<div class="tickets__td">123456789</div>
+								<div class="tickets__td">
+									<date class="date">24.05.2015</date>
+									<div class="time">17:28</div>
+								</div>
+								<div class="tickets__td">02 Bielefield Klimi</div>
+								<div class="tickets__td">
+								</div>
+								<div class="tickets__td">€50</div>
+								<div class="tickets__td">not solved</div>
+								<div class="tickets__td">€12 000</div>
+								<div class="tickets__td">12345678</div>
+							</div>
+							<div class="tickets__in">
+								<div class="tickets__head">
+									<div class="tickets__th"></div>
+									<div class="tickets__th">№</div>
+									<div class="tickets__th">date / time</div>
+									<div class="tickets__th">Match</div>
+									<div class="tickets__th">Bet type</div>
+									<div class="tickets__th">abgabe</div>
+									<div class="tickets__th">odds</div>
+									<div class="tickets__th">period</div>
+									<div class="tickets__th">Endstand</div>
+									<div class="tickets__th">status</div>
+								</div>
+								<div class="tickets__tr">
+									<div class="tickets__td">
+										<div class="status is-live">live</div>
+									</div>
+									<div class="tickets__td">39BF</div>
+									<div class="tickets__td">
+										<date class="date">24.05.2015</date>
+										<div class="time">17:28</div>
+									</div>
+									<div class="tickets__td">
+										<a href="#" class="league">
+											<i class="flag flag_tur"></i>
+											<span>Turkey / Süper Lig</span>
+										</a>
+										<div class="teams">
+											<div class="teams__item">
+												<a href="#" class="team">K. Karabükspor</a>
+											</div>
+											<span class="score">0 - 2</span>
+											<div class="teams__item">
+												<a href="#" class="team">Sivasspor</a>
+											</div>
+										</div>
+									</div>
+									<div class="tickets__td">Handicap (0) 1</div>
+									<div class="tickets__td">0:0</div>
+									<div class="tickets__td">1,45</div>
+									<div class="tickets__td"></div>
+									<div class="tickets__td"></div>
+									<div class="tickets__td">not solved</div>
+								</div>
+								<div class="tickets__tr is-red">
+									<div class="tickets__td">
+										<div class="status is-ft">ft</div>
+									</div>
+									<div class="tickets__td">39BF</div>
+									<div class="tickets__td">
+										<date class="date">24.05.2015</date>
+										<div class="time">17:28</div>
+									</div>
+									<div class="tickets__td">
+										<a href="#" class="league">
+											<i class="flag flag_tur"></i>
+											<span>Turkey / Süper Lig</span>
+										</a>
+										<div class="teams">
+											<div class="teams__item">
+												<a href="#" class="team">K. Karabükspor</a>
+											</div>
+											<span class="score is-green">0 - 2</span>
+											<div class="teams__item">
+												<a href="#" class="team">Sivasspor</a>
+											</div>
+										</div>
+									</div>
+									<div class="tickets__td">Handicap (0) 1</div>
+									<div class="tickets__td">0:0</div>
+									<div class="tickets__td">1,45</div>
+									<div class="tickets__td"></div>
+									<div class="tickets__td"></div>
+									<div class="tickets__td">lost</div>
+								</div>
+								<div class="tickets__tr">
+									<div class="tickets__td">
+										<div class="status is-live">live</div>
+									</div>
+									<div class="tickets__td">39BF</div>
+									<div class="tickets__td">
+										<date class="date">24.05.2015</date>
+										<div class="time">17:28</div>
+									</div>
+									<div class="tickets__td">
+										<a href="#" class="league">
+											<i class="flag flag_tur"></i>
+											<span>Turkey / Süper Lig</span>
+										</a>
+										<div class="teams">
+											<div class="teams__item">
+												<a href="#" class="team">K. Karabükspor</a>
+											</div>
+											<span class="score">0 - 2</span>
+											<div class="teams__item">
+												<a href="#" class="team">Sivasspor</a>
+											</div>
+										</div>
+									</div>
+									<div class="tickets__td">Handicap (0) 1</div>
+									<div class="tickets__td">0:0</div>
+									<div class="tickets__td">1,45</div>
+									<div class="tickets__td"></div>
+									<div class="tickets__td"></div>
+									<div class="tickets__td">not solved</div>
+								</div>
+								<div class="tickets__tr is-green">
+									<div class="tickets__td">
+										<div class="status is-ft">ft</div>
+									</div>
+									<div class="tickets__td">39BF</div>
+									<div class="tickets__td">
+										<date class="date">24.05.2015</date>
+										<div class="time">17:28</div>
+									</div>
+									<div class="tickets__td">
+										<a href="#" class="league">
+											<i class="flag flag_tur"></i>
+											<span>Turkey / Süper Lig</span>
+										</a>
+										<div class="teams">
+											<div class="teams__item">
+												<a href="#" class="team">K. Karabükspor</a>
+											</div>
+											<span class="score is-green">0 - 2</span>
+											<div class="teams__item">
+												<a href="#" class="team">Sivasspor</a>
+											</div>
+										</div>
+									</div>
+									<div class="tickets__td">Handicap (0) 1</div>
+									<div class="tickets__td">0:0</div>
+									<div class="tickets__td">1,45</div>
+									<div class="tickets__td"></div>
+									<div class="tickets__td"></div>
+									<div class="tickets__td">lost</div>
+								</div>
+							</div>
+						</div>
+						<div class="tickets__tr">
+							<div class="tickets__wrap">
+								<div class="tickets__td">
+									<button class="btn-smsquare is-toggle" type="button"></button>
+								</div>
+								<div class="tickets__td">123456789</div>
+								<div class="tickets__td">
+									<date class="date">24.05.2015</date>
+									<div class="time">17:28</div>
+								</div>
+								<div class="tickets__td">02 Bielefield Klimi</div>
+								<div class="tickets__td">
+									<span class="tickets__syst">1 2 6 8 12 14 16 18 19 20</span>
+									<span class="tickets__date">aus 24</span>
+								</div>
+								<div class="tickets__td">€50</div>
+								<div class="tickets__td">not solved</div>
+								<div class="tickets__td">€12 000</div>
+								<div class="tickets__td">12345678</div>
+							</div>
+						</div>
+						<div class="tickets__tr is-green">
+							<div class="tickets__wrap">
+								<div class="tickets__td">
+									<button class="btn-smsquare is-toggle" type="button"></button>
+								</div>
+								<div class="tickets__td">123456789</div>
+								<div class="tickets__td">
+									<date class="date">24.05.2015</date>
+									<div class="time">17:28</div>
+								</div>
+								<div class="tickets__td">02 Bielefield Klimi</div>
+								<div class="tickets__td">
+								</div>
+								<div class="tickets__td">€50</div>
+								<div class="tickets__td">not solved</div>
+								<div class="tickets__td">€12 000</div>
+								<div class="tickets__td">12345678</div>
+							</div>
+						</div>
+						<div class="tickets__tr">
+							<div class="tickets__wrap">
+								<div class="tickets__td">
+									<button class="btn-smsquare is-toggle" type="button"></button>
+								</div>
+								<div class="tickets__td">123456789</div>
+								<div class="tickets__td">
+									<date class="date">24.05.2015</date>
+									<div class="time">17:28</div>
+								</div>
+								<div class="tickets__td">02 Bielefield Klimi</div>
+								<div class="tickets__td">
+								</div>
+								<div class="tickets__td">€50</div>
+								<div class="tickets__td">not solved</div>
+								<div class="tickets__td">€12 000</div>
+								<div class="tickets__td">12345678</div>
+							</div>
+						</div>
+						<div class="tickets__tr is-red">
+							<div class="tickets__wrap">
+								<div class="tickets__td">
+									<button class="btn-smsquare is-toggle" type="button"></button>
+								</div>
+								<div class="tickets__td">123456789</div>
+								<div class="tickets__td">
+									<date class="date">24.05.2015</date>
+									<div class="time">17:28</div>
+								</div>
+								<div class="tickets__td">02 Bielefield Klimi</div>
+								<div class="tickets__td">
+								</div>
+								<div class="tickets__td">€50</div>
+								<div class="tickets__td">not solved</div>
+								<div class="tickets__td">€12 000</div>
+								<div class="tickets__td">12345678</div>
+							</div>
+						</div>
+						<div class="tickets__tr is-open">
+							<div class="tickets__wrap">
+								<div class="tickets__td">
+									<button class="btn-smsquare is-toggle is-open" type="button"></button>
+								</div>
+								<div class="tickets__td">123456789</div>
+								<div class="tickets__td">
+									<date class="date">24.05.2015</date>
+									<div class="time">17:28</div>
+								</div>
+								<div class="tickets__td">02 Bielefield Klimi</div>
+								<div class="tickets__td">
+								</div>
+								<div class="tickets__td">€50</div>
+								<div class="tickets__td">not solved</div>
+								<div class="tickets__td">€12 000</div>
+								<div class="tickets__td">12345678</div>
+							</div>
+							<div class="tickets__in">
+								<div class="tickets__head">
+									<div class="tickets__th"></div>
+									<div class="tickets__th">№</div>
+									<div class="tickets__th">date / time</div>
+									<div class="tickets__th">Match</div>
+									<div class="tickets__th">Bet type</div>
+									<div class="tickets__th">abgabe</div>
+									<div class="tickets__th">odds</div>
+									<div class="tickets__th">period</div>
+									<div class="tickets__th">Endstand</div>
+									<div class="tickets__th">status</div>
+								</div>
+								<div class="tickets__tr">
+									<div class="tickets__td">
+										<div class="status is-live">live</div>
+									</div>
+									<div class="tickets__td">39BF</div>
+									<div class="tickets__td">
+										<date class="date">24.05.2015</date>
+										<div class="time">17:28</div>
+									</div>
+									<div class="tickets__td">
+										<a href="#" class="league">
+											<i class="flag flag_tur"></i>
+											<span>Turkey / Süper Lig</span>
+										</a>
+										<div class="teams">
+											<div class="teams__item">
+												<a href="#" class="team">K. Karabükspor</a>
+											</div>
+											<span class="score">0 - 2</span>
+											<div class="teams__item">
+												<a href="#" class="team">Sivasspor</a>
+											</div>
+										</div>
+									</div>
+									<div class="tickets__td">Handicap (0) 1</div>
+									<div class="tickets__td">0:0</div>
+									<div class="tickets__td">1,45</div>
+									<div class="tickets__td"></div>
+									<div class="tickets__td"></div>
+									<div class="tickets__td">not solved</div>
+								</div>
+								<div class="tickets__tr is-red">
+									<div class="tickets__td">
+										<div class="status is-ft">ft</div>
+									</div>
+									<div class="tickets__td">39BF</div>
+									<div class="tickets__td">
+										<date class="date">24.05.2015</date>
+										<div class="time">17:28</div>
+									</div>
+									<div class="tickets__td">
+										<a href="#" class="league">
+											<i class="flag flag_tur"></i>
+											<span>Turkey / Süper Lig</span>
+										</a>
+										<div class="teams">
+											<div class="teams__item">
+												<a href="#" class="team">K. Karabükspor</a>
+											</div>
+											<span class="score is-green">0 - 2</span>
+											<div class="teams__item">
+												<a href="#" class="team">Sivasspor</a>
+											</div>
+										</div>
+									</div>
+									<div class="tickets__td">Handicap (0) 1</div>
+									<div class="tickets__td">0:0</div>
+									<div class="tickets__td">1,45</div>
+									<div class="tickets__td"></div>
+									<div class="tickets__td"></div>
+									<div class="tickets__td">lost</div>
+								</div>
+								<div class="tickets__tr">
+									<div class="tickets__td">
+										<div class="status is-yellow">abandoned</div>
+									</div>
+									<div class="tickets__td">39BF</div>
+									<div class="tickets__td">
+										<date class="date">24.05.2015</date>
+										<div class="time">17:28</div>
+									</div>
+									<div class="tickets__td">
+										<a href="#" class="league">
+											<i class="flag flag_tur"></i>
+											<span>Turkey / Süper Lig</span>
+										</a>
+										<div class="teams">
+											<div class="teams__item">
+												<a href="#" class="team">K. Karabükspor</a>
+											</div>
+											<span class="score">0 - 2</span>
+											<div class="teams__item">
+												<a href="#" class="team">Sivasspor</a>
+											</div>
+										</div>
+									</div>
+									<div class="tickets__td">Handicap (0) 1</div>
+									<div class="tickets__td">0:0</div>
+									<div class="tickets__td">1,45</div>
+									<div class="tickets__td"></div>
+									<div class="tickets__td"></div>
+									<div class="tickets__td">not solved</div>
+								</div>
+								<div class="tickets__tr is-green">
+									<div class="tickets__td">
+										<div class="status is-ft">ft</div>
+									</div>
+									<div class="tickets__td">39BF</div>
+									<div class="tickets__td">
+										<date class="date">24.05.2015</date>
+										<div class="time">17:28</div>
+									</div>
+									<div class="tickets__td">
+										<a href="#" class="league">
+											<i class="flag flag_tur"></i>
+											<span>Turkey / Süper Lig</span>
+										</a>
+										<div class="teams">
+											<div class="teams__item">
+												<a href="#" class="team">K. Karabükspor</a>
+											</div>
+											<span class="score is-green">0 - 2</span>
+											<div class="teams__item">
+												<a href="#" class="team">Sivasspor</a>
+											</div>
+										</div>
+									</div>
+									<div class="tickets__td">Handicap (0) 1</div>
+									<div class="tickets__td">0:0</div>
+									<div class="tickets__td">1,45</div>
+									<div class="tickets__td"></div>
+									<div class="tickets__td"></div>
+									<div class="tickets__td">lost</div>
+								</div>
+							</div>
+						</div>
+						<div class="tickets__tr">
+							<div class="tickets__wrap">
+								<div class="tickets__td">
+									<button class="btn-smsquare is-toggle" type="button"></button>
+								</div>
+								<div class="tickets__td">123456789</div>
+								<div class="tickets__td">
+									<date class="date">24.05.2015</date>
+									<div class="time">17:28</div>
+								</div>
+								<div class="tickets__td">02 Bielefield Klimi</div>
+								<div class="tickets__td">
+									<span class="tickets__syst">1 2 6 8 12 14 16 18 19 20</span>
+									<span class="tickets__date">aus 24</span>
+								</div>
+								<div class="tickets__td">€50</div>
+								<div class="tickets__td">not solved</div>
+								<div class="tickets__td">€12 000</div>
+								<div class="tickets__td">12345678</div>
+							</div>
+						</div>
+						<div class="tickets__tr is-green">
+							<div class="tickets__wrap">
+								<div class="tickets__td">
+									<button class="btn-smsquare is-toggle" type="button"></button>
+								</div>
+								<div class="tickets__td">123456789</div>
+								<div class="tickets__td">
+									<date class="date">24.05.2015</date>
+									<div class="time">17:28</div>
+								</div>
+								<div class="tickets__td">02 Bielefield Klimi</div>
+								<div class="tickets__td">
+								</div>
+								<div class="tickets__td">€50</div>
+								<div class="tickets__td is-green">won</div>
+								<div class="tickets__td is-green">€12 000</div>
+								<div class="tickets__td">12345678/<span class="is-green">99123756</span></div>
+							</div>
+						</div>
+						<div class="tickets__tr">
+							<div class="tickets__wrap">
+								<div class="tickets__td">
+									<button class="btn-smsquare is-toggle" type="button"></button>
+								</div>
+								<div class="tickets__td">123456789</div>
+								<div class="tickets__td">
+									<date class="date">24.05.2015</date>
+									<div class="time">17:28</div>
+								</div>
+								<div class="tickets__td">02 Bielefield Klimi</div>
+								<div class="tickets__td">
+								</div>
+								<div class="tickets__td">€50</div>
+								<div class="tickets__td">not solved</div>
+								<div class="tickets__td">€12 000</div>
+								<div class="tickets__td">12345678</div>
+							</div>
+						</div>
+						<div class="tickets__tr is-red">
+							<div class="tickets__wrap">
+								<div class="tickets__td">
+									<button class="btn-smsquare is-toggle" type="button"></button>
+								</div>
+								<div class="tickets__td">123456789</div>
+								<div class="tickets__td">
+									<date class="date">24.05.2015</date>
+									<div class="time">17:28</div>
+								</div>
+								<div class="tickets__td">02 Bielefield Klimi</div>
+								<div class="tickets__td">
+								</div>
+								<div class="tickets__td">€50</div>
+								<div class="tickets__td">not solved</div>
+								<div class="tickets__td">€12 000</div>
+								<div class="tickets__td">12345678</div>
+							</div>
+						</div>
+						<div class="tickets__tr">
+							<div class="tickets__wrap">
+								<div class="tickets__td">
+									<button class="btn-smsquare is-toggle" type="button"></button>
+								</div>
+								<div class="tickets__td">123456789</div>
+								<div class="tickets__td">
+									<date class="date">24.05.2015</date>
+									<div class="time">17:28</div>
+								</div>
+								<div class="tickets__td">02 Bielefield Klimi</div>
+								<div class="tickets__td">
+								</div>
+								<div class="tickets__td">€50</div>
+								<div class="tickets__td">not solved</div>
+								<div class="tickets__td">€12 000</div>
+								<div class="tickets__td">12345678</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+			<!-- begin pages  -->
+			<div class="pages">
+				<a href="#" class="pages__prev">preiveous page</a>
+				<ul class="pages__list">
+					<li><a href="#" class="is-active">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#">6</a></li>
+					<li><a href="#">7</a></li>
+					<li><a href="#">8</a></li>
+					<li><a href="#">...</a></li>
+					<li><a href="#">128</a></li>
+				</ul>
+				<a href="#" class="pages__next">next page</a>
+			</div>
+			<!-- end pages -->
 		</div>
 	</div>
 </div>

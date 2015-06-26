@@ -1,0 +1,96 @@
+.t-filter
+	+clr
+	font-size: 0
+	&__period
+		margin-bottom: 20px
+		float: left
+	&__type
+		margin-bottom: 20px
+		float: right
+		.select
+			width: 330px
+			+r(1100)
+				width: 270px
+		.chosen-container
+			max-width: 330px
+			+r(1100)
+				max-width: 270px
+	&__label
+		text-transform: uppercase
+		display: inline-block
+		vertical-align: middle
+		font-size: 13px
+		margin: 0 20px 
+	.select-wrap
+		display: inline-block
+		vertical-align: middle
+	&__search
+		text-align: center
+		margin-bottom: 15px
+	.search
+		display: inline-block
+		vertical-align: middle
+		width: 250px
+.select-wrap
+	.chosen-container-multi .chosen-choices li
+		float: none
+	.search-field
+		position: absolute
+		top: -100px
+.table
+	margin-bottom: 30px
+	table
+		font-size: 13px
+		thead
+			th
+				text-transform: uppercase
+				text-align: left
+				padding: 20px
+				background: rgba(153, 153, 153, 0.1)  
+		tbody
+			tr
+				&:nth-child(odd)					
+					background: rgba(153, 153, 153, 0.05) 
+			td
+				padding: 5px 20px 
+	&__type
+		div
+			padding-left: 40px
+			a
+				text-decoration: underline
+				&:hover
+					text-decoration: none
+	&__id
+		div
+			padding-left: 25px
+	&__pl
+		div
+			padding-left: 25px
+			&.is-profit
+				color: #36a200 
+
+.pages
+	text-align: center
+	font-size: 0
+	a
+		font-size: 13px
+		text-transform: uppercase
+		margin: 0 2px 
+	ul, a, li
+		display: inline-block
+		vertical-align: top
+		line-height: 13px
+	ul
+		&:before, &:after
+			content: "|" 
+			font-size: 13px
+			margin: 0 3px 
+		a
+			&.is-active
+				font-size: 16px
+	&__prev
+		&:before
+			content: "<" 
+	&__next
+		&:after
+			content: ">" 

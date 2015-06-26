@@ -667,3 +667,64 @@ button.btn-smsquare { letter-spacing: -0.8px; }
 .l .l-col1 .tab { margin-top: 0; }
 .l .l-col2 { float: right; margin-left: 28px; width: 295px; }
 @media only screen and (max-width: 1431px) { .l .l-col2 { margin-left: 7px; } }
+
+.t-filter { *zoom: 1; font-size: 0; }
+.t-filter:after { content: " "; display: table; clear: both; }
+.t-filter__period { margin-bottom: 20px; float: left; }
+.t-filter__type { margin-bottom: 20px; float: right; }
+.t-filter__type .select { width: 330px; }
+@media only screen and (max-width: 1100px) { .t-filter__type .select { width: 270px; } }
+.t-filter__type .chosen-container { max-width: 330px; }
+@media only screen and (max-width: 1100px) { .t-filter__type .chosen-container { max-width: 270px; } }
+.t-filter__label { text-transform: uppercase; display: inline-block; vertical-align: middle; font-size: 13px; margin: 0 20px; }
+.t-filter .select-wrap { display: inline-block; vertical-align: middle; }
+.t-filter__search { text-align: center; margin-bottom: 15px; }
+.t-filter .search { display: inline-block; vertical-align: middle; width: 250px; }
+
+.select-wrap .chosen-container-multi .chosen-choices li { float: none; }
+.select-wrap .search-field { position: absolute; top: -100px; }
+
+.table { margin-bottom: 30px; }
+.table table { font-size: 13px; }
+.table table thead th { text-transform: uppercase; text-align: left; padding: 20px; background: rgba(153, 153, 153, 0.1); }
+.table table tbody tr:nth-child(odd) { background: rgba(153, 153, 153, 0.05); }
+.table table tbody td { padding: 5px 20px; }
+.table__type div { padding-left: 40px; }
+.table__type div a { text-decoration: underline; }
+.table__type div a:hover { text-decoration: none; }
+.table__id div { padding-left: 25px; }
+.table__pl div { padding-left: 25px; }
+.table__pl div.is-profit { color: #36a200; }
+
+.pages { text-align: center; font-size: 0; }
+.pages a { font-size: 13px; text-transform: uppercase; margin: 0 2px; }
+.pages ul, .pages a, .pages li { display: inline-block; vertical-align: top; line-height: 13px; }
+.pages ul:before, .pages ul:after { content: "|"; font-size: 13px; margin: 0 3px; }
+.pages ul a.is-active { font-size: 16px; }
+.pages__prev:before { content: "<"; }
+.pages__next:after { content: ">"; }
+
+.password { max-width: 940px; margin: 0 auto; box-shadow: 0 4px 0 #e6e6e6; }
+.password.txt-center { text-align: center; }
+.password__title { margin: 37px 0 15px; font-size: 18px; text-transform: uppercase; }
+.password__bl { margin-bottom: 40px; }
+.password .s-margin { margin-bottom: 10px; }
+.password .txt-small { font-size: 10px; font-family: "NotoSans", Arial, sans-serif; font-weight: normal; }
+.password .wind__top { padding: 17px 48px 17px 15px; }
+.password .input-white { height: 37px; }
+
+.captcha { margin-top: 60px; }
+
+.popups { margin: 0 -25px; font-size: 0; }
+.popups .wind { margin: 0 25px 32px; }
+
+.wind.is-popup { display: inline-block; width: 295px; height: 150px; font-size: 13px; text-align: center; vertical-align: top; }
+.wind.is-popup .m-margin-top { margin-top: 30px; }
+.wind.is-popup .title { position: relative; margin-top: 22px; font-size: 12px; text-transform: uppercase; }
+.wind.is-popup .details { font-size: 14px; text-decoration: underline; }
+.wind.is-popup .spin { margin: 15px 0 20px; }
+.wind.is-popup .txt-small { font-size: 12px; }
+.wind.is-popup .txt-green { color: #36a200; }
+.wind.is-popup .checked_ico { position: absolute; top: 50%; left: 10px; width: 22px; height: 22px; margin-top: -12px; background: #36a200; border-radius: 50%; }
+.wind.is-popup .checked_ico:before { content: ""; position: absolute; top: 50%; left: 50%; margin: -4.5px 0 0 -6px; background: url("../img/svg/is-check-white.svg") no-repeat 0 0; -moz-background-size: 12px 9px; -o-background-size: 12px 9px; -webkit-background-size: 12px 9px; background-size: 12px 9px; width: 12px; height: 9px; display: inline-block; }
+.wind.is-popup .spinner_ico { background: url("../img/svg/spinner.svg") no-repeat 0 0; -moz-background-size: 30px 30px; -o-background-size: 30px 30px; -webkit-background-size: 30px 30px; background-size: 30px 30px; width: 30px; height: 30px; display: inline-block; }

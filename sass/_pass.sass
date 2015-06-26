@@ -1,0 +1,75 @@
+//password
+.password
+	max-width: 940px
+	margin: 0 auto
+	box-shadow: 0 4px 0 #e6e6e6
+	&.txt-center
+		text-align: center
+	&__title
+		margin: 37px 0 15px
+		font-size: 18px
+		text-transform: uppercase
+	&__bl
+		margin-bottom: 40px
+	.s-margin
+		margin-bottom: 10px
+	.txt-small
+		font-size: 10px
+		+ns
+	.wind__top
+		padding: 17px 48px 17px 15px
+	.input-white
+		height: 37px
+
+.captcha
+	margin-top: 60px
+
+//popups
+.popups
+	margin: 0 -25px
+	font-size: 0
+	.wind
+		margin: 0 25px 32px
+
+.wind
+	&.is-popup
+		display: inline-block
+		width: 295px
+		height: 150px
+		font-size: 13px
+		text-align: center
+		vertical-align: top
+		.m-margin-top
+			margin-top: 30px
+		.title
+			position: relative
+			margin-top: 22px
+			font-size: 12px
+			text-transform: uppercase
+		.details
+			font-size: 14px
+			text-decoration: underline
+		.spin
+			margin: 15px 0 20px
+		.txt-small
+			font-size: 12px
+		.txt-green
+			color: #36A200
+		.checked_ico
+			position: absolute
+			top: 50%
+			left: 10px
+			width: 22px
+			height: 22px
+			margin-top: -12px
+			background: #36A200
+			border-radius: 50%
+			&:before
+				content: ""
+				position: absolute
+				top: 50%
+				left: 50%
+				margin: -4.5px 0 0 -6px
+				+svg(is-check-white, 12, 9)
+		.spinner_ico
+			+svg(spinner, 30, 31)

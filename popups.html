@@ -91,9 +91,9 @@
 				</div>
 				<!-- tab -->
 				<div class="tab">
-					<li class="tab__item"><a href="#" class="is-active">single</a></li>
+					<li class="tab__item"><a href="#">single</a></li>
 					<li class="tab__item"><a href="#">multiple</a></li>
-					<li class="tab__item"><a href="#">system</a></li>
+					<li class="tab__item"><a href="#" class="is-active">system</a></li>
 				</div>
 				<!-- item -->
 				<div class="item">
@@ -242,6 +242,28 @@
 						<a href="#" class="coeff">1.6</a>
 					</div>
 				</div>
+				<!-- item -->
+				<div class="item">
+					<!-- topic -->
+					<div class="topic is-system">
+						<p class="system">System <span class="system__span">1,2,3,4,5,6 of 6</span></p>
+					</div>
+					<div class="item__row">
+						<div class="count">
+							<p class="count__bl">1 of 6</p>
+							<p class="count__bl">2 of 6</p>
+							<p class="count__bl">3 of 6</p>
+						</div>
+					</div>
+					<div class="item__row">
+						<div class="count">
+							<p class="count__bl">4 of 6</p>
+							<p class="count__bl">5 of 6</p>
+							<p class="count__bl">6 of 6</p>
+						</div>
+					</div>
+				</div>
+				<!-- item -->
 				<!-- calc -->
 				<div class="calc">
 					<div class="calc__row">
@@ -255,13 +277,35 @@
 						</div>
 					</div>
 					<div class="calc__row">
+						<div class="calc__text">stake per bets<span class="currency">$</span></div>
+						<div class="spinner">
+							<input type="text" value="25">
+							<div class="spinner__butt">
+								<button class="spinner__plus"></button>
+								<button class="spinner__minus"></button>
+							</div>
+						</div>
+					</div>
+					<div class="calc__row">
+						<div class="calc__text">num of bets<span class="currency">$</span></div>
+						<div class="profit">20</div>
+					</div>
+					<div class="calc__row">
+						<div class="calc__text">max odds<span class="currency">$</span></div>
+						<div class="profit">124</div>
+					</div>
+					<div class="calc__row">
 						<div class="calc__text">stake(s) profit<span class="currency">$</span></div>
-						<div class="profit">650 000 000</div>
+						<div class="profit txt-green">650 000 000,00</div>
 					</div>
 				</div>
 				<div class="operation">
 					<button class="btn btn_yellow" type="submit">place bets</button>
-					<a href="#">remove all bets</a>
+					<button class="btn btn_yellow inactive" type="submit">Remove all bets</button>
+					<button class="btn btn_yellow inactive" type="submit">Remove all open none type</button>
+					<button class="btn btn_yellow inactive" type="submit">Deliver the bet with 41,66€</button>
+					<button class="btn btn_yellow inactive" type="submit">Request bet</button>
+					<button class="btn btn_yellow inactive" type="submit">Adjust stake, request remainder</button>
 				</div>
 			</div>
 			<!-- wind -->
@@ -327,7 +371,7 @@
 				<div class="wind is-popup">
 					<p class="title"><i class="checked_ico"></i>Bet was placed successfully!</p>
 					<div class="m-margin-top">
-						<a class="details" href="#" >Print details</a>
+						<a class="details" href="#"><i class="print_ico"></i>Print details</a>
 					</div>
 				</div>
 				<div class="wind is-popup">
@@ -336,9 +380,36 @@
 					<div class="spin">
 						<i class="spinner_ico"></i>
 					</div>
-					<div>
-						<a class="details" href="#" >cancel</a>
-					</div>
+					<p><a class="details" href="#" >cancel</a></p>
+				</div>
+				<div class="wind is-popup">
+					<p class="title is-error"><i class="error_ico"></i><span>Wrong shop settings for this ticket type.</span></p>
+					<button class="btn btn_dark">ok</button>
+					<p><a class="details" href="#">cancel</a></p>
+				</div>
+				<div class="wind is-popup">
+					<p class="title is-error"><i class="error_ico"></i><span>Bet wasn't placed !</span></p>
+					<p class="warning m-margin-top"><i class="warning_ico"></i>Because: <span>system error</span></p>
+				</div>
+				<div class="wind is-popup">
+					<p class="title s-margin-top">Odds were changed</p>
+					<p class="title no-margin">would you like to:</p>
+					<button class="btn btn_yellow" type="submit">place bet</button>
+					<p><a class="details" href="#">cancel</a></p>
+				</div>
+				<div class="wind is-popup">
+					<p class="title">please confirm your bets</p>
+					<button class="btn btn_yellow" type="submit">place bet</button>
+					<p><a class="details" href="#">cancel</a></p>
+				</div>
+				<div class="wind is-popup is-note">
+					<button class="btn-square" type="button"><i class="ico ico_remove"></i></button>
+					<p>The max. stake for this bet is 250,00 €</p>
+					<p>You can:</p>
+					<p>Deliver the bet with the adjusted stake of 41,66€</p>
+					<p>(Total Wager is 249,96€)</p>
+					<p>Request a manual approval of the bet of 60€</p>
+					<p>deliver the bet with the adjustedstake of 41,66€ and request 18,34€ for approval</p>
 				</div>
 			</div>
 		</div>

@@ -245,7 +245,7 @@ button.btn-smsquare { letter-spacing: -0.8px; }
 .drop .drop__item { padding: 5px; cursor: pointer; }
 .drop .drop__item:hover { background: white; }
 
-.banner { margin: 13px 0 13px 2px; }
+.banner { display: block; margin: 13px 0 13px 2px; }
 .banner img { display: block; }
 
 .partners { padding-left: 10px; }

@@ -34,11 +34,11 @@
 //     @each $s in a,b,c
 // 	    	#{$s}
 //				display: none
-// ## fonts 
+// ## fonts
 // Save fonts to /css/fonts, after that write (eot, woff, ttf):
-// +font(book, cytiapro-black-webfont)  
+// +font(book, cytiapro-black-webfont)
 // =book
-// 	font-family: "book", Arial, sans-serif 
+// 	font-family: "book", Arial, sans-serif
 // insert pics into css
 // div
 // 	+pic("blabla.png")
@@ -47,24 +47,24 @@
 // p
 // 	+jpg(bla)
 
-+font(NotoSans, NotoSans)  
++font(NotoSans, NotoSans)
 =ns
-	font-family: "NotoSans", Arial, sans-serif 
+	font-family: "NotoSans", Arial, sans-serif
 	font-weight: normal
 
-+font(NotoSans-Bold, NotoSans-Bold)  
++font(NotoSans-Bold, NotoSans-Bold)
 =nsb
-	font-family: "NotoSans-Bold", Arial, sans-serif 
+	font-family: "NotoSans-Bold", Arial, sans-serif
 	font-weight: normal
 
-+font(OpenSans, OpenSans)  
++font(OpenSans, OpenSans)
 =os
-	font-family: "OpenSans", Arial, sans-serif 
+	font-family: "OpenSans", Arial, sans-serif
 	font-weight: normal
 
-+font(Myriad-Pro, MyriadPro-Regular)  
++font(Myriad-Pro, MyriadPro-Regular)
 =mp
-	font-family: "Myriad-Pro", Arial, sans-serif 
+	font-family: "Myriad-Pro", Arial, sans-serif
 	font-weight: normal
 
 // first el
@@ -207,7 +207,7 @@ $yellow-light: #ffe87c
 
 body
 	min-width: 960px
-	font-size: 13px 
+	font-size: 13px
 	color: $gray
 	line-height: 1.4
 	+nsb
@@ -222,7 +222,7 @@ a
 	&:hover
 		text-decoration: underline
 
-// common blocks      
+// common blocks
 
 // out
 .out
@@ -861,7 +861,7 @@ button.btn-smsquare
 				width: 68px
 			&:last-child
 				width: 50px
-		.team 
+		.team
 			&.is-left
 				padding-right: 5px
 				width: 105px
@@ -1019,6 +1019,8 @@ button.btn-smsquare
 		content: ''
 		top: 4px
 		left: 0
+	&:hover
+		text-decoration: none
 	&.is-blocked
 		width: 53px
 		height: 26px
@@ -1437,6 +1439,7 @@ button.btn-smsquare
 		border: 1px solid $light-gray2
 		border-right: none
 		display: inline-block
+		background: #FFF
 		+box
 		&:last-child
 			border-right: 1px solid $light-gray2
@@ -1764,7 +1767,7 @@ button.btn-smsquare
 		&:nth-child(2)
 			min-width: 98px
 			text-align: center
-		&:nth-child(2)
+		// &:nth-child(2)
 		.ico
 			margin-top: -2px
 			vertical-align: middle

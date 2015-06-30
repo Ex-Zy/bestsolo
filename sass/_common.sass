@@ -614,6 +614,30 @@ button.btn
 		color: $green
 		font-size: 7px
 		border-color: $green
+	&.is-toggle
+		background: $gray
+		color: #fff
+		&:before
+			content: "+"
+			display: inline-block
+		&:after
+			content: "-"
+			display: none
+		&:before,
+		&:after
+			position: absolute
+			left: 50%
+			right: 50%
+			height: 10px
+			width: 10px
+			line-height: 0.4
+			font-size: 18px
+			+translate(-50%,-50%)
+		&.is-open
+			&:before
+				display: none
+			&:after
+				display: inline-block
 	.ico
 		position: absolute
 		top: 50%
@@ -942,6 +966,9 @@ button.btn-smsquare
 	&.is-hot
 		background: $red
 	&.is-soon
+		color: $gray
+		background: $yellow
+	&.is-yellow
 		color: $gray
 		background: $yellow
 
@@ -2049,6 +2076,12 @@ button.btn-smsquare
 
 // tickets
 .tickets
+	.is-green
+		color: $green
+	.is-mob
+		display: none
+		+r(1431)
+			display: block
 	.indicator
 		padding: 12px 0
 		font-size: 13px
@@ -2059,12 +2092,185 @@ button.btn-smsquare
 	.tickets__table
 		text-align: center
 	.tickets__head,
-	.tickets__tr
+	.tickets__wrap
 		width: 100%
 		display: table
+	.tickets__tr
+		&.is-open
+			border: 1px solid $gray
+			.tickets__in
+				display: block
+		&.is-red
+			background: #fdede9
+		&.is-green
+			color: $gray
+			background: #ebf6e6
+	.tickets__head
+		padding: 17px 0
+		background: #f4f5f7
 	.tickets__th,
 	.tickets__td
 		display: table-cell
+		+box
+		+r(1431)
+			word-wrap: break-word
+		&:first-child
+			width: 45px
+			+r(1431)
+				width: 25px
+		&:nth-child(2)
+			+r(1431)
+				max-width: 66px
+		&:nth-child(3)
+			width: 128px
+			+r(1431)
+				max-width: 128px
+		&:nth-child(4)
+			width: 130px
+			+r(1431)
+				max-width: 112px
+		&:nth-child(5)
+			width: 204px
+			+r(1431)
+				max-width: 114px
+		&:nth-child(6)
+			width: 84px
+			+r(1431)
+				max-width: 55px
+		&:nth-child(7)
+			width: 108px
+			+r(1431)
+				max-width: 87px
+		&:nth-child(8)
+			width: 108px
+			+r(1431)
+				max-width: 105px
+		&:last-child
+			width: 150px
+			+r(1431)
+				padding-right: 3px
+				width: auto
+				span
+					display: block
+	.tickets__th
+		text-transform: uppercase
+		&:last-child
+			+r(1431)
+				span
+					display: none
+				.is-mob
+					display: block
+	.tickets__td
+		padding: 3px 0
+		+ns
+		.btn-smsquare.is-toggle
+			position: relative
+			top: 1px
+			+r(1431)
+				top: 2px
+	.tickets__syst
+		overflow: hidden
+		white-space: nowrap
+		text-overflow: ellipsis
+		max-width: 125px
+		vertical-align: top
+		display: inline-block
+	.score
+		color: $gray
+		&.is-green
+			color: $green
+	.status
+		padding: 0 4px
+		font-size: 8px
+		height: 12px
+		line-height: 12px
+		min-width: 25px
+		width: auto
+		+box
+		&.is-yellow
+			+r(1431)
+				min-width: 0
+				width: 100%
+				overflow: hidden
+				white-space: nowrap
+				text-overflow: ellipsis
+		+r(1431)
+			margin-top: 11px
+	.tickets__in
+		font-size: 10px
+		text-align: left
+		display: none
+		.date, .time
+			font-size: 10px
+		.tickets__head
+			padding: 5px 0 8px
+		.tickets__head,
+		.tickets__tr
+			display: block
+		.tickets__th,
+		.tickets__td
+			text-align: center
+			vertical-align: top
+			display: inline-block
+			&:first-child
+				width: 56px
+				+r(1431)
+					width: 32px
+			&:nth-child(2)
+				width: 65px
+				+r(1431)
+					width: 40px
+			&:nth-child(3)
+				width: 115px
+				+r(1431)
+					width: 80px
+			&:nth-child(4)
+				width: 175px
+			&:nth-child(5)
+				width: 120px
+				+r(1431)
+					width: 100%
+			&:nth-child(6)
+				width: 92px
+			&:nth-child(7)
+				width: 65px
+			&:nth-child(8)
+				width: 75px
+			&:nth-child(9)
+				width: 92px
+				+r(1431)
+					width: 75px
+			&:last-child
+				width: 72px
+		.tickets__td
+			line-height: 34px
+			span,
+			a,
+			date
+				line-height: 1.4
+				vertical-align: middle
+				display: inline-block
+			&:first-child
+				padding-left: 4px
+			&:nth-child(4)
+				line-height: 1.4
+		.tickets__tr
+			&.is-green
+				background: #f8fcf6
+			&.is-red
+				background: #fff9f8
+	.date, .time
+		font-size: 13px
+	+r(1431)
+		font-size: 10px
+		.date, .time
+			width: 100%
+			font-size: 10px
+			display: block
+		.tickets__syst
+			max-width: 55px
+		.teams__item
+			display: block
 
 // footer
 .footer

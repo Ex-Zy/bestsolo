@@ -156,9 +156,9 @@ $yellow-light: #ffe87c
 	&.ico_wintersports
 		+svg(wintersports,14,15)
 	&.ico_remove
-		+svg(remove,8,8)
+		+svg(cross, 7, 7)
 	&.ico_remove-w
-		+svg(close,8,8)
+		+svg(cross-white, 7, 7)
 	&.ico_blocked
 		+svg(blocked,8,10)
 	&.ico_radon
@@ -170,7 +170,7 @@ $yellow-light: #ffe87c
 	&.ico_stat
 		+svg(stat,8,8)
 	&.ico_plus
-		+svg(ico-plus,10,10)
+		+svg(ico-plus,11,11)
 	&.ico_sportwetten
 		+svg(sportwetten,111,143)
 	&.ico_search
@@ -595,20 +595,18 @@ button.btn
 	border: 1px solid $gray
 	+box
 	&.is-b
+		text-align: center
 		color: $gray
 		&:before
-			position: absolute
-			top: 0
-			left: 0
-			right: 0
-			bottom: 0
 			content: 'b'
+			display: inline-block
 			text-transform: uppercase
+			line-height: 1
 	&.is-gray
 		background: $gray
 		color: #fff
 		.ico_remove
-			+svg(close,8,8)
+			+svg(cross-white,7,7)
 	&.is-more
 		width: 14px
 		color: $green
@@ -649,6 +647,12 @@ button.btn
 	line-height: 13px
 button.btn-smsquare
 	letter-spacing: -0.8px
+
+.btn-square
+	i.ico
+		margin: -3.5px 0 0 -3.5px
+		+translate(0,0)
+
 
 // tabs
 .tabs
@@ -1277,7 +1281,7 @@ button.btn-smsquare
 		width: 100%
 		display: table
 	.indicator__item
-		width: 51px
+		width: 50px
 		text-align: center
 		display: inline-block
 	.indicator__tot
@@ -1468,6 +1472,8 @@ button.btn-smsquare
 		display: inline-block
 		background: #FFF
 		+box
+		&:hover
+			background: lighten(#dfe4ea, 5%)
 		&:last-child
 			border-right: 1px solid $light-gray2
 			width: 51px

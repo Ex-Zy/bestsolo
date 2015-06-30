@@ -55,14 +55,14 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 .ico.ico_volleyball { background: url("../img/svg/volleyball.svg") no-repeat 0 0; -moz-background-size: 14px 14px; -o-background-size: 14px 14px; -webkit-background-size: 14px 14px; background-size: 14px 14px; width: 14px; height: 14px; display: inline-block; }
 .ico.ico_waterpolo { background: url("../img/svg/waterpolo.svg") no-repeat 0 0; -moz-background-size: 20px 30px; -o-background-size: 20px 30px; -webkit-background-size: 20px 30px; background-size: 20px 30px; width: 20px; height: 30px; display: inline-block; }
 .ico.ico_wintersports { background: url("../img/svg/wintersports.svg") no-repeat 0 0; -moz-background-size: 14px 15px; -o-background-size: 14px 15px; -webkit-background-size: 14px 15px; background-size: 14px 15px; width: 14px; height: 15px; display: inline-block; }
-.ico.ico_remove { background: url("../img/svg/remove.svg") no-repeat 0 0; -moz-background-size: 8px 8px; -o-background-size: 8px 8px; -webkit-background-size: 8px 8px; background-size: 8px 8px; width: 8px; height: 8px; display: inline-block; }
-.ico.ico_remove-w { background: url("../img/svg/close.svg") no-repeat 0 0; -moz-background-size: 8px 8px; -o-background-size: 8px 8px; -webkit-background-size: 8px 8px; background-size: 8px 8px; width: 8px; height: 8px; display: inline-block; }
+.ico.ico_remove { background: url("../img/svg/cross.svg") no-repeat 0 0; -moz-background-size: 7px 7px; -o-background-size: 7px 7px; -webkit-background-size: 7px 7px; background-size: 7px 7px; width: 7px; height: 7px; display: inline-block; }
+.ico.ico_remove-w { background: url("../img/svg/cross-white.svg") no-repeat 0 0; -moz-background-size: 7px 7px; -o-background-size: 7px 7px; -webkit-background-size: 7px 7px; background-size: 7px 7px; width: 7px; height: 7px; display: inline-block; }
 .ico.ico_blocked, .coeff.is-blocked:after { background: url("../img/svg/blocked.svg") no-repeat 0 0; -moz-background-size: 8px 10px; -o-background-size: 8px 10px; -webkit-background-size: 8px 10px; background-size: 8px 10px; width: 8px; height: 10px; display: inline-block; }
 .ico.ico_radon { background: url("../img/svg/radon.svg") no-repeat 0 0; -moz-background-size: 31px 16px; -o-background-size: 31px 16px; -webkit-background-size: 31px 16px; background-size: 31px 16px; width: 31px; height: 16px; display: inline-block; }
 .ico.ico_radof { background: url("../img/svg/radof.svg") no-repeat 0 0; -moz-background-size: 31px 17px; -o-background-size: 31px 17px; -webkit-background-size: 31px 17px; background-size: 31px 17px; width: 31px; height: 17px; display: inline-block; }
 .ico.ico_hot { background: url("../img/svg/hot.svg") no-repeat 0 0; -moz-background-size: 7px 9px; -o-background-size: 7px 9px; -webkit-background-size: 7px 9px; background-size: 7px 9px; width: 7px; height: 9px; display: inline-block; }
 .ico.ico_stat { background: url("../img/svg/stat.svg") no-repeat 0 0; -moz-background-size: 8px 8px; -o-background-size: 8px 8px; -webkit-background-size: 8px 8px; background-size: 8px 8px; width: 8px; height: 8px; display: inline-block; }
-.ico.ico_plus { background: url("../img/svg/ico-plus.svg") no-repeat 0 0; -moz-background-size: 10px 10px; -o-background-size: 10px 10px; -webkit-background-size: 10px 10px; background-size: 10px 10px; width: 10px; height: 10px; display: inline-block; }
+.ico.ico_plus { background: url("../img/svg/ico-plus.svg") no-repeat 0 0; -moz-background-size: 11px 11px; -o-background-size: 11px 11px; -webkit-background-size: 11px 11px; background-size: 11px 11px; width: 11px; height: 11px; display: inline-block; }
 .ico.ico_sportwetten { background: url("../img/svg/sportwetten.svg") no-repeat 0 0; -moz-background-size: 111px 143px; -o-background-size: 111px 143px; -webkit-background-size: 111px 143px; background-size: 111px 143px; width: 111px; height: 143px; display: inline-block; }
 .ico.ico_search { background: url("../img/svg/search.svg") no-repeat 0 0; -moz-background-size: 16px 16px; -o-background-size: 16px 16px; -webkit-background-size: 16px 16px; background-size: 16px 16px; width: 16px; height: 16px; display: inline-block; }
 .ico.ico_kick { background: url("../img/svg/kick.svg") no-repeat 0 0; -moz-background-size: 10px 11px; -o-background-size: 10px 11px; -webkit-background-size: 10px 11px; background-size: 10px 11px; width: 10px; height: 11px; display: inline-block; }
@@ -196,10 +196,10 @@ button.btn { line-height: 1; }
 .btn-close { background: url("../img/svg/close.svg") no-repeat 0 0; -moz-background-size: 9px 9px; -o-background-size: 9px 9px; -webkit-background-size: 9px 9px; background-size: 9px 9px; width: 9px; height: 9px; display: inline-block; }
 
 .btn-square, .btn-smsquare { position: relative; height: 17px; width: 17px; line-height: 15px; text-align: center; border: 1px solid #555f6d; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-.btn-square.is-b, .btn-smsquare.is-b { color: #555f6d; }
-.btn-square.is-b:before, .btn-smsquare.is-b:before { position: absolute; top: 0; left: 0; right: 0; bottom: 0; content: "b"; text-transform: uppercase; }
+.btn-square.is-b, .btn-smsquare.is-b { text-align: center; color: #555f6d; }
+.btn-square.is-b:before, .btn-smsquare.is-b:before { content: "b"; display: inline-block; text-transform: uppercase; line-height: 1; }
 .btn-square.is-gray, .btn-smsquare.is-gray { background: #555f6d; color: white; }
-.btn-square.is-gray .ico_remove, .btn-smsquare.is-gray .ico_remove { background: url("../img/svg/close.svg") no-repeat 0 0; -moz-background-size: 8px 8px; -o-background-size: 8px 8px; -webkit-background-size: 8px 8px; background-size: 8px 8px; width: 8px; height: 8px; display: inline-block; }
+.btn-square.is-gray .ico_remove, .btn-smsquare.is-gray .ico_remove { background: url("../img/svg/cross-white.svg") no-repeat 0 0; -moz-background-size: 7px 7px; -o-background-size: 7px 7px; -webkit-background-size: 7px 7px; background-size: 7px 7px; width: 7px; height: 7px; display: inline-block; }
 .btn-square.is-more, .btn-smsquare.is-more { width: 14px; color: #36a200; font-size: 7px; border-color: #36a200; }
 .btn-square.is-toggle, .btn-smsquare.is-toggle { background: #555f6d; color: white; }
 .btn-square.is-toggle:before, .btn-smsquare.is-toggle:before { content: "+"; display: inline-block; }
@@ -212,6 +212,8 @@ button.btn { line-height: 1; }
 .btn-smsquare { height: 14px; width: 14px; line-height: 13px; }
 
 button.btn-smsquare { letter-spacing: -0.8px; }
+
+.btn-square i.ico { margin: -3.5px 0 0 -3.5px; -moz-transform: translate(0, 0); -ms-transform: translate(0, 0); -webkit-transform: translate(0, 0); transform: translate(0, 0); }
 
 .tabs.is-game .tabs__wrap { font-size: 0; }
 
@@ -396,7 +398,7 @@ button.btn-smsquare { letter-spacing: -0.8px; }
 .indicator .indicator__top { margin-bottom: 4px; text-align: center; font-size: 8px; }
 .indicator .indicator__top .ico { position: relative; top: 2px; margin-right: 5px; }
 .indicator .indicator__bot { width: 100%; display: table; }
-.indicator .indicator__item { width: 51px; text-align: center; display: inline-block; }
+.indicator .indicator__item { width: 50px; text-align: center; display: inline-block; }
 .indicator .indicator__tot { margin-left: 3px; color: #36a200; }
 
 .is-stat { width: 48px; }
@@ -465,6 +467,7 @@ button.btn-smsquare { letter-spacing: -0.8px; }
 .col.is-mod .col__ind:first-child { margin-left: 0; }
 .col.is-mod .col__ind:first-child .col__item { margin-left: 0; }
 .col .col__item { width: 52px; height: 27px; line-height: 25px; text-align: center; font-size: 13px; vertical-align: top; border: 1px solid #b9c0c9; border-right: none; display: inline-block; background: white; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.col .col__item:hover { background: #eef1f4; }
 .col .col__item:last-child { border-right: 1px solid #b9c0c9; width: 51px; }
 .col .col__item.is-green { position: relative; border-color: #36a200; }
 .col .col__item.is-green:before { position: absolute; content: ""; top: 0; left: -1px; bottom: 0; width: 1px; background: #36a200; }

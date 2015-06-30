@@ -254,7 +254,7 @@ button.btn-smsquare { letter-spacing: -0.8px; }
 .partners .partners__icons .ico { position: relative; margin-left: 25px; z-index: 1; }
 .partners .partners__icons .ico:first-child { margin: 0; }
 
-.age { display: inline-block; background: url("../img/svg/age.svg") no-repeat 0 0; -moz-background-size: 44px 44px; -o-background-size: 44px 44px; -webkit-background-size: 44px 44px; background-size: 44px 44px; width: 44px; height: 44px; display: inline-block; }
+.age { display: inline-block; background: url("../img/svg/age-2.svg") no-repeat 0 0; -moz-background-size: 44px 44px; -o-background-size: 44px 44px; -webkit-background-size: 44px 44px; background-size: 44px 44px; width: 44px; height: 44px; display: inline-block; }
 
 .wind { margin-bottom: 25px; border: 1px solid #555f6d; }
 .wind.is-hide .wind__block { display: none; }
@@ -336,8 +336,8 @@ button.btn-smsquare { letter-spacing: -0.8px; }
 .total + .coeff.is-down { color: #ed1c24; }
 .total + .coeff.is-up { color: #36a200; }
 
-.coeff { position: relative; padding: 0 7px; text-align: center; line-height: 18px; width: 30px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-.coeff:before { position: absolute; content: ""; top: 4px; left: 0; }
+.coeff { position: relative; padding: 0 7px 0 9px; text-align: center; line-height: 18px; width: 30px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.coeff:before { position: absolute; content: ""; top: 4px; left: 2px; }
 .coeff:hover { text-decoration: none; }
 .coeff.is-blocked { width: 53px; height: 26px; }
 .coeff.is-blocked:before { position: absolute; left: 0; right: 0; bottom: 0; top: 0; width: 52px; height: 25px; border: 1px solid #555f6d; background: #dfe4ea; }
@@ -446,7 +446,7 @@ button.btn-smsquare { letter-spacing: -0.8px; }
 .match .btn-smsquare { position: absolute; top: 0; left: 8px; }
 .match .btn-smsquare.is-more { position: absolute; top: 34px; left: auto; right: 9px; }
 @media only screen and (max-width: 1431px) { .match .btn-smsquare.is-more { top: 82px; } }
-.match .coeff.is-down:before { top: 7px; left: -1px; }
+.match .coeff.is-down:before { top: 7px; left: 2px; }
 .match .ico.ico_radon, .match .ico.ico_radof { position: absolute; top: 10px; right: 0; }
 .match .coeff { width: auto; }
 .match .event { margin-left: 30px; }

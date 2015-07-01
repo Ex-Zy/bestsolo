@@ -628,14 +628,18 @@ button.btn
 			right: 50%
 			height: 10px
 			width: 10px
-			line-height: 0.4
-			font-size: 18px
-			+translate(-50%,-50%)
+			line-height: 0.5
+			font-size: 19px
+			+translate(-53%,-50%)
+			+os
 		&.is-open
 			&:before
 				display: none
 			&:after
 				display: inline-block
+				font-size: 30px
+				line-height: 0.1
+				+transform(translate(-55%, -50%))
 	.ico
 		position: absolute
 		top: 50%
@@ -2098,6 +2102,7 @@ button.btn-smsquare
 	.indicator__item
 		width: auto
 		display: table-cell
+		+nsb
 	.tickets__table
 		text-align: center
 	.tickets__head,
@@ -2171,12 +2176,17 @@ button.btn-smsquare
 					display: block
 	.tickets__td
 		padding: 3px 0
-		+ns
+		//+ns
+		+nsb
 		.btn-smsquare.is-toggle
 			position: relative
 			top: 1px
 			+r(1431)
 				top: 2px
+			&.is-open
+				background: #FFF
+				&:after
+					color: $gray
 	.tickets__syst
 		overflow: hidden
 		white-space: nowrap
@@ -2196,6 +2206,7 @@ button.btn-smsquare
 		min-width: 25px
 		width: auto
 		+box
+		+nsb
 		&.is-yellow
 			+r(1431)
 				min-width: 0

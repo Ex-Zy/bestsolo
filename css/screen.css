@@ -204,9 +204,9 @@ button.btn { line-height: 1; }
 .btn-square.is-toggle, .btn-smsquare.is-toggle { background: #555f6d; color: white; }
 .btn-square.is-toggle:before, .btn-smsquare.is-toggle:before { content: "+"; display: inline-block; }
 .btn-square.is-toggle:after, .btn-smsquare.is-toggle:after { content: "-"; display: none; }
-.btn-square.is-toggle:before, .btn-square.is-toggle:after, .btn-smsquare.is-toggle:before, .btn-smsquare.is-toggle:after { position: absolute; left: 50%; right: 50%; height: 10px; width: 10px; line-height: 0.4; font-size: 18px; -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+.btn-square.is-toggle:before, .btn-square.is-toggle:after, .btn-smsquare.is-toggle:before, .btn-smsquare.is-toggle:after { position: absolute; left: 50%; right: 50%; height: 10px; width: 10px; line-height: 0.5; font-size: 19px; -moz-transform: translate(-53%, -50%); -ms-transform: translate(-53%, -50%); -webkit-transform: translate(-53%, -50%); transform: translate(-53%, -50%); font-family: "OpenSans", Arial, sans-serif; font-weight: normal; }
 .btn-square.is-toggle.is-open:before, .btn-smsquare.is-toggle.is-open:before { display: none; }
-.btn-square.is-toggle.is-open:after, .btn-smsquare.is-toggle.is-open:after { display: inline-block; }
+.btn-square.is-toggle.is-open:after, .btn-smsquare.is-toggle.is-open:after { display: inline-block; font-size: 30px; line-height: 0.1; -moz-transform: translate(-55%, -50%); -ms-transform: translate(-55%, -50%); -webkit-transform: translate(-55%, -50%); transform: translate(-55%, -50%); }
 .btn-square .ico, .btn-smsquare .ico { position: absolute; top: 50%; left: 50%; -moz-transform: translate(-55%, -55%); -ms-transform: translate(-55%, -55%); -webkit-transform: translate(-55%, -55%); transform: translate(-55%, -55%); }
 
 .btn-smsquare { height: 14px; width: 14px; line-height: 13px; }
@@ -640,7 +640,7 @@ button.btn-smsquare { letter-spacing: -0.8px; }
 .tickets .is-mob { display: none; }
 @media only screen and (max-width: 1431px) { .tickets .is-mob { display: block; } }
 .tickets .indicator { padding: 12px 0; font-size: 13px; display: block; }
-.tickets .indicator__item { width: auto; display: table-cell; }
+.tickets .indicator__item { width: auto; display: table-cell; font-family: "NotoSans-Bold", Arial, sans-serif; font-weight: normal; }
 .tickets .tickets__table { text-align: center; }
 .tickets .tickets__head, .tickets .tickets__wrap { width: 100%; display: table; }
 .tickets .tickets__tr.is-open { border: 1px solid #555f6d; }
@@ -671,13 +671,15 @@ button.btn-smsquare { letter-spacing: -0.8px; }
 .tickets .tickets__th { text-transform: uppercase; }
 @media only screen and (max-width: 1431px) { .tickets .tickets__th:last-child span { display: none; }
   .tickets .tickets__th:last-child .is-mob { display: block; } }
-.tickets .tickets__td { padding: 3px 0; font-family: "NotoSans", Arial, sans-serif; font-weight: normal; }
+.tickets .tickets__td { padding: 3px 0; font-family: "NotoSans-Bold", Arial, sans-serif; font-weight: normal; }
 .tickets .tickets__td .btn-smsquare.is-toggle { position: relative; top: 1px; }
 @media only screen and (max-width: 1431px) { .tickets .tickets__td .btn-smsquare.is-toggle { top: 2px; } }
+.tickets .tickets__td .btn-smsquare.is-toggle.is-open { background: white; }
+.tickets .tickets__td .btn-smsquare.is-toggle.is-open:after { color: #555f6d; }
 .tickets .tickets__syst { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; max-width: 125px; vertical-align: top; display: inline-block; }
 .tickets .score { color: #555f6d; }
 .tickets .score.is-green { color: #36a200; }
-.tickets .status, .tickets .legend .legend__left, .legend .tickets .legend__left { padding: 0 4px; font-size: 8px; height: 12px; line-height: 12px; min-width: 25px; width: auto; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.tickets .status, .tickets .legend .legend__left, .legend .tickets .legend__left { padding: 0 4px; font-size: 8px; height: 12px; line-height: 12px; min-width: 25px; width: auto; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; font-family: "NotoSans-Bold", Arial, sans-serif; font-weight: normal; }
 @media only screen and (max-width: 1431px) { .tickets .status.is-yellow, .tickets .legend .is-yellow.legend__left, .legend .tickets .is-yellow.legend__left { min-width: 0; width: 100%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; } }
 @media only screen and (max-width: 1431px) { .tickets .status, .tickets .legend .legend__left, .legend .tickets .legend__left { margin-top: 11px; } }
 .tickets .tickets__in { font-size: 10px; text-align: left; display: none; }

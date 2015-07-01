@@ -464,6 +464,7 @@ button.btn-smsquare { letter-spacing: -0.8px; }
 .col.is-mod .col__ind { margin-left: 50px; width: 52px; text-align: left; }
 .col.is-mod .col__ind .col__item { width: 52px; height: 27px; line-height: 24px; border-right: 1px solid #b9c0c9; }
 .col.is-mod .col__ind .col__item.is-green:after { background: #36a200; }
+.col.is-mod .col__ind .col__item .coeff { padding: 0 6px; }
 .col.is-mod .col__ind:first-child { margin-left: 0; }
 .col.is-mod .col__ind:first-child .col__item { margin-left: 0; }
 .col .col__item { width: 52px; height: 27px; line-height: 25px; text-align: center; font-size: 13px; vertical-align: top; border: 1px solid #b9c0c9; border-right: none; display: inline-block; background: white; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }

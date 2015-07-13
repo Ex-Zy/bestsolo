@@ -701,6 +701,27 @@ button.btn-smsquare
 .nav
 	margin: 9px 0
 	padding: 0 2px
+	li
+		display: block
+		&.is-check
+			.nav__item
+				background: #dfe4ea
+			ul
+				display: block
+		ul
+			display: none
+		li
+			padding: 9px 8px 8px 35px
+			text-transform: uppercase
+			letter-spacing: -0.2px
+			cursor: default
+			+ns
+			&:hover,
+			&.is-active
+				background: #dfe4ea
+		.checkbox
+			color: #7B8A9E
+			text-transform: initial
 	.nav__item
 		position: relative
 		padding: 9px 38px 8px 35px
@@ -716,6 +737,8 @@ button.btn-smsquare
 			.btn-check,
 			.btn-remove
 				display: block
+		&:hover
+			background: #dfe4ea
 	.ico
 		position: absolute
 		left: 13px

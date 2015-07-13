@@ -227,9 +227,17 @@ button.btn-smsquare { letter-spacing: -0.8px; }
 .tab a:hover, .tab a.is-active { text-decoration: none; background: #ffce00; }
 
 .nav { margin: 9px 0; padding: 0 2px; }
+.nav li { display: block; }
+.nav li.is-check .nav__item { background: #dfe4ea; }
+.nav li.is-check ul { display: block; }
+.nav li ul { display: none; }
+.nav li li { padding: 9px 8px 8px 35px; text-transform: uppercase; letter-spacing: -0.2px; cursor: default; font-family: "NotoSans", Arial, sans-serif; font-weight: normal; }
+.nav li li:hover, .nav li li.is-active { background: #dfe4ea; }
+.nav li .checkbox { color: #7b8a9e; text-transform: initial; }
 .nav .nav__item { position: relative; padding: 9px 38px 8px 35px; line-height: 1; height: 29px; cursor: default; text-transform: uppercase; display: block; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .nav .nav__item:hover, .nav .nav__item.is-active { background: #cccfd3; }
 .nav .nav__item:hover .btn-check, .nav .nav__item:hover .btn-remove, .nav .nav__item.is-active .btn-check, .nav .nav__item.is-active .btn-remove { display: block; }
+.nav .nav__item:hover { background: #dfe4ea; }
 .nav .ico { position: absolute; left: 13px; top: 50%; -moz-transform: translate(0, -50%); -ms-transform: translate(0, -50%); -webkit-transform: translate(0, -50%); transform: translate(0, -50%); }
 .nav .btn-check, .nav .btn-remove { position: absolute; top: 50%; -moz-transform: translate(0, -50%); -ms-transform: translate(0, -50%); -webkit-transform: translate(0, -50%); transform: translate(0, -50%); display: none; }
 .nav .btn-check { right: 26px; }

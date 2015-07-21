@@ -187,6 +187,32 @@ $yellow-light: #ffe87c
 		width: 10px
 		height: 15px
 		background: $red
+	&.ico_error
+		position: relative
+		width: 22px
+		height: 22px
+		background: $red
+		+border-radius(50%)
+		&:before
+			position: absolute
+			content: ''
+			top: 50%
+			left: 50%
+			+translate(-50%,-50%)
+			+svg(error-ico2,9,9)
+	&.ico_success
+		position: relative
+		width: 22px
+		height: 22px
+		background: $green
+		+border-radius(50%)
+		&:before
+			position: absolute
+			content: ''
+			top: 50%
+			left: 50%
+			+translate(-50%,-50%)
+			+svg(is-check-white, 12, 9)
 
 .flag
 	display: inline-block
@@ -197,7 +223,7 @@ $yellow-light: #ffe87c
 	margin: 0 auto
 	padding: 0 10px
 	max-width: 1440px
-	min-width: 1000px
+	min-width: 1024px
 	+box
 	+clr
 	+r(1431)
@@ -214,8 +240,11 @@ body
 	&.is-home
 		.l
 			margin-top: 16px
+			max-width: 1440px
 		.l-col1
 			padding-top: 9px
+		.item__row
+			cursor: pointer
 a
 	color: $gray
 	text-decoration: none
@@ -403,6 +432,7 @@ a
 		&.is-visible
 			overflow: visible
 	.form__col
+		position: relative
 		width: 246px
 		vertical-align: top
 		display: inline-block
@@ -466,6 +496,37 @@ a
 	&:focus
 		+placeholder
 			font-size: 0
+	&.is-error
+		& + .error-text
+			display: block
+	&.is-success
+		& + .success
+			display: block
+
+.error-text
+	position: absolute
+	top: 0
+	left: 100%
+	margin-left: 45px
+	padding: 8px
+	min-width: 159px
+	text-align: center
+	color: $red
+	background: #ffe6e5
+	display: none
+	.ico
+		position: absolute
+		top: 50%
+		left: -34px
+		+translate(0,-50%)
+
+.success
+	position: absolute
+	top: 50%
+	left: 100%
+	+translate(0,-50%)
+	margin-left: 10px
+	display: none
 
 .checkbox
 	position: relative
@@ -1265,17 +1326,15 @@ button.btn-smsquare
 			margin-right: 6px
 		&.is-coal
 			margin: 0 4px
-		&.is-match,
-		&.is-coal,
-		&.is-total
-			+r(1431)
+		&.is-total 
+			+r(1317)
 				display: none
-		&.is-score
-			+r(1431)
-				float: right
-		&.is-t-away
-			+r(1431)
-				margin-left: 40px
+			& + .is-total
+				+r(1443)
+					display: none
+		&.is-coal
+			+r(1204)
+				display: none
 
 // indicator
 .indicator
@@ -1347,9 +1406,6 @@ button.btn-smsquare
 	& + .match
 		.ft
 			top: -2px
-			+r(1431)
-				top: 71px
-				left: 0
 		.match__wrap
 			border-top-color: transparent
 	&.is-last
@@ -1379,10 +1435,6 @@ button.btn-smsquare
 	.match__left
 		float: left
 		width: 311px
-		+r(1431)
-			float: none
-			margin-bottom: 7px
-			width: 100%
 	.match__row
 		position: relative
 		padding-left: 40px
@@ -1393,10 +1445,6 @@ button.btn-smsquare
 		padding-right: 29px
 		vertical-align: top
 		overflow: hidden
-		+r(1431)
-			padding: 0 0 0 40px
-		+r(1152)
-			padding-left: 0
 	.score
 		position: absolute
 		top: 7px
@@ -1404,8 +1452,6 @@ button.btn-smsquare
 		color: $gray
 		&.is-green
 			color: $green
-		+r(1431)
-			right: 38px
 	.status
 		position: absolute
 		top: 1px
@@ -1421,8 +1467,6 @@ button.btn-smsquare
 		top: 34px
 		left: auto
 		right: 9px
-		+r(1431)
-			top: 82px
 	.coeff.is-down
 		&:before
 			top: 7px
@@ -1447,15 +1491,15 @@ button.btn-smsquare
 	.is-total
 		vertical-align: top
 		display: inline-block
-		& > .indicator
-			padding: 4px 0
+	.is-total 
+		+r(1317)
 			display: none
-	.is-total,
-	.is-coal,
-	.is-match
-		+r(1431)
-			.indicator
-				display: block
+		& + .is-total
+			+r(1443)
+				display: none
+	.is-coal
+		+r(1204)
+			display: none
 
 // row
 .row
@@ -2355,6 +2399,45 @@ button.btn-smsquare
 		bottom: 0
 		font-size: 10px
 		text-align: center
+
+// spinner
+$spinner-color: #69717d !default
+$spinner-size: 29px !default
+
+.sp-ico
+	margin: 10px 0
+	font-size: $spinner-size
+	position: relative
+	display: inline-block
+	width: 29px
+	height: 29px
+	.sp-ico__blade
+		position: absolute
+		left: .4629em
+		bottom: 0
+		width: 2px
+		height: .2777em
+		border-radius: .5em
+		background-color: transparent
+		transform-origin: center -.2222em
+		animation: spinner-fade 1s infinite linear
+
+		$animation-delay: 0s
+		$blade-rotation: 0deg
+
+		@for $i from 1 through 12
+			&:nth-child(#{$i})
+				animation-delay: $animation-delay
+				transform: rotate($blade-rotation)
+				$blade-rotation: $blade-rotation + 30
+				$animation-delay: $animation-delay + .083
+
+@keyframes spinner-fade
+	0%
+		background-color: $spinner-color
+	100%
+		background-color: transparent
+
 
 // UI style
 .ui-datepicker

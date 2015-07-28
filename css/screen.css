@@ -209,7 +209,7 @@ button.btn { line-height: 1; }
 
 .btn-square, .btn-smsquare { position: relative; height: 17px; width: 17px; line-height: 15px; text-align: center; border: 1px solid #555f6d; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .btn-square.is-b, .btn-smsquare.is-b { text-align: center; color: #555f6d; }
-.btn-square.is-b:before, .btn-smsquare.is-b:before { content: "b"; display: inline-block; text-transform: uppercase; line-height: 1; }
+.btn-square.is-b:before, .btn-smsquare.is-b:before { content: "b"; display: inline-block; text-transform: uppercase; line-height: 1; font-family: "NotoSans-Bold", Arial, sans-serif; font-weight: normal; }
 .btn-square.is-gray, .btn-smsquare.is-gray { background: #555f6d; color: white; }
 .btn-square.is-gray .ico_remove, .btn-smsquare.is-gray .ico_remove { background: url("../img/svg/cross-white.svg") no-repeat 0 0; -moz-background-size: 7px 7px; -o-background-size: 7px 7px; -webkit-background-size: 7px 7px; background-size: 7px 7px; width: 7px; height: 7px; display: inline-block; }
 .btn-square.is-more, .btn-smsquare.is-more { width: 14px; color: #36a200; font-size: 7px; border-color: #36a200; }
@@ -246,7 +246,7 @@ button.btn-smsquare { letter-spacing: -0.8px; }
 .nav li li { padding: 9px 8px 8px 35px; text-transform: uppercase; letter-spacing: -0.2px; cursor: default; font-family: "NotoSans", Arial, sans-serif; font-weight: normal; }
 .nav li li:hover, .nav li li.is-active { background: #dfe4ea; }
 .nav li .checkbox { color: #7b8a9e; text-transform: initial; }
-.nav .nav__item { position: relative; padding: 9px 38px 8px 35px; line-height: 1; height: 29px; cursor: default; text-transform: uppercase; display: block; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.nav .nav__item { position: relative; padding: 9px 36px 8px 35px; line-height: 1; cursor: default; text-transform: uppercase; display: block; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .nav .nav__item:hover, .nav .nav__item.is-active { background: #cccfd3; }
 .nav .nav__item:hover .btn-check, .nav .nav__item:hover .btn-remove, .nav .nav__item.is-active .btn-check, .nav .nav__item.is-active .btn-remove { display: block; }
 .nav .nav__item:hover { background: #dfe4ea; }
@@ -341,8 +341,7 @@ button.btn-smsquare { letter-spacing: -0.8px; }
 .minute:before { content: "'"; color: #555f6d; }
 
 .teams .teams__item { vertical-align: top; display: inline-block; }
-.teams .team { max-width: 95px; display: block; vertical-align: top; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; display: block; }
-.teams .team:first-child { max-width: 100px; }
+.teams .team { display: block; vertical-align: top; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; display: block; }
 
 .team { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .team.is-left { padding-right: 12px; width: 112px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; text-align: right; }
@@ -416,7 +415,7 @@ button.btn-smsquare { letter-spacing: -0.8px; }
 .indicator.is-more { position: absolute; bottom: 7px; right: 0; padding-left: 21px; }
 .indicator.is-mod { position: relative; left: -27px; width: 106px; letter-spacing: -0.2px; }
 .indicator .indicator__top { margin-bottom: 4px; text-align: center; font-size: 8px; }
-.indicator .indicator__top .ico { position: relative; top: 2px; margin-right: 5px; }
+.indicator .indicator__top .ico { position: relative; top: 2px; margin-right: 5px; cursor: pointer; }
 .indicator .indicator__bot { width: 100%; display: table; }
 .indicator .indicator__item { width: 50px; text-align: center; display: inline-block; }
 .indicator .indicator__tot { margin-left: 3px; color: #36a200; }
@@ -451,6 +450,8 @@ button.btn-smsquare { letter-spacing: -0.8px; }
 .match .match__wrap.is-goal { background: #ebf6e5; }
 .match .match__wrap.is-started { background: #fffae5; }
 .match .match__left { float: left; width: 311px; }
+.match .match__left .match__row { padding-right: 55px; }
+.match .match__left .minute { margin-left: 3px; }
 .match .match__row { position: relative; padding-left: 40px; }
 .match .match__row:first-child { margin: 0 0 9px 0; }
 .match .match__coeff { position: relative; padding-right: 29px; vertical-align: top; overflow: hidden; }
@@ -464,7 +465,8 @@ button.btn-smsquare { letter-spacing: -0.8px; }
 .match .ico.ico_radon, .match .ico.ico_radof { position: absolute; top: 10px; right: 0; }
 .match .coeff { width: auto; }
 .match .event { margin-left: 30px; }
-.match .time { position: absolute; top: 18px; left: 4px; font-size: 8px; }
+.match .time { position: absolute; top: 18px; left: 4px; font-size: 9px; }
+.match .time.is-top { top: 3px; }
 .match .is-match, .match .is-coal, .match .is-total { vertical-align: top; display: inline-block; }
 @media only screen and (max-width: 1317px) { .match .is-total { display: none; } }
 @media only screen and (max-width: 1443px) { .match .is-total + .is-total { display: none; } }
@@ -488,7 +490,7 @@ button.btn-smsquare { letter-spacing: -0.8px; }
 .col .col__item.is-green { position: relative; border-color: #36a200; }
 .col .col__item.is-green:before { position: absolute; content: ""; top: 0; left: -1px; bottom: 0; width: 1px; background: #36a200; }
 .col .col__item.is-gray { position: relative; -moz-box-shadow: inset 0 3px 0 #d5d9df; -webkit-box-shadow: inset 0 3px 0 #d5d9df; box-shadow: inset 0 3px 0 #d5d9df; background: #dfe4ea; }
-.col .col__item.is-gray:before { position: absolute; content: ""; top: -1px; left: -1px; right: -1px; bottom: -1px; border: 1px solid #555f6d; }
+.col .col__item.is-gray:before { position: absolute; content: ""; top: -1px; left: -1px; right: -1px; bottom: -1px; z-index: 1; border: 1px solid #555f6d; }
 .col .col__item .coeff { vertical-align: middle; }
 .col .col__item .coeff.is-blocked { margin-left: 0; width: 100%; height: 100%; }
 .col .col__item .coeff.is-blocked:before { top: -2px; left: -1px; right: -1px; width: auto; }
@@ -812,7 +814,7 @@ button.btn-smsquare { letter-spacing: -0.8px; }
 .table__pl div { padding-left: 25px; }
 .table__pl div.is-profit { color: #36a200; }
 
-.pages { margin-top: 30px; text-align: center; font-size: 0; }
+.pages { position: relative; top: -224px; text-align: center; font-size: 0; }
 .pages a { font-size: 13px; text-transform: uppercase; margin: 0 2px; }
 .pages ul, .pages a, .pages li { display: inline-block; vertical-align: top; line-height: 13px; }
 .pages ul:before, .pages ul:after { content: "|"; font-size: 13px; margin: 0 3px; }

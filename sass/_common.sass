@@ -663,6 +663,7 @@ button.btn
 			display: inline-block
 			text-transform: uppercase
 			line-height: 1
+			+nsb
 	&.is-gray
 		background: $gray
 		color: #fff
@@ -785,9 +786,8 @@ button.btn-smsquare
 			text-transform: initial
 	.nav__item
 		position: relative
-		padding: 9px 38px 8px 35px
+		padding: 9px 36px 8px 35px
 		line-height: 1
-		height: 29px
 		cursor: default
 		text-transform: uppercase
 		display: block
@@ -1079,15 +1079,12 @@ button.btn-smsquare
 		vertical-align: top
 		display: inline-block
 	.team
-		max-width: 95px
 		display: block
 		vertical-align: top
 		overflow: hidden
 		white-space: nowrap
 		text-overflow: ellipsis
 		display: block
-		&:first-child
-			max-width: 100px
 
 // team
 .team
@@ -1364,6 +1361,7 @@ button.btn-smsquare
 			position: relative
 			top: 2px
 			margin-right: 5px
+			cursor: pointer
 	.indicator__bot
 		width: 100%
 		display: table
@@ -1435,6 +1433,10 @@ button.btn-smsquare
 	.match__left
 		float: left
 		width: 311px
+		.match__row
+			padding-right: 55px
+		.minute
+			margin-left: 3px
 	.match__row
 		position: relative
 		padding-left: 40px
@@ -1485,7 +1487,9 @@ button.btn-smsquare
 		position: absolute
 		top: 18px
 		left: 4px
-		font-size: 8px
+		font-size: 9px
+		&.is-top
+			top: 3px
 	.is-match,
 	.is-coal,
 	.is-total
@@ -1573,6 +1577,7 @@ button.btn-smsquare
 				left: -1px
 				right: -1px
 				bottom: -1px
+				z-index: 1
 				border: 1px solid $gray
 		.coeff
 			vertical-align: middle

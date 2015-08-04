@@ -262,7 +262,7 @@ a
 
 // header
 .header
-	padding: 40px 0 23px
+	padding: 8px 0 5px
 	+os
 	background: $yellow
 	&.is-login
@@ -422,11 +422,16 @@ a
 		padding: 40px 0
 	.form__left
 		float: left
-		padding-top: 8px
+		position: relative
+		padding: 8px 0 0 18px
 		width: 180px
 		text-transform: uppercase
 		+box
 		+ns
+		.form__necess
+			position: absolute
+			top: 5px
+			left: 5px
 	.form__right
 		overflow: hidden
 		&.is-visible
@@ -1081,13 +1086,11 @@ button.btn-smsquare
 	.team
 		display: block
 		vertical-align: top
-		overflow: hidden
-		white-space: nowrap
-		text-overflow: ellipsis
 		display: block
 
 // team
 .team
+	word-wrap: break-word
 	+box
 	&.is-left
 		padding-right: 12px
@@ -1666,6 +1669,7 @@ button.btn-smsquare
 	position: relative
 	padding-left: 20px
 	font-size: 10px
+	word-wrap: break-word
 	.flag
 		position: absolute
 		top: 2px

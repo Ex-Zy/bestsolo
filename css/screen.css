@@ -91,7 +91,7 @@ a:hover { text-decoration: underline; }
 
 .out { padding-bottom: 198px; min-height: 364px; min-width: 100%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-.header { padding: 40px 0 23px; font-family: "OpenSans", Arial, sans-serif; font-weight: normal; background: #ffce00; }
+.header { padding: 8px 0 5px; font-family: "OpenSans", Arial, sans-serif; font-weight: normal; background: #ffce00; }
 .header.is-login .login { margin-left: 12px; }
 .header.is-login .lang__chosen { background: #ffe87c; }
 .header .header__right { float: right; font-size: 0; }
@@ -135,7 +135,8 @@ a:hover { text-decoration: underline; }
 .form .form__row { margin-top: 20px; *zoom: 1; }
 .form .form__row:after { content: " "; display: table; clear: both; }
 .form .form__padd { padding: 40px 0; }
-.form .form__left { float: left; padding-top: 8px; width: 180px; text-transform: uppercase; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; font-family: "NotoSans", Arial, sans-serif; font-weight: normal; }
+.form .form__left { float: left; position: relative; padding: 8px 0 0 18px; width: 180px; text-transform: uppercase; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; font-family: "NotoSans", Arial, sans-serif; font-weight: normal; }
+.form .form__left .form__necess { position: absolute; top: 5px; left: 5px; }
 .form .form__right { overflow: hidden; }
 .form .form__right.is-visible { overflow: visible; }
 .form .form__col { position: relative; width: 246px; vertical-align: top; display: inline-block; }
@@ -341,9 +342,9 @@ button.btn-smsquare { letter-spacing: -0.8px; }
 .minute:before { content: "'"; color: #555f6d; }
 
 .teams .teams__item { vertical-align: top; display: inline-block; }
-.teams .team { display: block; vertical-align: top; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; display: block; }
+.teams .team { display: block; vertical-align: top; display: block; }
 
-.team { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.team { word-wrap: break-word; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .team.is-left { padding-right: 12px; width: 112px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; text-align: right; }
 .team.is-right { padding-left: 10px; width: 90px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
 
@@ -515,7 +516,7 @@ button.btn-smsquare { letter-spacing: -0.8px; }
 
 .ml51 { margin-left: 51px; }
 
-.league { position: relative; padding-left: 20px; font-size: 10px; }
+.league { position: relative; padding-left: 20px; font-size: 10px; word-wrap: break-word; }
 .league .flag { position: absolute; top: 2px; left: 0; }
 
 .ft { position: absolute; top: -1px; left: 310px; right: -1px; bottom: -1px; text-align: center; text-transform: uppercase; z-index: 2; border: 1px solid #555f6d; background: rgba(255, 255, 255, 0.7); display: none; text-align: center; font-size: 0; }

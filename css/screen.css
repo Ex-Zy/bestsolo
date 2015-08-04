@@ -89,7 +89,7 @@ body.is-home .item__row { cursor: pointer; }
 a { color: #555f6d; text-decoration: none; }
 a:hover { text-decoration: underline; }
 
-.out { padding-bottom: 198px; min-height: 364px; min-width: 100%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.out { padding-bottom: 250px; min-height: 364px; min-width: 100%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .header { padding: 8px 0 5px; font-family: "OpenSans", Arial, sans-serif; font-weight: normal; background: #ffce00; }
 .header.is-login .login { margin-left: 12px; }
@@ -826,7 +826,6 @@ button.btn-smsquare { letter-spacing: -0.8px; }
 .select-wrap .chosen-container-multi .chosen-choices li { float: none; }
 .select-wrap .search-field { position: absolute; top: -100px; }
 
-.table { margin-bottom: 30px; }
 .table table { font-size: 13px; }
 .table table thead th { text-transform: uppercase; text-align: left; padding: 20px; background: rgba(153, 153, 153, 0.1); }
 .table table tbody tr:nth-child(odd) { background: rgba(153, 153, 153, 0.05); }
@@ -838,7 +837,7 @@ button.btn-smsquare { letter-spacing: -0.8px; }
 .table__pl div { padding-left: 25px; }
 .table__pl div.is-profit { color: #36a200; }
 
-.pages { position: relative; top: -224px; text-align: center; font-size: 0; }
+.pages { position: absolute; left: 50%; -moz-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); text-align: center; font-size: 0; }
 .pages a { font-size: 13px; text-transform: uppercase; margin: 0 2px; }
 .pages ul, .pages a, .pages li { display: inline-block; vertical-align: top; line-height: 13px; }
 .pages ul:before, .pages ul:after { content: "|"; font-size: 13px; margin: 0 3px; }

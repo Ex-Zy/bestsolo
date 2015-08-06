@@ -426,7 +426,7 @@ button.btn-smsquare { letter-spacing: -0.8px; }
 .indicator.is-stat { padding-left: 11px; }
 .indicator.is-more { position: absolute; bottom: 7px; right: 0; padding-left: 21px; }
 .indicator.is-mod { position: relative; left: -27px; width: 106px; letter-spacing: -0.2px; }
-.indicator .indicator__top { margin-bottom: 4px; text-align: center; font-size: 8px; }
+.indicator .indicator__top { margin-bottom: 4px; text-align: center; font-size: 8px; cursor: pointer; }
 .indicator .indicator__top .ico { position: relative; top: 2px; margin-right: 5px; cursor: pointer; }
 .indicator .indicator__bot { width: 100%; display: table; }
 .indicator .indicator__item { width: 50px; text-align: center; display: inline-block; }

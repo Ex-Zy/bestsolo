@@ -588,6 +588,7 @@ button.btn-smsquare { letter-spacing: -0.8px; }
 .table-results th:first-child { padding-left: 10px; text-align: left; }
 .table-results td { padding: 12px 0 7px 0; vertical-align: top; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .table-results td:first-child { min-width: 62px; padding-left: 10px; }
+.table-results td:nth-child(2) { width: 294px; }
 .table-results td:last-child { text-align: center; }
 .table-results .score { margin-top: 20px; width: 100%; color: #555f6d; text-align: center; }
 .table-results .date, .table-results .time { display: block; }

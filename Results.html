@@ -22,26 +22,19 @@
 		<div class="header__in">
 			<!-- logo -->
 			<a href="#" class="logo"></a>
+			<!-- menu -->
+			<ul class="menu">
+				<li class="menu__iten"><a href="#">Live betting</a></li>
+				<li class="menu__iten"><a href="#" class="is-active">Sport betting</a></li>
+				<li class="menu__iten"><a href="#">results</a></li>
+				<li class="menu__iten"><a href="#">live scores</a></li>
+				<li class="menu__iten"><a href="#">Casinо</a></li>
+				<li class="menu__iten"><a href="#">bingo</a></li>
+			</ul>
 			<div class="header__right">
-				<!-- lang -->
-				<div class="lang">
-					<div class="lang__chosen">
-						<span>Francais</span>
-						<i class="ico ico_fr"></i>
-					</div>
-					<ul class="lang__list">
-						<li class="lang__item">
-							<span>Francais</span>
-							<i class="ico ico_fr"></i>
-						</li>
-						<li class="lang__item">
-							<span>Francais</span>
-							<i class="ico ico_fr"></i>
-						</li>
-					</ul>
-				</div>
 				<!-- login -->
-				<form class="login">
+				<form class="login is-error">
+					<div class="login__error">Wrong login or password</div>
 					<div class="login__col">
 						<div class="login__row">
 							<input type="text" class="input" placeholder="Login">
@@ -64,20 +57,23 @@
 					<button class="btn btn_login" type="submit">Login</button>
 					<a href="#" class="btn btn_join">Join now</a>
 				</form>
+				<!-- lang -->
+				<div class="lang">
+					<div class="lang__chosen">
+						<i class="ico ico_fr"></i>
+					</div>
+					<ul class="lang__list">
+						<li class="lang__item">
+							<i class="ico ico_fr"></i>
+						</li>
+						<li class="lang__item">
+							<i class="ico ico_fr"></i>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</header>
-	<!-- menu -->
-	<div class="menu">
-		<ul class="menu__list">
-			<li class="menu__iten"><a href="#">Live betting</a></li>
-			<li class="menu__iten"><a href="#" class="is-active">Sport betting</a></li>
-			<li class="menu__iten"><a href="#">results</a></li>
-			<li class="menu__iten"><a href="#">live scores</a></li>
-			<li class="menu__iten"><a href="#">Casinо</a></li>
-			<li class="menu__iten"><a href="#">bingo</a></li>
-		</ul>
-	</div>
 	<!-- l -->
 	<div class="l">
 		<!-- col1 -->
@@ -262,7 +258,7 @@
 			</div>
 		</div>
 		<!-- l-col2 -->
-		<div class="l-col2">
+		<div class="l-col2 js-f-el">
 			<!-- wind -->
 			<div class="wind">
 				<div class="wind__top">

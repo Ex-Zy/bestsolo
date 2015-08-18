@@ -96,9 +96,9 @@ $yellow-light: #ffe87c
 .ico
 	display: inline-block
 	&.ico_fr
-		+svg(fr,20,14)
+		+svg(fr,32,22)
 	&.ico_pay
-		+svg(pay,45,10)
+		+svg(pay,53,15)
 	&.ico_mc
 		+svg(mc,64,10)
 	&.ico_visa
@@ -213,6 +213,27 @@ $yellow-light: #ffe87c
 			left: 50%
 			+translate(-50%,-50%)
 			+svg(is-check-white, 12, 9)
+	&.ico_coupons
+		+svg(coupons,50,32)
+	&.ico_c-card
+		+svg(credit-card,50,31)
+	&.ico_paypal
+		+svg(paypal,71,21)
+	&.ico_skrill
+		+svg(skrill,58,20)
+	&.ico_web-money
+		+svg(web-money,25,25)
+	&.ico_field-1
+		position: relative
+		+svg(field-1,32,17)
+		&:before
+			position: absolute
+			content: ''
+			top: -1px
+			left: -1px
+			right: -1px
+			bottom: -1px
+			border: 1px solid #A4ACB7
 
 .flag
 	display: inline-block
@@ -255,25 +276,33 @@ a
 
 // out
 .out
-	padding-bottom: 250px
+	padding-bottom: 342px
 	min-height: 364px
 	min-width: 100%
 	+box
 
 // header
 .header
+	position: relative
 	padding: 8px 0 5px
 	+os
 	background: $yellow
+	&:before
+		position: absolute
+		content: ''
+		bottom: 0
+		left: 0
+		right: 0
+		height: 2px
+		background: rgba(#000, .2)
 	&.is-login
 		.login
 			margin-left: 12px
-		.lang__chosen
-			background: $yellow-light
 	.header__in
 		@extend %in
 	.header__right
 		float: right
+		margin-top: 10px
 		font-size: 0
 	.lang,
 	.login
@@ -290,6 +319,11 @@ a
 		text-transform: inherit
 		+box-shadow(inset 0 -1px 0 rgba(0, 0, 0, 0.5))
 		+os
+	.logo,
+	.menu
+		float: left
+	.menu
+		margin: -8px 0 -5px 15px
 
 // lang
 .lang
@@ -304,32 +338,21 @@ a
 				+rotate(180)
 	.lang__chosen
 		position: relative
-		padding: 10px 54px 9px 12px
-		height: 35px
-		width: 133px
+		padding: 8px 24px 4px 4px
+		height: 34px
+		width: 60px
 		line-height: 1
-		overflow: hidden
-		white-space: nowrap
-		text-overflow: ellipsis
-		background: #FFFFFD
-		border: 1px solid #726738
-		border-top-color: transparent
-		border-left-color: transparent
-		border-right-color: transparent
 		+clr
 		+box
 		&:before
 			position: absolute
 			content: ''
-			right: 13px
+			right: 0
 			top: 50%
 			margin-top: -2px
-			+svg(lang-arr,10,6)
+			+svg(lang-arr,13,10)
 		.ico
-			position: absolute
-			top: 50%
-			right: 34px
-			+translate(0,-45%)
+			display: block
 	.lang__list
 		position: absolute
 		top: 100%
@@ -341,10 +364,7 @@ a
 		display: none
 	.lang__item
 		position: relative
-		padding: 5px 25px 5px 12px
-		overflow: hidden
-		white-space: nowrap
-		text-overflow: ellipsis
+		padding: 5px 25px 5px 4px
 		+clr
 		display: block
 		&:hover
@@ -358,53 +378,69 @@ a
 
 // logo
 .logo
-	margin: -6px 0 0 11px
+	margin: 2px 0 0 11px
 	vertical-align: top
 	display: inline-block
 	+svg(logo,184,42)
 
 // login
 .login
+	position: relative
+	font-size: 10px
+	&.is-error
+		.login__error
+			display: block
 	.login__col
 		margin-left: 8px
-		width: 140px
+		width: 100px
 		vertical-align: top
 		display: inline-block
 		&:first-child
 			margin-left: 0
-			width: 160px
 	.login__row
 		margin-top: 6px
 		+first
 		.checkbox
-			margin-left: 18px
+			margin-left: 2px
+	.input
+		border: none
 	.login__forgot
-		margin-left: 16px
 		line-height: 13px
+		text-decoration: underline
 		display: block
+		&:hover
+			text-decoration: none
+	.login__error
+		position: absolute
+		top: -17px
+		left: 0
+		width: 100%
+		padding-left: 22px
+		color: $red
+		font-size: 12px
+		display: none
 
 // menu
 .menu
-	background: $gray
+	font-size: 0
 	.menu__list
 		padding-left: 0
-		font-size: 0
 		@extend %in
 	.menu__iten
 		font-size: 13px
 		display: inline-block
 	a
 		padding: 0 20px
-		height: 52px
-		line-height: 56px
-		color: #fff
+		height: 77px
+		line-height: 77px
+		color: $gray
 		text-transform: uppercase
 		display: block
 		&:hover,
 		&.is-active
 			text-decoration: none
-			background: $yellow
-			color: $gray
+			background: $gray
+			color: #fff
 
 // form elements
 .form
@@ -575,8 +611,7 @@ a
 	font-size: 13px
 	display: inline-block
 	+box
-	&.btn_login,
-	&.btn_join
+	&.btn_login
 		padding: 0 18px
 		color: #fff
 		min-width: 90px
@@ -585,10 +620,15 @@ a
 		+box-shadow(inset 0 -1px 0 rgba(#000, .5))
 		+box
 		+os
-	&.btn_login
-		+darken($orange,3)
-	&.btn_join
 		+darken($gray,5)
+	// &.btn_join
+		// +darken($orange,3)
+	&.btn_join
+		margin: 8px 20px 0
+		text-decoration: underline
+		background: transparent
+		&:hover
+			text-decoration: none
 	&.btn_yellow
 		padding: 0 18px
 		height: 46px
@@ -905,7 +945,10 @@ button.btn-smsquare
 			position: relative
 			margin-left: 25px
 			z-index: 1
-			+first
+			&:first-child
+				position: relative
+				top: 4px
+				margin: 0
 // age
 .age
 	display: inline-block
@@ -1353,8 +1396,13 @@ button.btn-smsquare
 		position: absolute
 		top: 0
 		left: 0
-	.btn-square
+	.btn-smsquare
 		cursor: default
+		width: 14px	
+		height: 14px
+		font-size: 7px
+		.ico.ico_stat
+			+svg(stat,8,8)
 
 // indicators
 .indicators
@@ -1443,6 +1491,27 @@ button.btn-smsquare
 // center
 .center
 	overflow: hidden
+	min-height: 500px
+	.center__wrap
+		margin: 0 auto
+		padding: 0 10px
+		max-width: 1065px
+	.center__in
+		width: 930px
+		+box
+	h1, h2, h3
+		margin: 90px 0 40px
+		text-transform: uppercase
+		+nsb
+	h1
+		font-size: 27px
+	h2
+		font-size: 18px
+	h3
+		font-size: 14px
+	p
+		font-size: 15px
+		+ns
 
 // match
 .match
@@ -1488,15 +1557,17 @@ button.btn-smsquare
 		top: 0
 		bottom: 0
 		width: 31px
+		padding-top: 9px
 		+vertical
+	.match__center
+		vertical-align: top
+		display: inline-block
+		.ico
+			margin: 4px 0 13px
 		.btn-smsquare.is-more
 			position: relative
-			margin: 5px 0
 			top: auto
 			left: auto
-	.match__center
-		vertical-align: middle
-		display: inline-block
 	.match__row
 		position: relative
 		padding-left: 40px
@@ -1530,11 +1601,6 @@ button.btn-smsquare
 		&:before
 			top: 7px
 			left: 2px
-	.ico
-		&.ico_radon,
-		&.ico_radof
-			margin: 4px 0
-			cursor: pointer
 	.coeff
 		width: auto
 	.event
@@ -1658,6 +1724,10 @@ button.btn-smsquare
 				bottom: -1px
 				z-index: 1
 				border: 1px solid $gray
+		&.is-bd-none
+			border: none
+			&:hover
+				background: transparent
 		.coeff
 			vertical-align: middle
 			&.is-blocked
@@ -2142,7 +2212,7 @@ button.btn-smsquare
 // user
 .user
 	padding: 8px 23px 0 14px
-	height: 34px
+	height: 36px
 	border: 1px solid $yellow-dark
 	+box
 	vertical-align: top
@@ -2162,6 +2232,7 @@ button.btn-smsquare
 	max-width: 730px
 	.menu
 		margin-bottom: 25px
+		background: $gray
 	.menu__list
 		padding: 0
 		width: 100%
@@ -2174,6 +2245,14 @@ button.btn-smsquare
 		display: table-cell
 		a
 			padding: 0 18px
+			height: 52px
+			line-height: 52px
+			color: #fff
+			+ns
+			&.is-active,
+			&:hover
+				color: $gray
+				background: $yellow
 	.form
 		margin-top: 37px
 	+r(1062)
@@ -2185,7 +2264,7 @@ button.btn-smsquare
 				margin-top: 20px
 
 // title-bord
-.title-bord
+h1.title-bord, h2.title-bord, h3.title-bord
 	position: relative
 	margin: 20px 0
 	font-size: 13px
@@ -2201,6 +2280,8 @@ button.btn-smsquare
 		+translate(0,-50%)
 		height: 1px
 		background: $light-gray2
+	&.title-bord_mod
+		margin-bottom: 70px
 	span
 		position: relative
 		padding: 0 23px 0 18px
@@ -2461,8 +2542,8 @@ button.btn-smsquare
 
 // footer
 .footer
-	margin-top: -198px
-	height: 198px
+	margin-top: -290px
+	height: 290px
 	+ns
 	.footer__wrap
 		margin: 0 auto
@@ -2486,6 +2567,10 @@ button.btn-smsquare
 		position: relative
 		margin-top: 42px
 		+clr
+	.footer__img
+		margin-top: 20px
+		text-align: center
+		font-size: 0
 	.age
 		position: relative
 		float: right
@@ -2499,6 +2584,141 @@ button.btn-smsquare
 		bottom: 0
 		font-size: 10px
 		text-align: center
+
+.is-sticky 
+	position: fixed
+	z-index: 101
+	width: 292px
+	+transition(top 1s)
+
+.is-stop 
+	position: relative
+	z-index: 101
+	+transition(top 1s)
+
+// payments
+.payments
+	.btn
+		min-width: 143px
+
+// payment
+.payment
+	margin-bottom: 60px
+	width: 100%
+	font-size: 0
+	display: table
+	.payment__item
+		position: relative
+		min-width: 145px
+		font-size: 13px
+		text-align: center
+		text-transform: uppercase
+		text-decoration: none
+		display: table-cell
+		&:hover,
+		&.is-active
+			&:after
+				display: none
+			a
+				color: $gray
+				text-decoration: none
+				+background(radial-gradient(center, ellipse cover, #ffe200 0%, #fdae00 100%))
+				.ico_coupons
+					+svg(coupon-h,50,32)
+				.ico_c-card
+					+svg(credit-card-h,50,31)
+				.ico_paypal
+					+svg(paypal-h,71,21)
+				.ico_skrill
+					+svg(skrill-h,58,20)
+				.ico_web-money
+					+svg(web-money-h,25,25)
+		&.is-active
+			a
+				&:before
+					position: absolute
+					content: ''
+					left: 50%
+					top: 100%
+					+translate(-50%,0)
+					+arr(25,12,#febe00,b)
+		&:first-child
+			&:after
+				display: none
+		&:after
+			position: absolute
+			content: ''
+			top: 4px
+			left: 0
+			bottom: 4px
+			width: 1px
+			+opacity(.8)
+			+background(radial-gradient(center, ellipse cover, #717885 40%, #4a5361 80%))
+	a
+		position: relative
+		padding: 25px 20px 0
+		height: 103px
+		color: #fff
+		background: $gray
+		display: block
+		+box
+	.payment__ico
+		margin-bottom: 8px
+		height: 33px
+		line-height: 33px
+	.ico
+		vertical-align: middle
+
+// successful
+.successful
+	position: relative
+	padding: 20px 0
+	.successful__in
+		padding: 15px 5px 45px
+		border: 1px solid $green
+		background: $light-green
+	.success
+		padding-left: 40px
+		top: -25px
+		left: 50%
+		+translate(-50%, 0)
+		margin: 0
+		text-transform: uppercase
+		&.is-active
+			display: block
+		.ico
+			position: absolute
+			top: 50%
+			left: 0
+			+translate(0,-50%)
+		.success__text
+			font-size: 13px
+	.form__left
+		padding-top: 0
+	.form__right
+		+ns
+		.ico
+			margin-left: 50px
+	.form__row
+		margin-top: 30px
+
+// l-search
+.l-search
+	position: relative
+	margin: -3px 0 9px
+	.btn-search
+		position: absolute
+		top: 0
+		right: 0
+		width: 34px
+		bottom: 0
+		text-align: center
+		border-left: 1px solid #929ba9
+		background: transparent
+		.ico
+			+opacity(.8)
+	.input-white
+		border-color: #929ba9
 
 // spinner
 $spinner-color: #69717d !default

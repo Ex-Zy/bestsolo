@@ -18,56 +18,66 @@
 <!-- BEGIN  out-->
 <div class="out">
 	<!-- header -->
-	<header class="header is-login">
+	<header class="header">
 		<div class="header__in">
 			<!-- logo -->
 			<a href="#" class="logo"></a>
+			<!-- menu -->
+			<ul class="menu">
+				<li class="menu__iten"><a href="#">Live betting</a></li>
+				<li class="menu__iten"><a href="#" class="is-active">Sport betting</a></li>
+				<li class="menu__iten"><a href="#">results</a></li>
+				<li class="menu__iten"><a href="#">live scores</a></li>
+				<li class="menu__iten"><a href="#">Casinо</a></li>
+				<li class="menu__iten"><a href="#">bingo</a></li>
+			</ul>
 			<div class="header__right">
+				<!-- login -->
+				<form class="login is-error">
+					<div class="login__error">Wrong login or password</div>
+					<div class="login__col">
+						<div class="login__row">
+							<input type="text" class="input" placeholder="Login">
+						</div>
+						<div class="login__row">
+							<label class="checkbox">
+								<input type="checkbox">
+								<span>remember</span>
+							</label>
+						</div>
+					</div>
+					<div class="login__col">
+						<div class="login__row">
+							<input type="password" class="input" placeholder="password">
+						</div>
+						<div class="login__row">
+							<a href="#" class="login__forgot">forgot pasword?</a>
+						</div>
+					</div>
+					<button class="btn btn_login" type="submit">Login</button>
+					<a href="#" class="btn btn_join">Join now</a>
+				</form>
 				<!-- lang -->
 				<div class="lang">
 					<div class="lang__chosen">
-						<span>Francais</span>
 						<i class="ico ico_fr"></i>
 					</div>
 					<ul class="lang__list">
 						<li class="lang__item">
-							<span>Francais</span>
 							<i class="ico ico_fr"></i>
 						</li>
 						<li class="lang__item">
-							<span>Francais</span>
 							<i class="ico ico_fr"></i>
 						</li>
 					</ul>
 				</div>
-				<!-- login -->
-				<div class="login">
-					<!-- user -->
-					<div class="user">
-						<a href="#" class="user__name">Alexander222</a>
-						<div class="user__money">100 000 €</div>
-					</div>
-					<button class="btn btn_green" type="submit">Deposit</button>
-					<a href="#" class="btn btn_join">Logout</a>
-				</div>
 			</div>
 		</div>
 	</header>
-	<!-- menu -->
-	<div class="menu">
-		<ul class="menu__list">
-			<li class="menu__iten"><a href="#">Live betting</a></li>
-			<li class="menu__iten"><a href="#" class="is-active">Sport betting</a></li>
-			<li class="menu__iten"><a href="#">results</a></li>
-			<li class="menu__iten"><a href="#">live scores</a></li>
-			<li class="menu__iten"><a href="#">Casinо</a></li>
-			<li class="menu__iten"><a href="#">bingo</a></li>
-		</ul>
-	</div>
 	<!-- l -->
 	<div class="l">
 		<!-- l-col2 -->
-		<div class="l-col2">
+		<div class="l-col2 js-f-el">
 			<!-- wind -->
 			<div class="wind">
 				<div class="wind__top">

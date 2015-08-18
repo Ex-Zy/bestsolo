@@ -20,26 +20,19 @@
 		<div class="header__in">
 			<!-- logo -->
 			<a href="#" class="logo"></a>
+			<!-- menu -->
+			<ul class="menu">
+				<li class="menu__iten"><a href="#">Live betting</a></li>
+				<li class="menu__iten"><a href="#" class="is-active">Sport betting</a></li>
+				<li class="menu__iten"><a href="#">results</a></li>
+				<li class="menu__iten"><a href="#">live scores</a></li>
+				<li class="menu__iten"><a href="#">Casinо</a></li>
+				<li class="menu__iten"><a href="#">bingo</a></li>
+			</ul>
 			<div class="header__right">
-				<!-- lang -->
-				<div class="lang">
-					<div class="lang__chosen">
-						<span>Francais</span>
-						<i class="ico ico_fr"></i>
-					</div>
-					<ul class="lang__list">
-						<li class="lang__item">
-							<span>Francais</span>
-							<i class="ico ico_fr"></i>
-						</li>
-						<li class="lang__item">
-							<span>Francais</span>
-							<i class="ico ico_fr"></i>
-						</li>
-					</ul>
-				</div>
 				<!-- login -->
-				<form class="login">
+				<form class="login is-error">
+					<div class="login__error">Wrong login or password</div>
 					<div class="login__col">
 						<div class="login__row">
 							<input type="text" class="input" placeholder="Login">
@@ -62,20 +55,23 @@
 					<button class="btn btn_login" type="submit">Login</button>
 					<a href="#" class="btn btn_join">Join now</a>
 				</form>
+				<!-- lang -->
+				<div class="lang">
+					<div class="lang__chosen">
+						<i class="ico ico_fr"></i>
+					</div>
+					<ul class="lang__list">
+						<li class="lang__item">
+							<i class="ico ico_fr"></i>
+						</li>
+						<li class="lang__item">
+							<i class="ico ico_fr"></i>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</header>
-	<!-- menu -->
-	<div class="menu">
-		<ul class="menu__list">
-			<li class="menu__iten"><a href="#">Live betting</a></li>
-			<li class="menu__iten"><a href="#" class="is-active">Sport betting</a></li>
-			<li class="menu__iten"><a href="#">results</a></li>
-			<li class="menu__iten"><a href="#">live scores</a></li>
-			<li class="menu__iten"><a href="#">Casinо</a></li>
-			<li class="menu__iten"><a href="#">bingo</a></li>
-		</ul>
-	</div>
 	<!-- l -->
 	<div class="l">
 		<!-- col1 -->
@@ -309,7 +305,11 @@
 			</div>
 		</div>
 		<!-- l-col2 -->
-		<div class="l-col2">
+		<div class="l-col2 js-f-el">
+			<form class="l-search">
+				<input type="text" class="input-white" placeholder="SEARCH MATCHES">
+				<button class="btn-search" type="submit"><i class="ico ico_search"></i></button>
+			</form>
 			<!-- wind -->
 			<div class="wind is-radar">
 				<div class="wind__top">
@@ -673,7 +673,7 @@
 							</div>
 							<div class="is-coal">
 								<div class="col">
-									<a href="#" class="col__item">
+									<a href="#" class="col__item is-bd-none">
 										<div class="coeff">44</div>
 									</a>
 									<a href="#" class="col__item">
@@ -4533,10 +4533,10 @@
 					</div>
 					<div class="match__right">
 						<div class="match__center">
-							<!-- btn-smsquare -->
-							<button class="btn-smsquare is-more" type="button">+61</button>
 							<!-- radar on -->
 							<span class="ico ico_radon"></span>
+							<!-- btn-smsquare -->
+							<button class="btn-smsquare is-more" type="button">+61</button>
 						</div>
 					</div>
 				</div>
@@ -12016,6 +12016,9 @@
 				<div class="copy">&copy; 2015 GM Enterprises 1 Mapp Street Belize City Belize Licence nr 00785 </div>
 				<!-- age -->
 				<div class="age"></div>
+			</div>
+			<div class="footer__img">
+				<img src="img/foot-img.svg" alt="img" width="283" height="70">
 			</div>
 		</div>
 	</div>

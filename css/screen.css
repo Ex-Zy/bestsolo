@@ -78,8 +78,35 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 .ico.ico_paypal { background: url("../img/svg/paypal.svg") no-repeat 0 0; -moz-background-size: 71px 21px; -o-background-size: 71px 21px; -webkit-background-size: 71px 21px; background-size: 71px 21px; width: 71px; height: 21px; display: inline-block; }
 .ico.ico_skrill { background: url("../img/svg/skrill.svg") no-repeat 0 0; -moz-background-size: 58px 20px; -o-background-size: 58px 20px; -webkit-background-size: 58px 20px; background-size: 58px 20px; width: 58px; height: 20px; display: inline-block; }
 .ico.ico_web-money { background: url("../img/svg/web-money.svg") no-repeat 0 0; -moz-background-size: 25px 25px; -o-background-size: 25px 25px; -webkit-background-size: 25px 25px; background-size: 25px 25px; width: 25px; height: 25px; display: inline-block; }
-.ico.ico_field-1 { position: relative; background: url("../img/svg/field-1.svg") no-repeat 0 0; -moz-background-size: 32px 17px; -o-background-size: 32px 17px; -webkit-background-size: 32px 17px; background-size: 32px 17px; width: 32px; height: 17px; display: inline-block; }
-.ico.ico_field-1:before { position: absolute; content: ""; top: -1px; left: -1px; right: -1px; bottom: -1px; border: 1px solid #a4acb7; }
+.ico.ico_user-autoriz { background: url("../img/svg/user-autoriz.svg") no-repeat 0 0; -moz-background-size: 14px 19px; -o-background-size: 14px 19px; -webkit-background-size: 14px 19px; background-size: 14px 19px; width: 14px; height: 19px; display: inline-block; }
+.ico.ico_field-1 { background: url("../img/svg/field-1.svg") no-repeat 0 0; -moz-background-size: 31px 16px; -o-background-size: 31px 16px; -webkit-background-size: 31px 16px; background-size: 31px 16px; width: 31px; height: 16px; display: inline-block; }
+.ico.ico_field-2 { background: url("../img/svg/field-2.svg") no-repeat 0 0; -moz-background-size: 31px 16px; -o-background-size: 31px 16px; -webkit-background-size: 31px 16px; background-size: 31px 16px; width: 31px; height: 16px; display: inline-block; }
+.ico.ico_field-3 { background: url("../img/svg/field-3.svg") no-repeat 0 0; -moz-background-size: 31px 16px; -o-background-size: 31px 16px; -webkit-background-size: 31px 16px; background-size: 31px 16px; width: 31px; height: 16px; display: inline-block; }
+.ico.ico_field-4 { background: url("../img/svg/field-4.svg") no-repeat 0 0; -moz-background-size: 31px 16px; -o-background-size: 31px 16px; -webkit-background-size: 31px 16px; background-size: 31px 16px; width: 31px; height: 16px; display: inline-block; }
+.ico.ico_field-5 { background: url("../img/svg/field-5.svg") no-repeat 0 0; -moz-background-size: 31px 16px; -o-background-size: 31px 16px; -webkit-background-size: 31px 16px; background-size: 31px 16px; width: 31px; height: 16px; display: inline-block; }
+.ico.ico_field-6 { background: url("../img/svg/field-6.svg") no-repeat 0 0; -moz-background-size: 31px 16px; -o-background-size: 31px 16px; -webkit-background-size: 31px 16px; background-size: 31px 16px; width: 31px; height: 16px; display: inline-block; }
+.ico.ico_field-7 { background: url("../img/svg/field-7.svg") no-repeat 0 0; -moz-background-size: 31px 16px; -o-background-size: 31px 16px; -webkit-background-size: 31px 16px; background-size: 31px 16px; width: 31px; height: 16px; display: inline-block; }
+.ico.ico_field-8 { background: url("../img/svg/field-8.svg") no-repeat 0 0; -moz-background-size: 31px 16px; -o-background-size: 31px 16px; -webkit-background-size: 31px 16px; background-size: 31px 16px; width: 31px; height: 16px; display: inline-block; }
+.ico.ico_field-9 { background: url("../img/svg/field-9.svg") no-repeat 0 0; -moz-background-size: 31px 16px; -o-background-size: 31px 16px; -webkit-background-size: 31px 16px; background-size: 31px 16px; width: 31px; height: 16px; display: inline-block; }
+.ico.ico_field-10 { background: url("../img/svg/field-10.svg") no-repeat 0 0; -moz-background-size: 31px 16px; -o-background-size: 31px 16px; -webkit-background-size: 31px 16px; background-size: 31px 16px; width: 31px; height: 16px; display: inline-block; }
+.ico.ico_field-11 { background: url("../img/svg/field-11.svg") no-repeat 0 0; -moz-background-size: 31px 16px; -o-background-size: 31px 16px; -webkit-background-size: 31px 16px; background-size: 31px 16px; width: 31px; height: 16px; display: inline-block; }
+.ico.ico_field-12 { background: url("../img/svg/field-12.svg") no-repeat 0 0; -moz-background-size: 31px 16px; -o-background-size: 31px 16px; -webkit-background-size: 31px 16px; background-size: 31px 16px; width: 31px; height: 16px; display: inline-block; }
+.ico.ico_field-13 { background: url("../img/svg/field-13.svg") no-repeat 0 0; -moz-background-size: 31px 16px; -o-background-size: 31px 16px; -webkit-background-size: 31px 16px; background-size: 31px 16px; width: 31px; height: 16px; display: inline-block; }
+.ico.ico_field-14 { background: url("../img/svg/field-14.svg") no-repeat 0 0; -moz-background-size: 31px 16px; -o-background-size: 31px 16px; -webkit-background-size: 31px 16px; background-size: 31px 16px; width: 31px; height: 16px; display: inline-block; }
+.ico.ico_field-15 { background: url("../img/svg/field-15.svg") no-repeat 0 0; -moz-background-size: 31px 16px; -o-background-size: 31px 16px; -webkit-background-size: 31px 16px; background-size: 31px 16px; width: 31px; height: 16px; display: inline-block; }
+.ico.ico_field-16 { background: url("../img/svg/field-16.svg") no-repeat 0 0; -moz-background-size: 31px 16px; -o-background-size: 31px 16px; -webkit-background-size: 31px 16px; background-size: 31px 16px; width: 31px; height: 16px; display: inline-block; }
+.ico.ico_field-17 { background: url("../img/svg/field-17.svg") no-repeat 0 0; -moz-background-size: 31px 16px; -o-background-size: 31px 16px; -webkit-background-size: 31px 16px; background-size: 31px 16px; width: 31px; height: 16px; display: inline-block; }
+.ico.ico_125cc { background: url("../img/svg/125cc.svg") no-repeat 0 0; -moz-background-size: 18px 13px; -o-background-size: 18px 13px; -webkit-background-size: 18px 13px; background-size: 18px 13px; width: 18px; height: 13px; display: inline-block; }
+.ico.ico_field-hockey { background: url("../img/svg/field-hockey.svg") no-repeat 0 0; -moz-background-size: 13px 16px; -o-background-size: 13px 16px; -webkit-background-size: 13px 16px; background-size: 13px 16px; width: 13px; height: 16px; display: inline-block; }
+.ico.ico_motogp { background: url("../img/svg/motogp.svg") no-repeat 0 0; -moz-background-size: 18px 12px; -o-background-size: 18px 12px; -webkit-background-size: 18px 12px; background-size: 18px 12px; width: 18px; height: 12px; display: inline-block; }
+.ico.ico_athletics { background: url("../img/svg/athletics.svg") no-repeat 0 0; -moz-background-size: 15px 12px; -o-background-size: 15px 12px; -webkit-background-size: 15px 12px; background-size: 15px 12px; width: 15px; height: 12px; display: inline-block; }
+.ico.ico_greyhound { background: url("../img/svg/greyhound.svg") no-repeat 0 0; -moz-background-size: 14px 10px; -o-background-size: 14px 10px; -webkit-background-size: 14px 10px; background-size: 14px 10px; width: 14px; height: 10px; display: inline-block; }
+.ico.ico_schwingen { background: url("../img/svg/schwingen.svg") no-repeat 0 0; -moz-background-size: 17px 12px; -o-background-size: 17px 12px; -webkit-background-size: 17px 12px; background-size: 17px 12px; width: 17px; height: 12px; display: inline-block; }
+.ico.ico_bowls { background: url("../img/svg/bowls.svg") no-repeat 0 0; -moz-background-size: 20px 13px; -o-background-size: 20px 13px; -webkit-background-size: 20px 13px; background-size: 20px 13px; width: 20px; height: 13px; display: inline-block; }
+.ico.ico_criket { background: url("../img/svg/criket.svg") no-repeat 0 0; -moz-background-size: 16px 20px; -o-background-size: 16px 20px; -webkit-background-size: 16px 20px; background-size: 16px 20px; width: 16px; height: 20px; display: inline-block; }
+.ico.ico_boxing { background: url("../img/svg/boxing.svg") no-repeat 0 0; -moz-background-size: 16px 15px; -o-background-size: 16px 15px; -webkit-background-size: 16px 15px; background-size: 16px 15px; width: 16px; height: 15px; display: inline-block; }
+.ico.ico_golf { background: url("../img/svg/golf.svg") no-repeat 0 0; -moz-background-size: 16px 16px; -o-background-size: 16px 16px; -webkit-background-size: 16px 16px; background-size: 16px 16px; width: 16px; height: 16px; display: inline-block; }
+.ico.ico_neteller { background: url("../img/svg/neteller.svg") no-repeat 0 0; -moz-background-size: 90px 20px; -o-background-size: 90px 20px; -webkit-background-size: 90px 20px; background-size: 90px 20px; width: 90px; height: 20px; display: inline-block; }
 
 .flag { display: inline-block; }
 .flag.flag_tur { background: url("../img/svg/tur.svg") no-repeat 0 0; -moz-background-size: 14px 10px; -o-background-size: 14px 10px; -webkit-background-size: 14px 10px; background-size: 14px 10px; width: 14px; height: 10px; display: inline-block; }
@@ -127,12 +154,13 @@ a:hover { text-decoration: underline; }
 
 .login { position: relative; font-size: 10px; }
 .login.is-error .login__error { display: block; }
-.login .login__col { margin-left: 8px; width: 100px; vertical-align: top; display: inline-block; }
+.login .ico.ico_user-autoriz { position: absolute; top: 8px; left: -22px; }
+.login .login__col { position: relative; margin-left: 8px; width: 100px; vertical-align: top; display: inline-block; }
 .login .login__col:first-child { margin-left: 0; }
 .login .login__row { margin-top: 6px; }
 .login .login__row:first-child { margin: 0; }
 .login .login__row .checkbox { margin-left: 2px; }
-.login .input { border: none; }
+.login .input { border: none; background: white; }
 .login .login__forgot { line-height: 13px; text-decoration: underline; display: block; }
 .login .login__forgot:hover { text-decoration: none; }
 .login .login__error { position: absolute; top: -17px; left: 0; width: 100%; padding-left: 22px; color: #ed1c24; font-size: 12px; display: none; }
@@ -673,7 +701,8 @@ button.btn-smsquare { letter-spacing: -0.8px; }
 .search .input-white:focus { border-color: #b9c0c9; }
 
 .user { padding: 8px 23px 0 14px; height: 36px; border: 1px solid #edbc00; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; vertical-align: top; background: #ffe87c; display: inline-block; }
-.user .user__name { padding: 0 28px 0 0; }
+.user .user__name { position: relative; padding: 0 28px 0 0; }
+.user .user__name:before { position: absolute; content: ""; top: 50%; right: 6px; -moz-transform: translate(0, -50%); -ms-transform: translate(0, -50%); -webkit-transform: translate(0, -50%); transform: translate(0, -50%); background: url("../img/svg/ico-user.svg") no-repeat 0 0; -moz-background-size: 12px 15px; -o-background-size: 12px 15px; -webkit-background-size: 12px 15px; background-size: 12px 15px; width: 12px; height: 15px; display: inline-block; }
 .user .user__money { font-weight: bold; }
 .user .user__name, .user .user__money { display: inline-block; }
 
@@ -813,6 +842,7 @@ h1.title-bord span, h2.title-bord span, h3.title-bord span { position: relative;
 .payment .payment__item:hover a .ico_paypal, .payment .payment__item.is-active a .ico_paypal { background: url("../img/svg/paypal-h.svg") no-repeat 0 0; -moz-background-size: 71px 21px; -o-background-size: 71px 21px; -webkit-background-size: 71px 21px; background-size: 71px 21px; width: 71px; height: 21px; display: inline-block; }
 .payment .payment__item:hover a .ico_skrill, .payment .payment__item.is-active a .ico_skrill { background: url("../img/svg/skrill-h.svg") no-repeat 0 0; -moz-background-size: 58px 20px; -o-background-size: 58px 20px; -webkit-background-size: 58px 20px; background-size: 58px 20px; width: 58px; height: 20px; display: inline-block; }
 .payment .payment__item:hover a .ico_web-money, .payment .payment__item.is-active a .ico_web-money { background: url("../img/svg/web-money-h.svg") no-repeat 0 0; -moz-background-size: 25px 25px; -o-background-size: 25px 25px; -webkit-background-size: 25px 25px; background-size: 25px 25px; width: 25px; height: 25px; display: inline-block; }
+.payment .payment__item:hover a .ico_neteller, .payment .payment__item.is-active a .ico_neteller { background: url("../img/svg/neteller-h.svg") no-repeat 0 0; -moz-background-size: 90px 20px; -o-background-size: 90px 20px; -webkit-background-size: 90px 20px; background-size: 90px 20px; width: 90px; height: 20px; display: inline-block; }
 .payment .payment__item.is-active a:before { position: absolute; content: ""; left: 50%; top: 100%; -moz-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); width: 0px; height: 0px; border-style: solid; border-width: 12px 12.5px 0 12.5px; border-color: #febe00 transparent transparent transparent; }
 .payment .payment__item:first-child:after { display: none; }
 .payment .payment__item:after { position: absolute; content: ""; top: 4px; left: 0; bottom: 4px; width: 1px; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80); opacity: 0.8; background: -moz-radial-gradient(center, ellipse cover, #717885 40%, #4a5361 80%); background: -webkit-radial-gradient(center, ellipse cover, #717885 40%, #4a5361 80%); background: radial-gradient(center, ellipse cover, #717885 40%, #4a5361 80%); }

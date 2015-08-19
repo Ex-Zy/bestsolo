@@ -1,51 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 32.8 17.8" style="enable-background:new 0 0 32.8 17.8;" xml:space="preserve">
+	 viewBox="0 0 32 17" style="enable-background:new 0 0 32 17;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#FFFFFF;}
-	.st1{fill:#A4ACB7;}
+	.st1{fill:none;stroke:#A4ACB7;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#A4ACB7;stroke-miterlimit:10;stroke-dasharray:2,2;}
 </style>
-<g id="XMLID_65_">
-	<rect x="0.9" y="1.1" class="st0" width="31" height="16"/>
-</g>
-<g id="XMLID_64_">
-	<rect id="XMLID_90_" x="16.4" y="0.6" class="st1" width="1" height="16"/>
-</g>
-<g id="XMLID_63_">
-	<rect id="XMLID_89_" x="7.4" y="0.6" class="st1" width="1" height="16"/>
-</g>
-<g id="XMLID_62_">
-	<path id="XMLID_81_" class="st1" d="M28.4,5.6h-2v-1h2V5.6z M24.4,5.6h-2v-1h2V5.6z M20.4,5.6h-2v-1h2V5.6z M16.4,5.6h-2v-1h2V5.6z
-		 M12.4,5.6h-2v-1h2V5.6z M8.4,5.6h-2v-1h2V5.6z M4.4,5.6h-2v-1h2V5.6z"/>
-</g>
-<g id="XMLID_61_">
-	<path id="XMLID_73_" class="st1" d="M28.4,12.6h-2v-1h2V12.6z M24.4,12.6h-2v-1h2V12.6z M20.4,12.6h-2v-1h2V12.6z M16.4,12.6h-2v-1
-		h2V12.6z M12.4,12.6h-2v-1h2V12.6z M8.4,12.6h-2v-1h2V12.6z M4.4,12.6h-2v-1h2V12.6z"/>
-</g>
-<g id="XMLID_60_">
-	<rect id="XMLID_72_" x="23.4" y="0.6" class="st1" width="1" height="16"/>
-</g>
-<g id="XMLID_59_">
-	
-		<rect id="XMLID_71_" x="28.9" y="3.2" transform="matrix(0.3419 0.9397 -0.9397 0.3419 24.6713 -23.9215)" class="st1" width="1" height="4.9"/>
-</g>
-<g id="XMLID_58_">
-	
-		<rect id="XMLID_70_" x="27" y="10.2" transform="matrix(0.9395 0.3426 -0.3426 0.9395 5.4301 -9.4325)" class="st1" width="4.9" height="1"/>
-</g>
-<g id="XMLID_57_">
-	<rect id="XMLID_69_" x="28.4" y="5.6" class="st1" width="1" height="5"/>
-</g>
-<g id="XMLID_56_">
-	
-		<rect id="XMLID_68_" x="0.7" y="5.2" transform="matrix(0.9394 0.3428 -0.3428 0.9394 2.1297 -0.7424)" class="st1" width="4.9" height="1"/>
-</g>
-<g id="XMLID_55_">
-	
-		<rect id="XMLID_67_" x="2.7" y="8.2" transform="matrix(0.3419 0.9397 -0.9397 0.3419 12.0953 4.0374)" class="st1" width="1" height="4.9"/>
-</g>
-<g id="XMLID_54_">
-	<rect id="XMLID_66_" x="3.4" y="5.6" class="st1" width="1" height="5"/>
-</g>
+<rect id="XMLID_29_" x="0.5" y="0.5" class="st0" width="31" height="16"/>
+<rect id="XMLID_28_" x="0.5" y="0.5" class="st1" width="31" height="16"/>
+<line id="XMLID_27_" class="st0" x1="16.5" y1="0" x2="16.5" y2="16"/>
+<line id="XMLID_26_" class="st1" x1="16.5" y1="0" x2="16.5" y2="16"/>
+<line id="XMLID_25_" class="st0" x1="7.5" y1="0" x2="7.5" y2="16"/>
+<line id="XMLID_24_" class="st1" x1="7.5" y1="0" x2="7.5" y2="16"/>
+<line id="XMLID_23_" class="st0" x1="31" y1="4" x2="0" y2="4"/>
+<line id="XMLID_22_" class="st1" x1="31" y1="4.5" x2="30" y2="4.5"/>
+<line id="XMLID_21_" class="st2" x1="28" y1="4.5" x2="2" y2="4.5"/>
+<line id="XMLID_20_" class="st1" x1="1" y1="4.5" x2="0" y2="4.5"/>
+<line id="XMLID_19_" class="st0" x1="31" y1="12" x2="0" y2="12"/>
+<line id="XMLID_18_" class="st1" x1="31" y1="11.5" x2="30" y2="11.5"/>
+<line id="XMLID_17_" class="st2" x1="28" y1="11.5" x2="2" y2="11.5"/>
+<line id="XMLID_16_" class="st1" x1="1" y1="11.5" x2="0" y2="11.5"/>
+<line id="XMLID_15_" class="st0" x1="23.5" y1="0" x2="23.5" y2="16"/>
+<line id="XMLID_14_" class="st1" x1="23.5" y1="0" x2="23.5" y2="16"/>
+<line id="XMLID_13_" class="st0" x1="31.3" y1="4.2" x2="26.7" y2="5.9"/>
+<line id="XMLID_12_" class="st1" x1="31.3" y1="4.2" x2="26.7" y2="5.9"/>
+<line id="XMLID_11_" class="st0" x1="31.3" y1="10.9" x2="26.7" y2="9.2"/>
+<line id="XMLID_10_" class="st1" x1="31.3" y1="10.9" x2="26.7" y2="9.2"/>
+<line id="XMLID_9_" class="st0" x1="28.5" y1="5" x2="28.5" y2="10"/>
+<line id="XMLID_8_" class="st1" x1="28.5" y1="5" x2="28.5" y2="10"/>
+<line id="XMLID_7_" class="st0" x1="0.5" y1="4.2" x2="5.1" y2="5.9"/>
+<line id="XMLID_6_" class="st1" x1="0.5" y1="4.2" x2="5.1" y2="5.9"/>
+<line id="XMLID_5_" class="st0" x1="0.5" y1="10.9" x2="5.1" y2="9.2"/>
+<line id="XMLID_4_" class="st1" x1="0.5" y1="10.9" x2="5.1" y2="9.2"/>
+<line id="XMLID_3_" class="st0" x1="3.5" y1="5" x2="3.5" y2="10"/>
+<line id="XMLID_2_" class="st1" x1="3.5" y1="5" x2="3.5" y2="10"/>
 </svg>

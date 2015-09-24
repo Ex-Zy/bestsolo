@@ -82,6 +82,7 @@
 $gray: #555F6D
 $light-gray: #E6E6E6
 $light-gray2: #b9c0c9
+$light-gray3: #f4f5f7
 $yellow: #FFCE00
 $orange: #FF9D00
 $green: #36A200
@@ -281,6 +282,8 @@ $yellow-light: #ffe87c
 		+svg(golf,16,16)
 	&.ico_neteller
 		+svg(neteller,90,20)
+	&.ico_it-big
+		+svg(ico-it-big,33,23)
 
 .flag
 	display: inline-block
@@ -1465,6 +1468,9 @@ button.btn-smsquare
 	position: relative
 	padding: 0 38px 7px 0
 	font-size: 0
+	+clr
+	.indicators__right
+		float: right
 	.indicator
 		vertical-align: bottom
 		&.is-total
@@ -1521,6 +1527,22 @@ button.btn-smsquare
 	.indicator__tot
 		margin-left: 3px
 		color: $green
+	.indicator__btn
+		position: relative
+		margin-right: 6px
+		height: 10px
+		width: 10px
+		vertical-align: top
+		+border-radius(10px)
+		background: $yellow
+		display: inline-block
+		&:before
+			position: absolute
+			content: ''
+			top: 50%
+			left: 50%
+			margin: -2.5px 0 0 -2.5px
+			+svg(plus-small,5,5)
 
 // mod
 .is-stat
@@ -2129,7 +2151,7 @@ button.btn-smsquare
 			vertical-align: middle
 	tr
 		&:nth-child(even)
-			background: #f4f5f7
+			background: $light-gray3
 	.table-results
 		td
 			height: auto
@@ -2468,7 +2490,7 @@ h1.title-bord, h2.title-bord, h3.title-bord
 			background: #ebf6e6
 	.tickets__head
 		padding: 17px 0
-		background: #f4f5f7
+		background: $light-gray3
 	.tickets__th,
 	.tickets__td
 		display: table-cell
@@ -2806,7 +2828,7 @@ h1.title-bord, h2.title-bord, h3.title-bord
 // l-search
 .l-search
 	position: relative
-	margin: -3px 0 9px
+	margin: 0 0 9px
 	.btn-search
 		position: absolute
 		top: 0
@@ -2820,6 +2842,149 @@ h1.title-bord, h2.title-bord, h3.title-bord
 			+opacity(.8)
 	.input-white
 		border-color: #929ba9
+
+// slider
+.slider
+	margin-bottom: 20px
+	height: 370px
+	visibility: hidden
+	opacity: 0
+	&.is-init
+		visibility: visible
+		opacity: 1
+	.slide
+		position: relative
+		width: 100%
+		height: 370px
+		background-size: cover !important
+	.slide__bg
+		position: absolute
+		left: 0
+		top: 0
+		bottom: 0
+		width: 558px
+		background: url(../img/svg/slide-bg-in.svg) no-repeat 0 0
+		background-size: cover
+	.slide__in
+		margin-left: 106px
+		padding-top: 14px
+		width: 316px
+		color: #fff
+		text-align: center
+		+nsb
+	.slick-next,
+	.slick-prev
+		z-index: 2
+		&:hover
+			+opacity(.8)
+		&:active
+			+opacity(.6)
+		&:before
+			display: none
+	.slick-next
+		right: 33px
+		+svg(slick-next,17,28)
+	.slick-prev
+		left: 33px
+		+svg(slick-prev,17,28)
+	.champ
+		font-size: 21px
+	.teams
+		margin: 12px 0 10px
+		font-size: 42px
+	.team
+		line-height: 1
+	.vs
+		color: $yellow
+		font-size: 20px
+		line-height: 1
+	.col
+		margin-bottom: 22px
+		.col__ind:last-child .col__item,
+		.col__item
+			width: 104px
+			height: 56px
+			border-right-width: 2px
+			border-color: #444c5b
+			line-height: 56px
+			color: $gray
+	.indicator
+		margin-bottom: 15px
+		font-size: 17px
+		line-height: 20px
+		+ns
+	.coeff
+		font-size: 24px
+		width: auto
+	.btn
+		width: 100%
+		height: 62px
+		font-size: 21px
+	a.btn
+		line-height: 62px
+
+// champ
+.champ
+	.ico,
+	.champ__name,
+	.champ__time
+		vertical-align: top
+		display: inline-block
+	.champ__name,
+	.champ__time
+		line-height: 24px
+	.ico
+		margin-right: 8px
+	.champ__name
+		margin-right: 3px
+		letter-spacing: .3px
+
+// bets
+.bets
+	margin-bottom: 30px
+	.bets__in
+		border: 1px solid #d6dadf
+	.indicators
+		padding: 9px 1px 5px
+		text-transform: uppercase
+		background: $light-gray3
+		border-bottom: 1px solid #d6dadf
+	.indicator__top
+		padding: 4px 9px 4px 4px
+		font-size: 8px
+		color: #fff
+		+border-radius(19px)
+		background: $gray
+
+// theme
+.theme
+	padding: 9px
+	color: #fff
+	text-transform: uppercase
+	background: $gray
+	+nsb
+	+clr
+	.theme__status
+		float: left
+		font-size: 18px
+	.theme__view
+		float: right
+		font-size: 0
+		li
+			margin-left: 22px
+			vertical-align: top
+			font-size: 13px
+			line-height: 24px
+			display: inline-block
+			&:first-child
+				margin-left: 0
+		a
+			color: inherit
+			vertical-align: middle
+			&.is-active,
+			&:hover
+				color: $yellow
+				text-decoration: none
 
 // spinner
 $spinner-color: #69717d !default

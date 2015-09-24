@@ -53,4 +53,20 @@ head.ready(function() {
 		}
 		scrollLeftBar();
 	});
+	var slider = $('.js-slider');
+	if (slider.length) {
+		slider.each(function() {
+			var this_ = $(this);
+			slider.on('init', function(slick){
+				$(this).addClass('is-init');
+			});
+			this_.slick({
+				dots: false,
+				infinite: true,
+				speed: 500,
+				cssEase: 'linear'
+			});
+		});
+	};
+
 });

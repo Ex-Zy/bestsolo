@@ -284,6 +284,8 @@ $yellow-light: #ffe87c
 		+svg(neteller,90,20)
 	&.ico_it-big
 		+svg(ico-it-big,33,23)
+	&.ico_italy
+		+svg(ico-italy,20,14)
 
 .flag
 	display: inline-block
@@ -316,6 +318,63 @@ body
 			padding-top: 9px
 		.item__row
 			cursor: pointer
+	&.is-home-new
+		.l,
+		.header__in
+			max-width: 1442px
+		.l-col1
+			margin-right: 14px
+			width: 176px
+		.l-col2
+			margin-left: 20px
+			width: 295px
+		.nav
+			margin-top: 0
+		.wind
+			&.is-hide
+				margin-bottom: 9px
+		.wind__title
+			+nsb
+		.header
+			.btn_green
+				height: 36px
+				font-size: 13px
+				line-height: 36px
+				text-transform: uppercase
+			.lang
+				margin-left: 25px
+		.logo
+			margin-left: 5px
+		.header__right
+			margin-right: 24px
+		.menu
+			margin-left: 25px
+			+nsb
+			a
+				position: relative
+				&:before
+					position: absolute
+					content: ''
+					left: 0
+					right: 0
+					bottom: 0
+					height: 5px
+					z-index: 1
+					background: #fff
+					display: none
+				&.is-active,
+				&:hover
+					+g(#545f71, #353c47)
+					&:before
+						display: block
+		.footer	
+			padding-top: 8px
+			background: #f3f3f3
+		.footer__nav
+			padding-left: 20px
+			background: none
+			li
+				margin-left: 23px
 a
 	color: $gray
 	text-decoration: none
@@ -728,6 +787,19 @@ a
 		+border-radius(0)
 		+box-shadow(none)
 		+nsb
+	&.btn_bets
+		padding-left: 34px
+		padding-right: 34px
+		height: 42px
+		line-height: 42px
+		font-size: 12px
+	&.btn_log
+		height: 36px
+		line-height: 36px
+		font-size: 13px
+		text-transform: uppercase
+		+nsb
+		color: $gray
 	&:hover
 		+box-shadow(none)
 		text-decoration: none
@@ -750,8 +822,12 @@ button.btn
 	+svg(remove,8,8)
 .btn-turn
 	+svg(turn,10,2)
+	&.is-gray
+		+svg(turn-gray,10,2)
 .btn-close
 	+svg(close,9,9)
+	&.is-gray
+		+svg(close-gray,9,9)
 .btn-square,
 .btn-smsquare
 	position: relative
@@ -832,6 +908,45 @@ button.btn-smsquare
 	+svg(nav-star,15,14)
 	&.is-active
 		+svg(nav-star-yellow,15,14)
+
+.btn-radar
+	+svg(ico-field-green,40,20)
+
+.btn-stat
+	+svg(ico-stat-big,40,20)
+	&.is-gray
+		+svg(ico-stat-big-gray,40,20)
+
+.btn-radar-tennis
+	+svg(ico-field-tennis,40,22) 
+	&.is-yellow
+		+svg(ico-field-tennis-yel,40,22) 
+		
+
+.button-more
+	position: relative
+	width: 40px
+	height: 20px
+	line-height: 20px
+	color: #fff
+	font-size: 12px
+	+nsb
+	background: $gray
+	&.is-yellow
+		color: $gray
+		background: $yellow
+	&.is-check
+		background: $yellow
+		font-size: 0
+		&:before
+			position: absolute
+			content: ''
+			top: 50%
+			left: 50%
+			+translate(-50%,-50%)
+			+svg(more-check,16,13)
+button.button-more
+	line-height: 1
 
 // tabs
 .tabs
@@ -1024,6 +1139,11 @@ button.btn-smsquare
 		border-color: $yellow-brown
 		.wind__top
 			background: $yellow-brown
+	&.is-yellow
+		border-color: $yellow
+		.wind__top
+			color: $gray
+			background: $yellow
 	&.is-radar
 		position: relative
 		margin-bottom: 20px
@@ -1259,6 +1379,13 @@ button.btn-smsquare
 	&.is-final
 		font-size: 19px
 		line-height: 1
+ul.score
+	li
+		margin-left: 12px
+		vertical-align: top
+		display: inline-block
+		&:first-child
+			margin-left: 0
 
 // under
 .total
@@ -1507,6 +1634,27 @@ button.btn-smsquare
 		left: -27px
 		width: 106px
 		letter-spacing: -0.2px
+	&.is-tot
+		margin: 0 10px 0 0
+		.indicator__item
+			&:first-child
+				width: 46px
+	&.indicator_more
+		margin: 4px 5px 0 0
+		vertical-align: top
+		& + .indicator
+			margin: 4px 0 0
+			vertical-align: top
+	.indicator__in
+		margin-bottom: 4px
+		text-align: right
+		font-size: 0
+		.indicator__top
+			margin: 0 9px 0 0
+			left: 0
+			+translate(0,0)
+			vertical-align: top
+			display: inline-block
 	.indicator__top
 		margin-bottom: 4px
 		text-align: center
@@ -1770,6 +1918,8 @@ button.btn-smsquare
 				margin-left: 0
 				.col__item
 					margin-left: 0
+	&.is-tot
+		margin-left: 0
 	.col__item
 		width: 52px
 		height: 27px
@@ -1828,6 +1978,16 @@ button.btn-smsquare
 					width: auto
 				&:after
 					top: 46%
+	.col__total
+		width: 43px
+		height: 26px
+		color: $green
+		text-align: center
+		line-height: 26px
+		font-size: 13px
+		+nsb
+		vertical-align: top
+		display: inline-block
 	.col__ind
 		text-align: center
 		vertical-align: top
@@ -1892,6 +2052,14 @@ button.btn-smsquare
 	display: inline-block
 	&.is-red
 		background: $red
+	&.is-red-after
+		position: relative
+		&:before
+			position: absolute
+			content: ''
+			right: 0
+			bottom: 0
+			+arr(10,13,$red,br)
 
 // ml51
 .ml51
@@ -2942,23 +3110,303 @@ h1.title-bord, h2.title-bord, h3.title-bord
 // bets
 .bets
 	margin-bottom: 30px
+	&.is-tennis
+		.bet__in
+			padding: 4px 7px
+		.bet__left
+			width: 465px
+		.bet__stat
+			width: 427px
+		.bet__right
+			position: absolute
+			top: 9px
+			left: 462px
+			right: 12px
+			bottom: 9px
+			overflow: initial
+			+vertical
+		.bet__l
+			margin-top: -1px
+			vertical-align: middle
+			display: inline-block
+		.teams
+			padding-left: 35px
+			.team
+				padding-left: 82px
+				width: 202px
+				+box
+				&:first-child
+					width: 170px
+					text-align: left
+					padding: 0 55px 0 0
+		.score
+			margin: 0 0 0 -2px
+			width: 112px
+		.status	
+			position: absolute
+			top: 0
+			left: 0
+		.bet__more .button-more
+			margin-top: -10px
+		.bet__more
+			right: 50px
+		.gen
+			.score
+				margin-top: 0
+		.indicator
+			margin-left: 7px
+			&.indicator_more
+				margin-left: 14px
+		.coeff
+			&.is-blocked
+				&:before
+					border-color: #b9c0c9
+					background: #fff
+		.col__item
+			position: relative
+			&.is-active
+				border-color: $gray
+				background: #d8dde6
+				+box-shadow(inset 0 2px #ccd1d8)
+				&:before
+					position: absolute
+					content: ''
+					top: -1px
+					bottom: -1px
+					right: -1px
+					width: 1px
+					z-index: 1
+					background: $gray
+	& + .bets
+		margin-top: 38px
 	.bets__in
 		border: 1px solid #d6dadf
+		border-bottom: none
+	.bets__bot
+		padding-top: 12px
+		text-align: center
 	.indicators
-		padding: 9px 1px 5px
+		padding: 5px 2px 5px
 		text-transform: uppercase
 		background: $light-gray3
 		border-bottom: 1px solid #d6dadf
+	.indicator
+		margin-left: 11px
+		&.is-tot
+			margin-left: 0
+		&.indicator_more
+			margin: 4px 5px 0 0
+			vertical-align: top
+			& + .indicator
+				margin: 4px 0 0
+				vertical-align: top
+		.indicator__item
+			width: 51px
 	.indicator__top
+		position: relative
+		left: 50%
+		min-width: 70px
+		+translate(-50%,0)
 		padding: 4px 9px 4px 4px
 		font-size: 8px
 		color: #fff
 		+border-radius(19px)
 		background: $gray
+		display: inline-block
+		+box
+
+// bet
+.bet
+	border-bottom: 1px solid #d6dadf
+	.bet__in
+		position: relative
+		padding: 9px 12px
+		min-height: 78px
+		+box
+		+clr
+	.bet__left
+		float: left
+		width: 334px
+		+clr
+	.bet__right
+		position: relative
+		overflow: hidden
+		padding-right: 88px
+	.bet__more
+		position: absolute
+		top: 0
+		bottom: 0
+		right: 47px
+		width: 40px
+		.button-more
+			position: absolute
+			left: 0
+			top: 50%
+			margin-top: -11px
+	.bet__radar
+		position: absolute
+		right: 0
+		top: 0
+		bottom: 0
+		width: 40px
+		font-size: 0
+		+vertical
+	.bet__center
+		vertical-align: middle
+		display: inline-block
+		.btn-radar,
+		.btn-radar-tennis
+			& + .btn-stat
+				margin-top: 6px
+	.bet__inf
+		float: left
+		padding-top: 23px
+		width: 26px
+		.minute
+			position: relative
+			left: 50%
+			+translate(-50%,0)
+			margin: 0 -5px
+			color: $green
+			&:before
+				color: inherit
+	.bet__stat
+		float: left
+		width: 260px
+	.mark
+		float: right
+		width: 46px
+	.col
+		margin-left: 5px
+		&:first-child
+			margin-left: 0
+		&.is-tot
+			margin-left: 0
+	.chemp
+		position: relative
+		padding-left: 26px
+		margin-left: -26px
+		line-height: 18px
+		color: #7B8A9E
+		font-size: 12px
+		.ico
+			position: absolute
+			top: 0
+			left: 0
+	.teams,
+	.gen
+		position: relative
+		margin-top: 4px
+		font-size: 0
+	.teams
+		.team
+			&:first-child
+				text-align: right
+		.beginning
+			position: absolute
+			left: 50%
+			top: 0
+			+translate(-50%,0)
+			width: 38px
+			line-height: 20px
+	.gen
+		margin-top: 6px
+		min-height: 14px
+		.score
+			line-height: 13px
+		.set
+			position: absolute
+			top: 0
+			left: 0
+	.team,
+	.cards
+		padding-left: 23px
+		width: 50%
+		font-size: 14px
+		vertical-align: top
+		display: inline-block
+		+box
+		&:first-child
+			padding: 0 23px 0 0
+	.score
+		position: absolute
+		top: 0
+		left: 50%
+		height: inherit
+		line-height: inherit
+		font-size: 13px
+		color: $gray
+		+translate(-50%, 0)
+		&.is-goal
+			color: $green
+	.cards
+		font-size: 0
+		text-align: center
+	.card
+		margin: 0 0 0 4px
+		width: 6px
+		height: 13px
+		line-height: 13px
+		text-align: center
+		font-size: 10px
+		&:first-child
+			margin-left: 0
+		span
+			position: relative
+			z-index: 1
+	.coeff
+		margin-left: 5px
+		width: auto
+		&:first-child
+			margin-left: 0
+		&.is-down
+			&:before
+				top: 7px
+		&:before
+			left: 0
+// beginning
+.beginning
+	text-align: center
+	font-size: 14px
+	line-height: 14px
+	color: #7b8a9e
+	&.is-green
+		color: $green
+
+// set
+.set
+	font-size: 13px
+	color: #7b8a9e
+
+// serve
+.serve
+	position: absolute
+	top: 3px
+	left: 0
+	height: 12px
+	width: 12px
+	background: $yellow
+	+border-radius(50%)
+	&.is-right
+		left: auto
+		right: 0
+
+// mark
+.mark
+	font-size: 10px
+	text-align: center
+	text-transform: uppercase
+	+ns
+	.mark__name,
+	.mark__stat
+		margin-top: 6px
+		line-height: 26px
+		&:first-child
+			margin-top: 0
 
 // theme
 .theme
-	padding: 9px
+	padding: 9px 20px 9px 9px
 	color: #fff
 	text-transform: uppercase
 	background: $gray

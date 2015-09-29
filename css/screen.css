@@ -110,6 +110,7 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 .ico.ico_neteller { background: url("../img/svg/neteller.svg") no-repeat 0 0; -moz-background-size: 90px 20px; -o-background-size: 90px 20px; -webkit-background-size: 90px 20px; background-size: 90px 20px; width: 90px; height: 20px; display: inline-block; }
 .ico.ico_it-big { background: url("../img/svg/ico-it-big.svg") no-repeat 0 0; -moz-background-size: 33px 23px; -o-background-size: 33px 23px; -webkit-background-size: 33px 23px; background-size: 33px 23px; width: 33px; height: 23px; display: inline-block; }
 .ico.ico_italy { background: url("../img/svg/ico-italy.svg") no-repeat 0 0; -moz-background-size: 20px 14px; -o-background-size: 20px 14px; -webkit-background-size: 20px 14px; background-size: 20px 14px; width: 20px; height: 14px; display: inline-block; }
+.ico.ico_user { background: url("../img/svg/ico-user.svg") no-repeat 0 0; -moz-background-size: 12px 15px; -o-background-size: 12px 15px; -webkit-background-size: 12px 15px; background-size: 12px 15px; width: 12px; height: 15px; display: inline-block; }
 
 .flag { display: inline-block; }
 .flag.flag_tur { background: url("../img/svg/tur.svg") no-repeat 0 0; -moz-background-size: 14px 10px; -o-background-size: 14px 10px; -webkit-background-size: 14px 10px; background-size: 14px 10px; width: 14px; height: 10px; display: inline-block; }
@@ -122,18 +123,26 @@ body { min-width: 960px; font-size: 13px; color: #555f6d; line-height: 1.4; font
 body.is-home .l { margin-top: 16px; max-width: 1465px; }
 body.is-home .l-col1 { padding-top: 9px; }
 body.is-home .item__row { cursor: pointer; }
+body.is-home-new { min-width: 1215px; }
 body.is-home-new .l, body.is-home-new .header__in { max-width: 1442px; }
 body.is-home-new .l-col1 { margin-right: 14px; width: 176px; }
 body.is-home-new .l-col2 { margin-left: 20px; width: 295px; }
 body.is-home-new .nav { margin-top: 0; }
 body.is-home-new .wind.is-hide { margin-bottom: 9px; }
 body.is-home-new .wind__title { font-family: "NotoSans-Bold", Arial, sans-serif; font-weight: normal; }
+body.is-home-new .header { padding: 8px 0; }
 body.is-home-new .header .btn_green { height: 36px; font-size: 13px; line-height: 36px; text-transform: uppercase; }
-body.is-home-new .header .lang { margin-left: 25px; }
+body.is-home-new .header .menu { margin-bottom: -8px; }
+body.is-home-new .header__right { margin-right: 11px; }
+body.is-home-new .lang.is-open { background: #e6eaed; border: 1px solid #d5dce3; border-bottom: none; -moz-border-radius: 3px 3px 0 0; -webkit-border-radius: 3px; border-radius: 3px 3px 0 0; }
+body.is-home-new .lang.is-open .lang__chosen:before { -ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+body.is-home-new .lang .lang__chosen { position: relative; padding: 8px 38px 4px 17px; width: auto; }
+body.is-home-new .lang .lang__chosen:before { right: 12px; }
+body.is-home-new .lang .lang__list { left: -1px; right: -1px; padding-top: 1px; border-color: #d5dce3; -moz-border-radius: 0 0 3px 3px; -webkit-border-radius: 0; border-radius: 0 0 3px 3px; background: #e6eaed; }
+body.is-home-new .lang .lang__item { padding: 5px 25px 5px 17px; }
 body.is-home-new .logo { margin-left: 5px; }
-body.is-home-new .header__right { margin-right: 24px; }
 body.is-home-new .menu { margin-left: 25px; font-family: "NotoSans-Bold", Arial, sans-serif; font-weight: normal; }
-body.is-home-new .menu a { position: relative; }
+body.is-home-new .menu a { position: relative; height: 80px; }
 body.is-home-new .menu a:before { position: absolute; content: ""; left: 0; right: 0; bottom: 0; height: 5px; z-index: 1; background: white; display: none; }
 body.is-home-new .menu a.is-active, body.is-home-new .menu a:hover { background-image: -moz-linear-gradient(#545f71, #353c47); background-image: -webkit-linear-gradient(#545f71, #353c47); background-image: linear-gradient(#545f71, #353c47); }
 body.is-home-new .menu a.is-active:before, body.is-home-new .menu a:hover:before { display: block; }
@@ -174,6 +183,8 @@ a:hover { text-decoration: underline; }
 
 .login { position: relative; font-size: 10px; }
 .login.is-error .login__error { display: block; }
+.login.is-log { padding-left: 20px; }
+.login.is-log .ico { position: absolute; left: 0; top: 12px; }
 .login .ico.ico_user-autoriz { position: absolute; top: 8px; left: -22px; }
 .login .login__col { position: relative; margin-left: 8px; width: 100px; vertical-align: top; display: inline-block; }
 .login .login__col:first-child { margin-left: 0; }
@@ -260,6 +271,8 @@ a:hover { text-decoration: underline; }
 .btn.btn_mod { min-width: 75px; font-size: 10px; height: 25px; line-height: 25px; text-transform: uppercase; -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; font-family: "NotoSans-Bold", Arial, sans-serif; font-weight: normal; }
 .btn.btn_bets { padding-left: 34px; padding-right: 34px; height: 42px; line-height: 42px; font-size: 12px; }
 .btn.btn_log { height: 36px; line-height: 36px; font-size: 13px; text-transform: uppercase; font-family: "NotoSans-Bold", Arial, sans-serif; font-weight: normal; color: #555f6d; }
+.btn.btn_join-mod { height: 36px; line-height: 36px; font-size: 13px; text-decoration: underline; font-family: "NotoSans-Bold", Arial, sans-serif; font-weight: normal; color: #555f6d; }
+.btn.btn_join-mod:hover { text-decoration: none; }
 .btn:hover { -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; text-decoration: none; }
 
 button.btn { line-height: 1; }
@@ -972,7 +985,7 @@ h1.title-bord span, h2.title-bord span, h3.title-bord span { position: relative;
 .bets.is-tennis .bet__stat { width: 427px; }
 .bets.is-tennis .bet__right { position: absolute; top: 9px; left: 462px; right: 12px; bottom: 9px; overflow: initial; text-align: center; font-size: 0; }
 .bets.is-tennis .bet__right:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
-.bets.is-tennis .bet__l { margin-top: -1px; vertical-align: middle; display: inline-block; }
+.bets.is-tennis .bet__l { margin-top: -1px; width: 100%; text-align: right; vertical-align: middle; display: inline-block; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .bets.is-tennis .teams { padding-left: 35px; }
 .bets.is-tennis .teams .team { padding-left: 82px; width: 202px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .bets.is-tennis .teams .team:first-child { width: 170px; text-align: left; padding: 0 55px 0 0; }
@@ -984,6 +997,8 @@ h1.title-bord span, h2.title-bord span, h3.title-bord span { position: relative;
 .bets.is-tennis .indicator { margin-left: 7px; }
 .bets.is-tennis .indicator.indicator_more { margin-left: 14px; }
 .bets.is-tennis .coeff.is-blocked:before { border-color: #b9c0c9; background: white; }
+@media only screen and (max-width: 1322px) { .bets.is-tennis .col:nth-child(2), .bets.is-tennis .indicator:nth-child(2) { display: none; } }
+@media only screen and (max-width: 1430px) { .bets.is-tennis .col:nth-child(3), .bets.is-tennis .indicator:nth-child(3) { display: none; } }
 .bets.is-tennis .col__item { position: relative; }
 .bets.is-tennis .col__item.is-active { border-color: #555f6d; background: #d8dde6; -moz-box-shadow: inset 0 2px #ccd1d8; -webkit-box-shadow: inset 0 2px #ccd1d8; box-shadow: inset 0 2px #ccd1d8; }
 .bets.is-tennis .col__item.is-active:before { position: absolute; content: ""; top: -1px; bottom: -1px; right: -1px; width: 1px; z-index: 1; background: #555f6d; }
@@ -992,8 +1007,11 @@ h1.title-bord span, h2.title-bord span, h3.title-bord span { position: relative;
 .bets .bets__bot { padding-top: 12px; text-align: center; }
 .bets .indicators { padding: 5px 2px 5px; text-transform: uppercase; background: #f4f5f7; border-bottom: 1px solid #d6dadf; }
 .bets .indicator { margin-left: 11px; }
+@media only screen and (max-width: 1310px) { .bets .indicator:nth-child(2) { display: none; } }
 .bets .indicator.is-tot { margin-left: 0; }
+@media only screen and (max-width: 1456px) { .bets .indicator.is-tot { display: none; } }
 .bets .indicator.indicator_more { margin: 4px 5px 0 0; vertical-align: top; }
+@media only screen and (max-width: 1456px) { .bets .indicator.indicator_more { margin-left: 12px; } }
 .bets .indicator.indicator_more + .indicator { margin: 4px 0 0; vertical-align: top; }
 .bets .indicator .indicator__item { width: 51px; }
 .bets .indicator__top { position: relative; left: 50%; min-width: 70px; -moz-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); padding: 4px 9px 4px 4px; font-size: 8px; color: white; -moz-border-radius: 19px; -webkit-border-radius: 19px; border-radius: 19px; background: #555f6d; display: inline-block; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
@@ -1003,6 +1021,7 @@ h1.title-bord span, h2.title-bord span, h3.title-bord span { position: relative;
 .bet .bet__in:after { content: " "; display: table; clear: both; }
 .bet .bet__left { float: left; width: 334px; *zoom: 1; }
 .bet .bet__left:after { content: " "; display: table; clear: both; }
+.bet .bet__l { text-align: right; padding-right: 8px; }
 .bet .bet__right { position: relative; overflow: hidden; padding-right: 88px; }
 .bet .bet__more { position: absolute; top: 0; bottom: 0; right: 47px; width: 40px; }
 .bet .bet__more .button-more { position: absolute; left: 0; top: 50%; margin-top: -11px; }
@@ -1017,7 +1036,9 @@ h1.title-bord span, h2.title-bord span, h3.title-bord span { position: relative;
 .bet .mark { float: right; width: 46px; }
 .bet .col { margin-left: 5px; }
 .bet .col:first-child { margin-left: 0; }
+@media only screen and (max-width: 1310px) { .bet .col:nth-child(2) { display: none; } }
 .bet .col.is-tot { margin-left: 0; }
+@media only screen and (max-width: 1456px) { .bet .col.is-tot { display: none; } }
 .bet .chemp { position: relative; padding-left: 26px; margin-left: -26px; line-height: 18px; color: #7b8a9e; font-size: 12px; }
 .bet .chemp .ico { position: absolute; top: 0; left: 0; }
 .bet .teams, .bet .gen { position: relative; margin-top: 4px; font-size: 0; }

@@ -134,6 +134,8 @@ body.is-home-new .header { padding: 8px 0; }
 body.is-home-new .header .btn_green { height: 36px; font-size: 13px; line-height: 36px; text-transform: uppercase; }
 body.is-home-new .header .menu { margin-bottom: -8px; }
 body.is-home-new .header__right { margin-right: 11px; }
+body.is-home-new .user { margin-top: 6px; padding: 6px 12px 6px 35px; font-size: 13px; line-height: 1.2; height: auto; -moz-border-radius: 29px; -webkit-border-radius: 29px; border-radius: 29px; border: none; -moz-box-shadow: 0 1px 0 #d8ad00; -webkit-box-shadow: 0 1px 0 #d8ad00; box-shadow: 0 1px 0 #d8ad00; text-transform: uppercase; font-family: "NotoSans-Bold", Arial, sans-serif; font-weight: normal; }
+body.is-home-new .user:before { left: 13px; background: url("../img/svg/new-user.svg") no-repeat 0 0; -moz-background-size: 11px 15px; -o-background-size: 11px 15px; -webkit-background-size: 11px 15px; background-size: 11px 15px; width: 11px; height: 15px; display: inline-block; }
 body.is-home-new .lang.is-open { background: #e6eaed; border: 1px solid #d5dce3; border-bottom: none; -moz-border-radius: 3px 3px 0 0; -webkit-border-radius: 3px; border-radius: 3px 3px 0 0; }
 body.is-home-new .lang.is-open .lang__chosen:before { -ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); transform: rotate(0deg); }
 body.is-home-new .lang .lang__chosen { position: relative; padding: 8px 38px 4px 17px; width: auto; }

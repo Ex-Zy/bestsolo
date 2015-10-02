@@ -31,10 +31,27 @@
 			</ul>
 			<div class="header__right">
 				<!-- login -->
-				<form class="login is-error">
+				<div class="login is-active is-error">
 					<a href="#" class="btn btn_green">registration</a>
 					<a href="#" class="btn btn_log">login</a>
-				</form>
+					<form class="login__form">
+						<div class="login__error">E-mail/Username or password wrong.</div>
+						<div class="login__field">
+							<input class="input-white" type="text" placeholder="E-mail / Username">
+						</div>
+						<div class="login__field">
+							<input class="input-white" type="text" placeholder="Password">
+						</div>
+						<label class="checkbox">
+							<input type="checkbox">
+							<span>Remember</span>
+						</label>
+						<a href="#" class="login__forgot">forgot pasword?</a>
+						<div class="login__sub">
+							<button class="btn btn_yellow" type="submit">enter</button>
+						</div>
+					</form>
+				</div>
 				<!-- lang -->
 				<div class="lang is-active">
 					<div class="lang__chosen">

@@ -164,7 +164,7 @@ a:hover { text-decoration: underline; }
 .header .header__right { float: right; margin-top: 10px; font-size: 0; }
 .header .lang, .header .login { vertical-align: top; font-size: 13px; display: inline-block; }
 .header .lang { margin-left: 8px; }
-.header .btn { margin-left: 10px; }
+.header .btn { margin-left: 17px; }
 .header .btn.btn_green { width: auto; min-width: 90px; text-transform: inherit; -moz-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.5); -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.5); box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.5); font-family: "OpenSans", Arial, sans-serif; font-weight: normal; }
 .header .logo, .header .menu { float: left; }
 .header .menu { margin: -8px 0 -5px 15px; }
@@ -187,6 +187,7 @@ a:hover { text-decoration: underline; }
 .login.is-error .login__error { display: block; }
 .login.is-log { padding-left: 20px; }
 .login.is-log .ico { position: absolute; left: 0; top: 12px; }
+.login.is-active .login__form { display: block; }
 .login .ico.ico_user-autoriz { position: absolute; top: 8px; left: -22px; }
 .login .login__col { position: relative; margin-left: 8px; width: 100px; vertical-align: top; display: inline-block; }
 .login .login__col:first-child { margin-left: 0; }
@@ -197,6 +198,20 @@ a:hover { text-decoration: underline; }
 .login .login__forgot { line-height: 13px; text-decoration: underline; display: block; }
 .login .login__forgot:hover { text-decoration: none; }
 .login .login__error { position: absolute; top: -17px; left: 0; width: 100%; padding-left: 22px; color: #ed1c24; font-size: 12px; display: none; }
+.login .login__form { position: absolute; top: 67px; left: 0; padding: 30px 20px 17px; width: 295px; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; z-index: 3; border: 1px solid #d5dce3; background: #dfe5e9; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; display: none; }
+.login .login__form:before, .login .login__form:after { position: absolute; content: ""; left: 168px; top: -7px; -moz-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); }
+.login .login__form:before { width: 0px; height: 0px; border-style: solid; border-width: 0 7px 7px 7px; border-color: transparent transparent #d5dce4 transparent; }
+.login .login__form:after { top: -6px; width: 0px; height: 0px; border-style: solid; border-width: 0 7px 7px 7px; border-color: transparent transparent #e0e5e9 transparent; }
+.login .login__form .login__error { position: absolute; left: 0; top: 7px; }
+.login .login__form .checkbox { margin: 15px 0 0 8px; }
+.login .login__form .login__forgot { margin: 4px 0 0 8px; }
+.login .login__form .btn { margin: 0; width: 100%; height: 39px; font-size: 13px; line-height: 39px; }
+.login .login__form input { border-color: #8e96a3; }
+.login .login__form input:-moz-placeholder, .login .login__form input::-moz-placeholder { color: #b6bfca; opacity: 1; }
+.login .login__form input::-webkit-input-placeholder { color: #b6bfca; }
+.login .btn.btn_green { margin-left: 0; }
+.login .login__field { margin-bottom: 10px; }
+.login .login__sub { margin-top: 15px; }
 
 .menu { font-size: 0; }
 .menu .menu__list { padding-left: 0; }
@@ -256,14 +271,14 @@ a:hover { text-decoration: underline; }
 .checkbox span:after { position: absolute; content: ""; left: 2px; top: 2px; background: url("../img/svg/is-check.svg") no-repeat 0 0; -moz-background-size: 10px 9px; -o-background-size: 10px 9px; -webkit-background-size: 10px 9px; background-size: 10px 9px; width: 10px; height: 9px; display: inline-block; display: none; }
 
 .btn { vertical-align: top; text-align: center; font-size: 13px; display: inline-block; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-.btn.btn_login, .btn.btn_join { padding: 0 18px; color: white; min-width: 90px; height: 35px; line-height: 35px; -moz-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.5); -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.5); box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.5); -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; font-family: "OpenSans", Arial, sans-serif; font-weight: normal; }
+.btn.btn_login, .btn.btn_join { padding: 0 18px; color: white; min-width: 90px; height: 35px; line-height: 35px; -moz-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.3); -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.3); box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.3); -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; font-family: "OpenSans", Arial, sans-serif; font-weight: normal; }
 .btn.btn_login { background: #ff9d00; }
 .btn.btn_login:hover { background: #f09400; }
 .btn.btn_join { background: #555f6d; }
 .btn.btn_join:hover { background: #4a535f; }
 .btn.btn_logout { margin: 8px 10px 0 20px; text-decoration: underline; background: transparent; }
 .btn.btn_logout:hover { text-decoration: none; }
-.btn.btn_yellow { padding: 0 18px; height: 46px; line-height: 46px; color: #555f6d; font-size: 16px; text-transform: uppercase; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; -moz-box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.5); -webkit-box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.5); box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.5); background: #ffce00; font-family: "NotoSans-Bold", Arial, sans-serif; font-weight: normal; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.btn.btn_yellow { padding: 0 18px; height: 46px; line-height: 46px; color: #555f6d; font-size: 16px; text-transform: uppercase; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; -moz-box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.3); -webkit-box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.3); box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.3); background: #ffce00; font-family: "NotoSans-Bold", Arial, sans-serif; font-weight: normal; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .btn.btn_yellow:hover { background: #ffce00; }
 .btn.btn_yellow:hover:hover { background: #f0c200; }
 .btn.btn_green { padding: 0 18px; height: 34px; width: 100%; line-height: 34px; color: white; font-size: 14px; text-transform: uppercase; -moz-box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.5); -webkit-box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.5); box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.5); background: #36a200; }

@@ -160,7 +160,6 @@ a:hover { text-decoration: underline; }
 
 .header { position: relative; padding: 8px 0 5px; font-family: "OpenSans", Arial, sans-serif; font-weight: normal; background: #ffce00; }
 .header:before { position: absolute; content: ""; bottom: 0; left: 0; right: 0; height: 2px; background: rgba(0, 0, 0, 0.2); }
-.header.is-login .login { margin-left: 12px; }
 @media only screen and (max-width: 1431px) { .header .header__in { max-width: 100%; } }
 .header .header__right { float: right; margin-top: 10px; font-size: 0; }
 .header .lang, .header .login { vertical-align: top; font-size: 13px; display: inline-block; }
@@ -186,8 +185,8 @@ a:hover { text-decoration: underline; }
 
 .login { position: relative; font-size: 10px; }
 .login.is-error .login__error { display: block; }
-.login.is-log { padding-left: 20px; }
 .login.is-log .ico { position: absolute; left: 0; top: 12px; }
+.login.is-log .login + .lang { margin-left: 0; }
 .login.is-active .login__form { display: block; }
 .login .ico.ico_user-autoriz { position: absolute; top: 8px; left: -22px; }
 .login .login__col { position: relative; margin-left: 8px; width: 100px; vertical-align: top; display: inline-block; }
@@ -213,6 +212,10 @@ a:hover { text-decoration: underline; }
 .login .btn.btn_green { margin-left: 0; }
 .login .login__field { margin-bottom: 10px; }
 .login .login__sub { margin-top: 15px; }
+
+.logout { padding-left: 95px; font-family: "NotoSans-Bold", Arial, sans-serif; font-weight: normal; font-size: 11px; }
+.logout a { color: #68778e; text-decoration: underline; }
+.logout a:hover { text-decoration: none; }
 
 .menu { font-size: 0; }
 .menu .menu__list { padding-left: 0; }
@@ -806,7 +809,7 @@ ul.score li:first-child { margin-left: 0; }
 
 .user { position: relative; padding: 8px 23px 0 14px; height: 36px; border: 1px solid #edbc00; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; vertical-align: top; background: #ffe87c; display: inline-block; }
 .user:before { position: absolute; content: ""; top: 50%; left: -20px; -moz-transform: translate(0, -50%); -ms-transform: translate(0, -50%); -webkit-transform: translate(0, -50%); transform: translate(0, -50%); background: url("../img/svg/ico-user.svg") no-repeat 0 0; -moz-background-size: 12px 15px; -o-background-size: 12px 15px; -webkit-background-size: 12px 15px; background-size: 12px 15px; width: 12px; height: 15px; display: inline-block; }
-.user .user__name { position: relative; padding: 0 28px 0 0; }
+.user .user__name { position: relative; padding: 0 10px 0 0; }
 .user .user__money { font-weight: bold; }
 .user .user__name, .user .user__money { display: inline-block; }
 

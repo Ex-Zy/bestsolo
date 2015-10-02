@@ -448,9 +448,6 @@ a
 		right: 0
 		height: 2px
 		background: rgba(#000, .2)
-	&.is-login
-		.login
-			margin-left: 12px
 	.header__in
 		@extend %in
 		+r(1431)
@@ -543,11 +540,13 @@ a
 		.login__error
 			display: block
 	&.is-log
-		padding-left: 20px
 		.ico
 			position: absolute
 			left: 0
 			top: 12px
+		.login
+			& + .lang
+				margin-left: 0
 	&.is-active
 		.login__form
 			display: block
@@ -634,6 +633,16 @@ a
 	.login__sub
 		margin-top: 15px
 
+// logout
+.logout
+	padding-left: 95px
+	+nsb
+	font-size: 11px
+	a
+		color: #68778e
+		text-decoration: underline
+		&:hover
+			text-decoration: none
 
 // menu
 .menu
@@ -2618,7 +2627,7 @@ ul.score
 		+svg(ico-user,12,15)
 	.user__name
 		position: relative
-		padding: 0 28px 0 0
+		padding: 0 10px 0 0
 	.user__money
 		font-weight: bold
 	.user__name,

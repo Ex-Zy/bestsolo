@@ -288,6 +288,12 @@ $yellow-light: #ffe87c
 		+svg(ico-italy,20,14)
 	&.ico_user
 		+svg(ico-user,12,15)
+	&.ico_clock
+		+svg(ico-clock,42,42)
+	&.ico_warn
+		+svg(ico-warn,46,46)
+	&.ico_warn-white
+		+svg(ico-warn-white,46,46)
 
 .flag
 	display: inline-block
@@ -311,6 +317,8 @@ body
 	color: $gray
 	line-height: 1.4
 	+nsb
+	&.is-hidden
+		overflow: hidden
 	&.is-home
 		.l
 			margin-top: 16px
@@ -916,6 +924,19 @@ a
 		color: $gray
 		&:hover
 			text-decoration: none
+	&.btn_gray
+		padding: 0 18px
+		height: 46px
+		color: #fff
+		line-height: 46px
+		font-size: 16px
+		+nsb
+		text-transform: uppercase
+		+border-radius(2px)
+		+box-shadow(inset 0 -2px 0 rgba(#000, .3))
+		background: #444c5b
+		&:hover
+			+darken(#444c5b, 3)
 	&:hover
 		+box-shadow(none)
 		text-decoration: none
@@ -3605,6 +3626,87 @@ h1.title-bord, h2.title-bord, h3.title-bord
 			&:hover
 				color: $yellow
 				text-decoration: none
+
+.popup
+	position: fixed
+	top: 80px
+	left: 0
+	right: 0
+	bottom: 0
+	padding-top: 90px
+	color: $gray
+	z-index: 101
+	overflow-y: scroll
+	background: #fff
+	background: rgba(#fff, .5)
+	+font-smoothing(antialiased)
+	+vertical
+	.popup__wrap
+		width: 410px
+		vertical-align: top
+		display: inline-block
+	.popup__in
+		margin-top: 15px
+		padding-bottom: 40px
+		text-align: left
+		font-size: 16px
+		border: 1px solid $gray
+		background: #fff
+		&.is-red,
+		&.is-green
+			.popup__close
+				+svg(close,14,14)
+			.popup__top
+				color: #fff
+		&.is-red
+			.popup__top
+				background: $red
+		&.is-green
+			border-color: #63bd00
+			.popup__top
+				padding-left: 50px
+				background: #63bd00
+		& > .btn
+			margin: 0 60px
+			width: calc(100% - 120px)
+	.popup__top
+		position: relative
+		padding: 35px 35px 35px 85px
+		line-height: 24px
+		+nsb
+		background: $yellow
+	.popup__ico
+		position: absolute
+		width: 88px
+		top: 0
+		left: 0
+		bottom: 0
+		.ico
+			position: absolute
+			top: 50%
+			left: 50%
+			+translate(-50%,-50%)
+	.popup__close
+		position: absolute
+		top: 10px
+		right: 10px
+		+svg(close-gray,14,14)
+	.popup__text
+		padding: 28px 40px
+		min-height: 150px
+		+ns
+		+box
+		a
+			text-decoration: underline
+			&:hover
+				text-decoration: none
+	.popup__buttons
+		padding: 0 45px
+		.btn
+			min-width: 135px
+			margin-left: 33px
+			&:first-child
+				margin-left: 0
 
 // spinner
 $spinner-color: #69717d !default

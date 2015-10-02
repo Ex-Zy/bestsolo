@@ -321,7 +321,6 @@ body
 		.item__row
 			cursor: pointer
 	&.is-home-new
-		min-width: 1215px
 		.l,
 		.header__in
 			max-width: 1442px
@@ -580,7 +579,6 @@ a
 		position: absolute
 		top: -17px
 		left: 0
-		width: 100%
 		padding-left: 22px
 		color: $red
 		font-size: 12px
@@ -1189,7 +1187,8 @@ button.button-more
 				+rotate(180)
 	.drop__check
 		position: relative
-		padding: 9px 20px 8px 35px
+		padding: 9px 20px 8px 0
+		text-align: center
 		cursor: pointer
 		overflow: hidden
 		white-space: nowrap
@@ -3233,15 +3232,23 @@ h1.title-bord, h2.title-bord, h3.title-bord
 		.bet__in
 			padding: 4px 7px
 		.bet__left
-			width: 465px
+			width: 456px
+			+r(1430)
+				margin-right: 315px
+				width: auto
+			+r(1322)
+				margin-right: 208px
 		.bet__stat
 			width: 427px
+			+r(1430)
+				width: 100%
 		.bet__right
 			position: absolute
 			top: 9px
 			left: 462px
 			right: 12px
 			bottom: 9px
+			width: auto
 			overflow: initial
 			+vertical
 		.bet__l
@@ -3261,9 +3268,15 @@ h1.title-bord, h2.title-bord, h3.title-bord
 					width: 170px
 					text-align: left
 					padding: 0 55px 0 0
+					+r(1430)
+						width: 50%
+				+r(1430)
+					width: 50%
 		.score
 			margin: 0 0 0 -2px
 			width: 112px
+			+r(1430)
+				margin-left: 35px
 		.status	
 			position: absolute
 			top: 0
@@ -3276,9 +3289,11 @@ h1.title-bord, h2.title-bord, h3.title-bord
 			.score
 				margin-top: 0
 		.indicator
-			margin-left: 7px
+			margin-left: 6px
 			&.indicator_more
-				margin-left: 14px
+				margin-left: 8px
+				+r(1430)
+					margin-left: 13px
 		.coeff
 			&.is-blocked
 				&:before
@@ -3362,16 +3377,21 @@ h1.title-bord, h2.title-bord, h3.title-bord
 		+box
 		+clr
 	.bet__left
-		float: left
-		width: 334px
+		overflow: hidden
 		+clr
 	.bet__l
 		text-align: right
 		padding-right: 8px
 	.bet__right
 		position: relative
-		overflow: hidden
+		float: right
+		width: 557px
 		padding-right: 88px
+		+box
+		+r(1456)
+			width: 412px
+		+r(1310)
+			width: 252px
 	.bet__more
 		position: absolute
 		top: 0
@@ -3413,6 +3433,8 @@ h1.title-bord, h2.title-bord, h3.title-bord
 	.bet__stat
 		float: left
 		width: 260px
+		+r(1456)
+			width: 78%
 	.mark
 		float: right
 		width: 46px
@@ -3433,6 +3455,9 @@ h1.title-bord, h2.title-bord, h3.title-bord
 		margin-left: -26px
 		line-height: 18px
 		color: #7B8A9E
+		white-space: nowrap
+		overflow: hidden
+		text-overflow: ellipsis
 		font-size: 12px
 		.ico
 			position: absolute
@@ -3445,6 +3470,9 @@ h1.title-bord, h2.title-bord, h3.title-bord
 		font-size: 0
 	.teams
 		.team
+			white-space: nowrap
+			overflow: hidden
+			text-overflow: ellipsis
 			&:first-child
 				text-align: right
 		.beginning

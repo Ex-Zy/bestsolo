@@ -1061,7 +1061,7 @@ h1.title-bord span, h2.title-bord span, h3.title-bord span { position: relative;
 .bet .bet__inf { float: left; padding-top: 23px; width: 26px; }
 .bet .bet__inf .minute { position: relative; left: 50%; -moz-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); margin: 0 -5px; color: #36a200; }
 .bet .bet__inf .minute:before { color: inherit; }
-.bet .bet__stat { float: left; width: 246px; }
+.bet .bet__stat { float: left; width: 243px; }
 @media only screen and (max-width: 1420px) { .bet .bet__stat { width: 78%; } }
 .bet .mark { float: right; width: 46px; }
 .bet .col { margin-left: 5px; }

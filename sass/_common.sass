@@ -96,8 +96,6 @@ $yellow-light: #ffe87c
 // ico
 .ico
 	display: inline-block
-	&.ico_fr
-		+svg(fr,32,22)
 	&.ico_pay
 		+svg(pay,53,15)
 	&.ico_mc
@@ -188,6 +186,21 @@ $yellow-light: #ffe87c
 		width: 10px
 		height: 15px
 		background: $red
+	&.ico_yr-card
+		width: 10px
+		height: 15px
+		position: relative
+		background: $yellow
+		&:before
+			position: absolute
+			content: ""
+			right: 0
+			bottom: 0
+			width: 0px
+			height: 0px
+			border-style: solid
+			border-width: 0 0 15px 10px
+			border-color: transparent transparent $red transparent
 	&.ico_error
 		position: relative
 		width: 22px
@@ -282,17 +295,10 @@ $yellow-light: #ffe87c
 		+svg(golf,16,16)
 	&.ico_neteller
 		+svg(neteller,90,20)
-	&.ico_it-big
-		+svg(ico-it-big,33,23)
-	&.ico_italy
-		+svg(ico-italy,20,14)
+	&.ico_bank
+		+svg(bank,50,35)
 	&.ico_user
 		+svg(ico-user,12,15)
-
-.flag
-	display: inline-block
-	&.flag_tur
-		+svg(tur,14,10)
 
 .in
 	margin: 0 auto
@@ -366,7 +372,7 @@ body
 		.lang
 			&.is-open
 				background: #e6eaed
-				border: 1px solid #d5dce3
+				//border: 1px solid #d5dce3
 				border-bottom: none
 				+border-radius(3px 3px 0 0)
 				.lang__chosen
@@ -389,27 +395,28 @@ body
 				padding: 5px 25px 5px 17px
 		.logo
 			margin-left: 5px
-		.menu
-			margin-left: 25px
-			+nsb
-			a
-				position: relative
-				height: 80px
-				&:before
-					position: absolute
-					content: ''
-					left: 0
-					right: 0
-					bottom: 0
-					height: 5px
-					z-index: 1
-					background: #fff
-					display: none
-				&.is-active,
-				&:hover
-					+g(#545f71, #353c47)
+		.header
+			.menu
+				margin-left: 25px
+				+nsb
+				a
+					position: relative
+					height: 80px
 					&:before
-						display: block
+						position: absolute
+						content: ''
+						left: 0
+						right: 0
+						bottom: 0
+						height: 5px
+						z-index: 1
+						background: #fff
+						display: none
+					&.is-active,
+					&:hover
+						+g(#545f71, #353c47)
+						&:before
+							display: block
 		.footer	
 			padding-top: 8px
 			background: #f3f3f3
@@ -564,6 +571,8 @@ a
 		+first
 		.checkbox
 			margin-left: 2px
+			position: absolute
+			white-space: nowrap
 	.input
 		border: none
 		background: #fff
@@ -571,6 +580,8 @@ a
 		line-height: 13px
 		text-decoration: underline
 		display: block
+		position: absolute
+		white-space: nowrap
 		&:hover
 			text-decoration: none
 	.login__error
@@ -593,7 +604,7 @@ a
 		font-size: 13px
 		display: inline-block
 	a
-		padding: 0 20px
+		padding: 0 10px
 		height: 77px
 		line-height: 77px
 		color: $gray
@@ -716,7 +727,7 @@ a
 	left: 100%
 	margin-left: 45px
 	padding: 8px
-	min-width: 159px
+	min-width: 250px
 	text-align: center
 	color: $red
 	background: #ffe6e5
@@ -1271,6 +1282,11 @@ button.button-more
 		margin-top: 5px
 		+first
 
+.betting-slip .wind__top
+	padding-right: 15px
+	.date, .time
+		float: right
+
 // item
 .item
 	margin: 5px 0
@@ -1395,9 +1411,6 @@ button.button-more
 .minute
 	color: $light-blue
 	font-size: 13px
-	&:before
-		content: "'"
-		color: $gray
 
 // teams
 .teams
@@ -1603,18 +1616,19 @@ ul.score
 	display: inline-block
 
 // operation
-.operation
-	padding: 26px 30px
-	text-align: center
-	font-size: 14px
-	border-top: 1px solid $light-gray2
-	.btn
-		margin-bottom: 15px
-		width: 100%
-	a
-		text-decoration: underline
-		&:hover
-			text-decoration: none
+//.operation
+//	padding: 26px 30px
+//	text-align: center
+//	font-size: 14px
+//	border-top: 1px solid $light-gray2
+//	.btn
+//		margin-bottom: 15px
+//		width: 100%
+//	a
+//		text-decoration: underline
+//		&:hover
+//			text-decoration: none
+
 // field
 .field
 	display: block
@@ -1922,15 +1936,8 @@ ul.score
 
 // preloader
 .preloader
-	position: absolute
-	top: -2px
-	left: -1px
-	right: -1px
-	bottom: -1px
-	z-index: 2
 	text-transform: uppercase
 	+nsb
-	border: 1px solid $gray
 	background: #fff
 	display: none
 	+vertical
@@ -2318,6 +2325,9 @@ ul.score
 					td
 						&:first-child
 							padding-left: 0
+					tr
+						&:first-child
+							display: none
 	th,
 	td
 		border-bottom: 1px solid $light-gray2
@@ -2674,6 +2684,9 @@ h1.title-bord, h2.title-bord, h3.title-bord
 	.form__right
 		float: right
 		width: 457px
+		overflow: visible
+	.form__col
+		width: 457px
 
 // rader
 .radar
@@ -2936,12 +2949,10 @@ h1.title-bord, h2.title-bord, h3.title-bord
 	position: fixed
 	z-index: 101
 	width: 292px
-	+transition(top 1s)
 
 .is-stop 
 	position: relative
 	z-index: 101
-	+transition(top 1s)
 
 // payments
 .payments
@@ -2954,43 +2965,44 @@ h1.title-bord, h2.title-bord, h3.title-bord
 	width: 100%
 	font-size: 0
 	display: table
-	.payment__item
+	li
 		position: relative
 		min-width: 145px
 		font-size: 13px
 		text-align: center
 		text-transform: uppercase
 		text-decoration: none
-		display: table-cell
+		display: table-cell		
+	.payment__item
 		&:hover,
 		&.is-active
 			&:after
 				display: none
-			a
-				color: $gray
-				text-decoration: none
-				+background(radial-gradient(center, ellipse cover, #ffe200 0%, #fdae00 100%))
-				.ico_coupons
-					+svg(coupon-h,50,32)
-				.ico_c-card
-					+svg(credit-card-h,50,31)
-				.ico_paypal
-					+svg(paypal-h,71,21)
-				.ico_skrill
-					+svg(skrill-h,58,20)
-				.ico_web-money
-					+svg(web-money-h,25,25)
-				.ico_neteller
-					+svg(neteller-h,90,20)
+			color: $gray
+			text-decoration: none
+			+background(radial-gradient(center, ellipse cover, #ffe200 0%, #fdae00 100%))
+			.ico_coupons
+				+svg(coupon-h,50,32)
+			.ico_c-card
+				+svg(credit-card-h,50,31)
+			.ico_paypal
+				+svg(paypal-h,71,21)
+			.ico_skrill
+				+svg(skrill-h,58,20)
+			.ico_web-money
+				+svg(web-money-h,25,25)
+			.ico_neteller
+				+svg(neteller-h,90,20)
+			.ico_bank
+				+svg(bank-h,50,35)
 		&.is-active
-			a
-				&:before
-					position: absolute
-					content: ''
-					left: 50%
-					top: 100%
-					+translate(-50%,0)
-					+arr(25,12,#febe00,b)
+			&:before
+				position: absolute
+				content: ''
+				left: 50%
+				top: 100%
+				+translate(-50%,0)
+				+arr(25,12,#febe00,b)
 		&:first-child
 			&:after
 				display: none
@@ -3374,9 +3386,13 @@ h1.title-bord, h2.title-bord, h3.title-bord
 		color: #7B8A9E
 		font-size: 12px
 		.ico
-			position: absolute
+			+bg-size(20px, 14px)
+			width: 20px
+			height: 14px
 			top: 0
 			left: 0
+			position: absolute
+			display: inline-block
 	.teams,
 	.gen
 		position: relative
@@ -3448,6 +3464,10 @@ h1.title-bord, h2.title-bord, h3.title-bord
 				top: 7px
 		&:before
 			left: 0
+	&.is-open
+		.more
+			display: block
+
 // beginning
 .beginning
 	text-align: center
@@ -3624,108 +3644,3 @@ $spinner-size: 29px !default
 		padding: 0
 		border: none
 		background: none
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

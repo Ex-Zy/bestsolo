@@ -637,6 +637,12 @@ ul.score li:first-child { margin-left: 0; }
 @media only screen and (max-width: 1443px) { .match .is-total + .is-total { display: none; } }
 @media only screen and (max-width: 1204px) { .match .is-coal { display: none; } }
 
+.preloader { text-transform: uppercase; font-family: "NotoSans-Bold", Arial, sans-serif; font-weight: normal; background: #fff; display: none; text-align: center; font-size: 0; }
+.preloader:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
+.preloader.is-active { display: block; }
+.preloader .preloader__in { font-size: 12px; vertical-align: middle; display: inline-block; }
+.preloader .sp-ico { margin-bottom: 0; }
+
 .row { margin-top: 7px; font-size: 0; }
 .row:first-child { margin: 0; }
 

@@ -305,6 +305,12 @@ $yellow-light: #ffe87c
 		+svg(ico-warn,46,46)
 	&.ico_warn-white
 		+svg(ico-warn-white,46,46)
+	&.ico_fr
+		+svg(fr,32,22)
+	&.ico_it-big
+		+svg(ico-it-big,33,23)
+	&.ico_italy
+		+svg(ico-italy,20,14)
 
 .in
 	margin: 0 auto
@@ -318,7 +324,7 @@ $yellow-light: #ffe87c
 	@extend .in
 
 body
-	min-width: 1280px
+	min-width: 1262px
 	font-size: 13px
 	color: $gray
 	line-height: 1.4
@@ -589,7 +595,7 @@ a
 		line-height: 13px
 		text-decoration: underline
 		display: block
-		position: absolute
+		overflow: hidden
 		white-space: nowrap
 		&:hover
 			text-decoration: none
@@ -608,11 +614,13 @@ a
 		padding: 30px 20px 17px
 		width: 295px
 		+border-radius(2px)
-		z-index: 3
+		z-index: 102
 		border: 1px solid #d5dce3
 		background: #dfe5e9
 		+box
 		display: none
+		+r(1500)
+			left: -32px
 		&:before,
 		&:after
 			position: absolute
@@ -620,6 +628,8 @@ a
 			left: 168px
 			top: -7px
 			+translate(-50%,0)
+			+r(1500)
+				left: 200px
 		&:before
 			+arr(14,7,#d5dce4,t)
 		&:after
@@ -1080,6 +1090,7 @@ button.btn-smsquare
 	font-size: 12px
 	+nsb
 	background: $gray
+	display: inline-block
 	&.is-yellow
 		color: $gray
 		background: $yellow
@@ -1696,18 +1707,20 @@ ul.score
 	display: inline-block
 
 // operation
-//.operation
-//	padding: 26px 30px
-//	text-align: center
-//	font-size: 14px
-//	border-top: 1px solid $light-gray2
-//	.btn
-//		margin-bottom: 15px
-//		width: 100%
-//	a
-//		text-decoration: underline
-//		&:hover
-//			text-decoration: none
+.operation
+	padding: 26px 30px
+	text-align: center
+	font-size: 14px
+	border-top: 1px solid $light-gray2
+	+box
+	.btn.btn_yellow
+		margin: 0 0 15px
+		padding: 0 20px
+		width: 100%
+	a
+		text-decoration: underline
+		&:hover
+			text-decoration: none
 
 // field
 .field
@@ -1718,10 +1731,10 @@ ul.score
 .legend
 	position: relative
 	padding-left: 45px
-	height: 15px
+	height: 16px
 	font-size: 10px
 	text-transform: uppercase
-	line-height: 15px
+	line-height: 16px
 	+ns
 	.legend__left
 		font-size: 0
@@ -1741,6 +1754,13 @@ ul.score
 		font-size: 7px
 		.ico.ico_stat
 			+svg(stat,8,8)
+	.btn-stat
+		+svg(ico-stat-big,31,16)
+	.button-more
+		width: 31px
+		height: 16px
+		line-height: 16px
+		font-size: 8px
 
 // indicators
 .indicators
@@ -3268,7 +3288,7 @@ h1.title-bord, h2.title-bord, h3.title-bord
 			+r(1420)
 				margin-right: 315px
 				width: auto
-			+r(1302)
+			+r(1304)
 				margin-right: 208px
 		.bet__stat
 			width: 427px
@@ -3334,7 +3354,7 @@ h1.title-bord, h2.title-bord, h3.title-bord
 		.col,
 		.indicator
 			&:nth-child(2)
-				+r(1302)
+				+r(1304)
 					display: none
 			&:nth-child(3)
 				+r(1420)
@@ -3370,7 +3390,7 @@ h1.title-bord, h2.title-bord, h3.title-bord
 	.indicator
 		margin-left: 11px
 		&:nth-child(2)
-			+r(1302)
+			+r(1304)
 				display: none
 		&.is-tot
 			margin-left: 0
@@ -3422,7 +3442,7 @@ h1.title-bord, h2.title-bord, h3.title-bord
 		+box
 		+r(1420)
 			width: 412px
-		+r(1302)
+		+r(1304)
 			width: 252px
 	.bet__more
 		position: absolute
@@ -3475,7 +3495,7 @@ h1.title-bord, h2.title-bord, h3.title-bord
 		&:first-child
 			margin-left: 0
 		&:nth-child(2)
-			+r(1302)
+			+r(1304)
 				display: none
 		&.is-tot
 			margin-left: 0

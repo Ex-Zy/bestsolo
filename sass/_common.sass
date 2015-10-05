@@ -2189,6 +2189,7 @@ ul.score
 .more
 	display: none
 	.more__field
+		position: relative
 		padding: 1px 0 8px
 		border-bottom: 1px solid $light-gray2
 		+clr
@@ -2808,6 +2809,9 @@ h1.title-bord, h2.title-bord, h3.title-bord
 		#document
 			.sr-widgets-lmts > .sr-content
 				min-width: 100% !important
+	.radar__in
+		margin: 0 auto 30px
+		width: 516px
 
 // tickets
 .tickets
@@ -3456,17 +3460,33 @@ h1.title-bord, h2.title-bord, h3.title-bord
 			width: 60px
 		.gen
 			min-height: 16px
-		.bet__stat
-			position: relative
-			padding-left: 45px
-			width: 52%
-			+box
 		.minute
 			position: absolute
 			content: ''
 			top: 0
 			left: 0
+			color: #7B8A9E
 			font-size: 22px
+			line-height: 1
+			&:before
+				content: "'"
+		.bet__in
+			padding-left: 0
+		.bet__stat
+			position: relative
+			padding-left: 45px
+			width: 67%
+			+box
+			+r(1426)
+				width: 62%
+			+r(1333)
+				width: 59%
+		.bet__right
+			margin-top: 4px
+			padding: 0
+			width: 20%
+		.bet__radar
+			position: relative
 	.bet__in
 		position: relative
 		padding: 9px 12px
@@ -3653,6 +3673,10 @@ h1.title-bord, h2.title-bord, h3.title-bord
 	.more__field
 		border-top: 1px solid #b9c0c9
 		border-bottom: none
+	.preloader
+		top: -1px
+		bottom: -1px
+		border: 1px solid $gray
 
 // beginning
 .beginning

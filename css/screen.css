@@ -682,7 +682,7 @@ ul.score li:first-child { margin-left: 0; }
 .col .col__ind .indicator { display: block; }
 
 .more { display: none; }
-.more .more__field { padding: 1px 0 8px; border-bottom: 1px solid #b9c0c9; *zoom: 1; }
+.more .more__field { position: relative; padding: 1px 0 8px; border-bottom: 1px solid #b9c0c9; *zoom: 1; }
 .more .more__field:after { content: " "; display: table; clear: both; }
 .more .more__left { float: left; padding-right: 26px; text-align: right; width: 50%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .more .more__right { float: right; padding: 0 120px 0 22px; width: 50%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
@@ -857,6 +857,7 @@ h1.title-bord span, h2.title-bord span, h3.title-bord span { position: relative;
 .support .form__col { width: 457px; }
 
 .radar iframe #document .sr-widgets-lmts > .sr-content { min-width: 100% !important; }
+.radar .radar__in { margin: 0 auto 30px; width: 516px; }
 
 .tickets .is-green { color: #36a200; }
 .tickets .is-mob { display: none; }
@@ -1069,8 +1070,14 @@ h1.title-bord span, h2.title-bord span, h3.title-bord span { position: relative;
 .bet.is-popen-more .team:first-child { padding: 0 32px 0 0; }
 .bet.is-popen-more .score { width: 60px; }
 .bet.is-popen-more .gen { min-height: 16px; }
-.bet.is-popen-more .bet__stat { position: relative; padding-left: 45px; width: 52%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-.bet.is-popen-more .minute { position: absolute; content: ""; top: 0; left: 0; font-size: 22px; }
+.bet.is-popen-more .minute { position: absolute; content: ""; top: 0; left: 0; color: #7b8a9e; font-size: 22px; line-height: 1; }
+.bet.is-popen-more .minute:before { content: "'"; }
+.bet.is-popen-more .bet__in { padding-left: 0; }
+.bet.is-popen-more .bet__stat { position: relative; padding-left: 45px; width: 67%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+@media only screen and (max-width: 1426px) { .bet.is-popen-more .bet__stat { width: 62%; } }
+@media only screen and (max-width: 1333px) { .bet.is-popen-more .bet__stat { width: 59%; } }
+.bet.is-popen-more .bet__right { margin-top: 4px; padding: 0; width: 20%; }
+.bet.is-popen-more .bet__radar { position: relative; }
 .bet .bet__in { position: relative; padding: 9px 12px; min-height: 78px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; *zoom: 1; }
 .bet .bet__in:after { content: " "; display: table; clear: both; }
 .bet .bet__left { overflow: hidden; *zoom: 1; }
@@ -1122,6 +1129,7 @@ h1.title-bord span, h2.title-bord span, h3.title-bord span { position: relative;
 .bet.is-open .more { display: block; }
 .bet .more { border-bottom: none; display: block; }
 .bet .more__field { border-top: 1px solid #b9c0c9; border-bottom: none; }
+.bet .preloader { top: -1px; bottom: -1px; border: 1px solid #555f6d; }
 
 .beginning { text-align: center; font-size: 14px; line-height: 14px; color: #7b8a9e; }
 .beginning.is-green { color: #36a200; }

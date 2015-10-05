@@ -203,7 +203,6 @@ a:hover { text-decoration: underline; }
 .login .login__error { position: absolute; top: -17px; left: 0; padding-left: 22px; color: #ed1c24; font-size: 12px; display: none; }
 .login .login__form { position: absolute; top: 67px; left: 0; padding: 30px 20px 17px; width: 295px; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; z-index: 102; border: 1px solid #d5dce3; background: #dfe5e9; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; display: none; }
 .login .login__form:before, .login .login__form:after { position: absolute; content: ""; left: 168px; top: -7px; -moz-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); }
-@media only screen and (max-width: 1500px) { .login .login__form:before, .login .login__form:after { left: 200px; } }
 .login .login__form:before { width: 0px; height: 0px; border-style: solid; border-width: 0 7px 7px 7px; border-color: transparent transparent #d5dce4 transparent; }
 .login .login__form:after { top: -6px; width: 0px; height: 0px; border-style: solid; border-width: 0 7px 7px 7px; border-color: transparent transparent #e0e5e9 transparent; }
 .login .login__form .login__error { position: absolute; left: 0; top: 7px; }

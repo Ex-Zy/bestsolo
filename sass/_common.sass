@@ -543,6 +543,11 @@ a
 		&:hover
 			color: #fff
 			background: $orange
+	.lang
+		.flag
+			width: 32px
+			height: 22px
+			background-size: cover
 
 // logo
 .logo
@@ -657,8 +662,9 @@ a
 
 // logout
 .logout
-	padding-left: 95px
+	padding-left: 35px
 	+nsb
+	text-align: center
 	font-size: 11px
 	a
 		color: #68778e
@@ -1185,6 +1191,8 @@ button.button-more
 				display: none
 		&:hover
 			background: #dfe4ea
+		span
+			word-break: break-all
 	.ico
 		position: absolute
 		left: 13px
@@ -2032,6 +2040,12 @@ ul.score
 
 // preloader
 .preloader
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	z-index: 1
 	text-transform: uppercase
 	+nsb
 	background: #fff
@@ -2652,6 +2666,10 @@ ul.score
 		padding-right: 34px
 		&:focus
 			border-color: $light-gray2
+
+.user-wr
+	display: inline-block
+	vertical-align: top
 
 // user
 .user
@@ -3342,11 +3360,6 @@ h1.title-bord, h2.title-bord, h3.title-bord
 				margin-left: 8px
 				+r(1410)
 					margin-left: 13px
-		.coeff
-			&.is-blocked
-				&:before
-					border-color: #b9c0c9
-					background: #fff
 		.col,
 		.indicator
 			&:nth-child(2)
@@ -3418,6 +3431,42 @@ h1.title-bord, h2.title-bord, h3.title-bord
 // bet
 .bet
 	border-bottom: 1px solid #d6dadf
+	&.is-popen-more
+		.sort,
+		.chemp
+			float: left
+		.chemp
+			margin-left: 5px
+			width: 148px
+			font-size: 11px
+			white-space: nowrap
+			overflow: hidden
+			text-overflow: ellipsis
+		.teams
+			margin-top: 0
+		.team,
+		.score
+			line-height: 1
+			font-size: 22px
+		.team
+			padding-left: 32px
+			&:first-child
+				padding: 0 32px 0 0
+		.score
+			width: 60px
+		.gen
+			min-height: 16px
+		.bet__stat
+			position: relative
+			padding-left: 45px
+			width: 52%
+			+box
+		.minute
+			position: absolute
+			content: ''
+			top: 0
+			left: 0
+			font-size: 22px
 	.bet__in
 		position: relative
 		padding: 9px 12px
@@ -3483,6 +3532,8 @@ h1.title-bord, h2.title-bord, h3.title-bord
 		width: 243px
 		+r(1420)
 			width: 78%
+		+r(1304)
+			width: 84%
 	.mark
 		float: right
 		width: 46px
@@ -3589,9 +3640,19 @@ h1.title-bord, h2.title-bord, h3.title-bord
 				top: 7px
 		&:before
 			left: 0
+		&.is-blocked
+			&:before
+				border-color: #b9c0c9
+				background: #fff
 	&.is-open
 		.more
 			display: block
+	.more
+		border-bottom: none
+		display: block
+	.more__field
+		border-top: 1px solid #b9c0c9
+		border-bottom: none
 
 // beginning
 .beginning
@@ -3850,3 +3911,25 @@ $spinner-size: 29px !default
 		padding: 0
 		border: none
 		background: none
+
+// back
+.back
+	.back__link
+		font-size: 11px
+		+nsb
+		color: #7B8A9E
+		text-decoration: underline
+
+// sort
+.sort
+	font-size: 11px
+	color: #7B8A9E
+	.sort__name
+		width: 36px
+		white-space: nowrap
+		overflow: hidden
+		text-overflow: ellipsis
+		vertical-align: top
+		display: inline-block
+	.ico
+		margin-right: 5px

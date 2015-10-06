@@ -684,10 +684,19 @@ ul.score li:first-child { margin-left: 0; }
 .more { display: none; }
 .more .more__field { position: relative; padding: 1px 0 8px; border-bottom: 1px solid #b9c0c9; *zoom: 1; }
 .more .more__field:after { content: " "; display: table; clear: both; }
+.more .more__field + .more__wrap { margin-top: 0; }
 .more .more__left { float: left; padding-right: 26px; text-align: right; width: 50%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .more .more__right { float: right; padding: 0 120px 0 22px; width: 50%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 @media only screen and (max-width: 1431px) { .more .more__right { padding-right: 1px; } }
+.more .more__wrap { margin-top: 3px; }
+.more .more__wrap.is-active + .more__wrap { margin-top: 0; }
+.more .more__wrap.is-active .more__topic { color: white; background: #555f6d; }
+.more .more__wrap.is-active .arr-more { width: 0px; height: 0px; border-style: solid; border-width: 4px 2.5px 0 2.5px; border-color: white transparent transparent transparent; }
+.more .more__wrap.is-active .more__in { display: block; }
 .more .more__text { margin-top: 22px; letter-spacing: -0.1px; }
+.more .more__topic { position: relative; padding: 12px 14px 12px 40px; cursor: pointer; text-transform: uppercase; background: #e4e7ea; }
+.more .more__topic .arr-more { position: absolute; top: 50%; margin-top: -2px; left: 18px; }
+.more .more__in { display: none; }
 .more .indicator { margin-bottom: 2px; display: table; }
 
 .card { margin-top: 5px; padding: 0 2px; margin-right: 1px; height: 11px; font-size: 7px; line-height: 11px; color: white; cursor: default; background: #ffce00; vertical-align: top; display: inline-block; }
@@ -1062,6 +1071,7 @@ h1.title-bord span, h2.title-bord span, h3.title-bord span { position: relative;
 .bets .indicator__top { position: relative; left: 50%; min-width: 70px; -moz-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); padding: 4px 9px 4px 4px; font-size: 8px; color: white; -moz-border-radius: 19px; -webkit-border-radius: 19px; border-radius: 19px; background: #555f6d; display: inline-block; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .bet { border-bottom: 1px solid #d6dadf; }
+.bet.is-popen-more { border-bottom: none; }
 .bet.is-popen-more .sort, .bet.is-popen-more .chemp { float: left; }
 .bet.is-popen-more .chemp { margin-left: 5px; width: 148px; font-size: 11px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .bet.is-popen-more .teams { margin-top: 0; }
@@ -1212,6 +1222,8 @@ h1.title-bord span, h2.title-bord span, h3.title-bord span { position: relative;
 .sort { font-size: 11px; color: #7b8a9e; }
 .sort .sort__name { width: 36px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; vertical-align: top; display: inline-block; }
 .sort .ico { margin-right: 5px; }
+
+.arr-more { width: 0px; height: 0px; border-style: solid; border-width: 2.5px 0 2.5px 4px; border-color: transparent transparent transparent #555f6d; }
 
 .l { margin: 24px auto 75px; *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }

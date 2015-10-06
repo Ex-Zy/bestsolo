@@ -2193,6 +2193,8 @@ ul.score
 		padding: 1px 0 8px
 		border-bottom: 1px solid $light-gray2
 		+clr
+		& + .more__wrap
+			margin-top: 0
 	.more__left
 		float: left
 		padding-right: 26px
@@ -2206,9 +2208,34 @@ ul.score
 		+box
 		+r(1431)
 			padding-right: 1px
+	.more__wrap
+		margin-top: 3px
+		&.is-active
+			& + .more__wrap
+				margin-top: 0
+			.more__topic
+				color: #fff
+				background: $gray
+			.arr-more
+				+arr(5,4,#fff,b)
+			.more__in
+				display: block
 	.more__text
 		margin-top: 22px
 		letter-spacing: -0.1px
+	.more__topic
+		position: relative
+		padding: 12px 14px 12px 40px
+		cursor: pointer
+		text-transform: uppercase
+		background: #E4E7EA
+		.arr-more
+			position: absolute
+			top: 50%
+			margin-top: -2px
+			left: 18px
+	.more__in
+		display: none
 	.indicator
 		margin-bottom: 2px
 		display: table
@@ -3436,6 +3463,7 @@ h1.title-bord, h2.title-bord, h3.title-bord
 .bet
 	border-bottom: 1px solid #d6dadf
 	&.is-popen-more
+		border-bottom: none
 		.sort,
 		.chemp
 			float: left
@@ -3957,3 +3985,7 @@ $spinner-size: 29px !default
 		display: inline-block
 	.ico
 		margin-right: 5px
+
+// arr-more
+.arr-more
+	+arr(4,5,$gray,r)

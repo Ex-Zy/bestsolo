@@ -92,6 +92,7 @@ $light-blue: #77A3BC
 $yellow-brown: #c1a221
 $yellow-dark: #edbc00
 $yellow-light: #ffe87c
+$purple: #9B4576
 
 // ico
 .ico
@@ -318,8 +319,6 @@ $yellow-light: #ffe87c
 	min-width: 1024px
 	+box
 	+clr
-	+r(1431)
-		max-width: 1180px
 %in
 	@extend .in
 
@@ -1500,6 +1499,8 @@ button.button-more
 	&.is-yellow
 		color: $gray
 		background: $yellow
+	&.is-purple
+		background: $purple
 
 // minute
 .minute
@@ -2893,7 +2894,7 @@ h1.title-bord, h2.title-bord, h3.title-bord
 				width: 25px
 		&:nth-child(2)
 			+r(1431)
-				max-width: 66px
+				width: 170px
 		&:nth-child(3)
 			width: 128px
 			+r(1431)
@@ -2934,18 +2935,26 @@ h1.title-bord, h2.title-bord, h3.title-bord
 				.is-mob
 					display: block
 	.tickets__td
+		position: relative
 		padding: 3px 0
-		//+ns
+		vertical-align: middle
 		+nsb
 		.btn-smsquare.is-toggle
 			position: relative
 			top: 1px
 			+r(1431)
-				top: 2px
 			&.is-open
 				background: #FFF
 				&:after
 					color: $gray
+	.tickets__wrap
+		& > .tickets__td > .status
+			position: absolute
+			top: 10px
+			left: -2px
+			+r(1431)
+				left: 2px
+				top: 0
 	.tickets__syst
 		overflow: hidden
 		white-space: nowrap
@@ -2964,6 +2973,7 @@ h1.title-bord, h2.title-bord, h3.title-bord
 		line-height: 12px
 		min-width: 25px
 		width: auto
+		vertical-align: middle
 		+box
 		+nsb
 		&.is-yellow
@@ -4098,6 +4108,9 @@ $spinner-size: 29px !default
 	.col__text
 		float: left
 		font-size: 13px
+		white-space: nowrap
+		overflow: hidden
+		text-overflow: ellipsis
 		line-height: 25px
 	.col__item
 		float: right

@@ -481,6 +481,8 @@ button.button-more { line-height: 1; }
 
 .minute { color: #77a3bc; font-size: 13px; }
 
+.teams { position: relative; }
+.teams .teams__arr { position: absolute; left: 50%; top: 50%; -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
 .teams .teams__item { vertical-align: top; display: inline-block; }
 .teams .team { display: block; vertical-align: top; display: block; }
 
@@ -1083,9 +1085,9 @@ h1.title-bord span, h2.title-bord span, h3.title-bord span { position: relative;
 .bet.is-popen-more .sort, .bet.is-popen-more .chemp { float: left; }
 .bet.is-popen-more .chemp { margin-left: 5px; width: 148px; font-size: 11px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .bet.is-popen-more .teams { margin-top: 0; }
-.bet.is-popen-more .team, .bet.is-popen-more .score { line-height: 1; font-size: 22px; }
 .bet.is-popen-more .team { padding-left: 32px; }
 .bet.is-popen-more .team:first-child { padding: 0 32px 0 0; }
+.bet.is-popen-more .team, .bet.is-popen-more .score, .bet.is-popen-more .teams__arr { line-height: 1; font-size: 22px; }
 .bet.is-popen-more .score { width: 60px; }
 .bet.is-popen-more .gen { min-height: 16px; }
 .bet.is-popen-more .minute { position: absolute; content: ""; top: 0; left: 0; color: #7b8a9e; font-size: 22px; line-height: 1; }
@@ -1094,8 +1096,14 @@ h1.title-bord span, h2.title-bord span, h3.title-bord span { position: relative;
 .bet.is-popen-more .bet__stat { position: relative; padding-left: 45px; width: 67%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 @media only screen and (max-width: 1426px) { .bet.is-popen-more .bet__stat { width: 62%; } }
 @media only screen and (max-width: 1333px) { .bet.is-popen-more .bet__stat { width: 59%; } }
-.bet.is-popen-more .bet__right { margin-top: 4px; padding: 0; width: 20%; }
+.bet.is-popen-more .bet__right { margin-top: 4px; padding: 0 0 0 20px; width: 20%; }
 .bet.is-popen-more .bet__radar { position: relative; }
+.bet.bet_not-started { position: relative; }
+.bet.bet_not-started .teams { margin-top: -4px; }
+.bet.bet_not-started .teams .team { padding-left: 15px; line-height: 1.4; white-space: normal; word-break: break-word; }
+.bet.bet_not-started .teams .team:first-child { padding: 0 15px 0 0; }
+.bet.bet_not-started .bet__time { position: absolute; left: 50%; top: -12px; -moz-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); padding-left: 90px; }
+.bet.bet_not-started .date, .bet.bet_not-started .time { font-size: 14px; color: #7b8a9e; }
 .bet .bet__in { position: relative; padding: 9px 12px; min-height: 78px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; *zoom: 1; }
 .bet .bet__in:after { content: " "; display: table; clear: both; }
 .bet .bet__left { overflow: hidden; *zoom: 1; }

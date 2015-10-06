@@ -1509,6 +1509,12 @@ button.button-more
 
 // teams
 .teams
+	position: relative
+	.teams__arr
+		position: absolute
+		left: 50%
+		top: 50%
+		+translate(-50%,-50%)
 	.teams__item
 		vertical-align: top
 		display: inline-block
@@ -3512,14 +3518,15 @@ h1.title-bord, h2.title-bord, h3.title-bord
 			text-overflow: ellipsis
 		.teams
 			margin-top: 0
-		.team,
-		.score
-			line-height: 1
-			font-size: 22px
 		.team
 			padding-left: 32px
 			&:first-child
 				padding: 0 32px 0 0
+		.team,
+		.score,
+		.teams__arr
+			line-height: 1
+			font-size: 22px
 		.score
 			width: 60px
 		.gen
@@ -3547,10 +3554,32 @@ h1.title-bord, h2.title-bord, h3.title-bord
 				width: 59%
 		.bet__right
 			margin-top: 4px
-			padding: 0
+			padding: 0 0 0 20px
 			width: 20%
 		.bet__radar
 			position: relative
+	&.bet_not-started
+		position: relative
+		.teams
+			margin-top: -4px
+			.team
+				padding-left: 15px
+				line-height: 1.4
+				white-space: normal
+				word-break: break-word
+				&:first-child
+					padding: 0 15px 0 0
+		.bet__time
+			position: absolute
+			left: 50%
+			top: -12px
+			+translate(-50%,0)
+			padding-left: 90px
+		.date,
+		.time
+			font-size: 14px
+			color: #7B8A9E
+
 	.bet__in
 		position: relative
 		padding: 9px 12px

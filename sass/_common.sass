@@ -3226,6 +3226,42 @@ h1.title-bord, h2.title-bord, h3.title-bord
 	.input-white
 		border-color: #929ba9
 
+// hint
+.hint
+	position: absolute
+	top: 100%
+	left: 0
+	right: 0
+	border: 1px solid $gray
+	z-index: 2
+	+box-shadow(0 2px 0 rgba($gray, .3))
+	background: #fff
+	.hint__item
+		position: relative
+		padding: 7px 7px 7px 28px
+		font-size: 13px
+		color: $gray
+		+ns
+		border-top: 1px solid #d6dadf
+		&:first-child
+			border-top: none
+	.hint__topic
+		text-transform: uppercase
+		+nsb
+	.hint__ico
+		position: absolute
+		top: 0
+		left: 0
+		bottom: 0
+		width: 28px
+	.is-search
+		color: $green
+	.ico
+		position: absolute
+		top: 50%
+		left: 50%
+		+translate(-50%,-50%)
+
 // slider
 .slider
 	margin-bottom: 20px

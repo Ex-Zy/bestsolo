@@ -369,18 +369,14 @@ body
 			margin-right: 11px
 		.user
 			margin-top: 6px
-			padding: 6px 12px 6px 35px
+			padding: 6px 12px 6px 12px
 			font-size: 13px
 			line-height: 1.2
 			height: auto
-			+border-radius(29px)
 			border: none
 			+box-shadow(0 1px 0 #d8ad00)
 			text-transform: uppercase
 			+nsb
-			&:before
-				left: 13px
-				+svg(new-user,11,15)
 		.lang
 			border: 1px solid transparent
 			&.is-open
@@ -662,7 +658,6 @@ a
 
 // logout
 .logout
-	padding-left: 35px
 	+nsb
 	text-align: center
 	font-size: 11px
@@ -2664,6 +2659,7 @@ ul.score
 .user-wr
 	display: inline-block
 	vertical-align: top
+	margin-left: 10px
 
 // user
 .user
@@ -2675,13 +2671,6 @@ ul.score
 	vertical-align: top
 	background: $yellow-light
 	display: inline-block
-	&:before
-		position: absolute
-		content: ''
-		top: 50%
-		left: -20px
-		+translate(0,-50%)
-		+svg(ico-user,12,15)
 	.user__name
 		position: relative
 		padding: 0 10px 0 0

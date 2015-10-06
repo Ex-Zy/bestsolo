@@ -1175,7 +1175,7 @@ button.button-more
 			text-transform: initial
 	.nav__item
 		position: relative
-		padding: 9px 40px 8px 35px
+		padding: 9px 35px 8px 35px
 		line-height: 1
 		text-transform: uppercase
 		display: block
@@ -1214,7 +1214,7 @@ button.button-more
 		position: absolute
 		top: 50%
 		+translate(0,-50%)
-		right: 10px
+		right: 5px
 
 .amount
 	font-size: 13px
@@ -1240,8 +1240,7 @@ button.button-more
 		white-space: nowrap
 		text-overflow: ellipsis
 		text-transform: uppercase
-		border: 1px solid $light-gray
-		background: $light-gray
+		background: $yellow
 		+box
 		&:before
 			position: absolute
@@ -1575,6 +1574,7 @@ ul.score
 	text-align: center
 	line-height: 18px
 	width: 30px
+	cursor: pointer
 	+box
 	&:before
 		position: absolute
@@ -4054,3 +4054,52 @@ $spinner-size: 29px !default
 // arr-more
 .arr-more
 	+arr(4,5,$gray,r)
+
+// accord
+.accord
+	margin-top: 3px
+	&:first-child
+		margin-top: 0
+	&.is-active
+		& + .accord
+			margin-top: 0
+		.accord__top
+			color: #fff
+			background: $gray
+		.arr-more
+			+arr(5,4,#fff,b)
+		.accord__wrap
+			display: block
+	.accord__top
+		position: relative
+		padding: 12px 14px 12px 40px
+		cursor: pointer
+		text-transform: uppercase
+		background: #E4E7EA
+		.arr-more
+			position: absolute
+			top: 50%
+			margin-top: -2px
+			left: 18px
+	.accord__row
+		padding: 12px 0
+		font-size: 0
+		border-top: 1px solid #dfe1e5
+		&:first-child
+			border-top: none
+	.col
+		padding-left: 5%
+		width: 21%
+		+box
+		+clr
+		&:first-child
+			width: 16%
+			padding-left: 12px
+	.col__text
+		float: left
+		font-size: 13px
+		line-height: 25px
+	.col__item
+		float: right
+	.accord__wrap
+		display: none

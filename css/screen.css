@@ -163,7 +163,7 @@ a:hover { text-decoration: underline; }
 .header { position: relative; padding: 8px 0 5px; font-family: "OpenSans", Arial, sans-serif; font-weight: normal; background: #ffce00; }
 .header:before { position: absolute; content: ""; bottom: 0; left: 0; right: 0; height: 2px; background: rgba(0, 0, 0, 0.2); }
 @media only screen and (max-width: 1431px) { .header .header__in { max-width: 100%; } }
-.header .header__right { float: right; margin-top: 10px; font-size: 0; }
+.header .header__right { position: relative; float: right; margin-top: 10px; font-size: 0; }
 .header .lang, .header .login { vertical-align: top; font-size: 13px; display: inline-block; }
 .header .lang { margin-left: 8px; }
 .header .btn { margin-left: 17px; }
@@ -186,7 +186,7 @@ a:hover { text-decoration: underline; }
 
 .logo { margin: 2px 0 0 11px; vertical-align: top; display: inline-block; background: url("../img/svg/logo.svg") no-repeat 0 0; -moz-background-size: 184px 42px; -o-background-size: 184px 42px; -webkit-background-size: 184px 42px; background-size: 184px 42px; width: 184px; height: 42px; display: inline-block; }
 
-.login { position: relative; font-size: 10px; }
+.login { font-size: 10px; }
 .login.is-error .login__error { display: block; }
 .login.is-log .ico { position: absolute; left: 0; top: 12px; }
 .login.is-log .login + .lang { margin-left: 0; }
@@ -201,7 +201,7 @@ a:hover { text-decoration: underline; }
 .login .login__forgot { line-height: 13px; text-decoration: underline; display: block; overflow: hidden; white-space: nowrap; }
 .login .login__forgot:hover { text-decoration: none; }
 .login .login__error { position: absolute; top: -17px; left: 0; padding-left: 22px; color: #ed1c24; font-size: 12px; display: none; }
-.login .login__form { position: absolute; top: 67px; left: 0; padding: 30px 20px 17px; width: 295px; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; z-index: 102; border: 1px solid #d5dce3; background: #dfe5e9; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; display: none; }
+.login .login__form { position: absolute; top: 67px; right: -11px; padding: 30px 20px 17px; width: 295px; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; z-index: 102; border: 1px solid #d5dce3; background: #dfe5e9; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; display: none; }
 .login .login__form:before, .login .login__form:after { position: absolute; content: ""; left: 168px; top: -7px; -moz-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); }
 .login .login__form:before { width: 0px; height: 0px; border-style: solid; border-width: 0 7px 7px 7px; border-color: transparent transparent #d5dce4 transparent; }
 .login .login__form:after { top: -6px; width: 0px; height: 0px; border-style: solid; border-width: 0 7px 7px 7px; border-color: transparent transparent #e0e5e9 transparent; }
@@ -1109,7 +1109,7 @@ h1.title-bord span, h2.title-bord span, h3.title-bord span { position: relative;
 .bet .bet__in:after { content: " "; display: table; clear: both; }
 .bet .bet__left { overflow: hidden; *zoom: 1; }
 .bet .bet__left:after { content: " "; display: table; clear: both; }
-.bet .bet__l { text-align: right; padding-right: 8px; }
+.bet .bet__l { position: relative; text-align: right; padding-right: 8px; }
 .bet .bet__right { position: relative; float: right; width: 557px; padding-right: 88px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 @media only screen and (max-width: 1420px) { .bet .bet__right { width: 412px; } }
 @media only screen and (max-width: 1304px) { .bet .bet__right { width: 252px; } }
@@ -1258,6 +1258,10 @@ h1.title-bord span, h2.title-bord span, h3.title-bord span { position: relative;
 .accord .col__text { float: left; font-size: 13px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; line-height: 25px; }
 .accord .col__item { float: right; }
 .accord .accord__wrap { display: none; }
+
+.pause { position: absolute; left: -2px; right: 6px; top: -16px; bottom: -10px; z-index: 2; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -o-font-smoothing: antialiased; background: rgba(85, 95, 109, 0.8); text-align: center; font-size: 0; }
+.pause:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
+.pause .pause__in { color: white; font-size: 13px; vertical-align: middle; display: inline-block; }
 
 .l { margin: 24px auto 75px; *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }

@@ -471,6 +471,7 @@ a
 		+r(1431)
 			max-width: 100%
 	.header__right
+		position: relative
 		float: right
 		margin-top: 10px
 		font-size: 0
@@ -557,7 +558,6 @@ a
 
 // login
 .login
-	position: relative
 	font-size: 10px
 	&.is-error
 		.login__error
@@ -614,7 +614,7 @@ a
 	.login__form
 		position: absolute
 		top: 67px
-		left: 0
+		right: -11px
 		padding: 30px 20px 17px
 		width: 295px
 		+border-radius(2px)
@@ -3600,6 +3600,7 @@ h1.title-bord, h2.title-bord, h3.title-bord
 		overflow: hidden
 		+clr
 	.bet__l
+		position: relative
 		text-align: right
 		padding-right: 8px
 	.bet__right
@@ -4116,3 +4117,20 @@ $spinner-size: 29px !default
 		float: right
 	.accord__wrap
 		display: none
+
+// pause
+.pause
+	position: absolute
+	left: -2px
+	right: 6px
+	top: -16px
+	bottom: -10px
+	z-index: 2
+	+font-smoothing(antialiased)
+	background: rgba($gray, .8)
+	+vertical
+	.pause__in
+		color: #fff
+		font-size: 13px
+		vertical-align: middle
+		display: inline-block

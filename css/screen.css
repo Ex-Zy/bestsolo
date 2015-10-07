@@ -137,8 +137,7 @@ body.is-home-new .header { padding: 8px 0; }
 body.is-home-new .header .btn_green { height: 36px; font-size: 13px; line-height: 36px; text-transform: uppercase; }
 body.is-home-new .header .menu { margin-bottom: -8px; }
 body.is-home-new .header__right { margin-right: 11px; }
-body.is-home-new .user { margin-top: 6px; padding: 6px 12px 6px 35px; font-size: 13px; line-height: 1.2; height: auto; -moz-border-radius: 29px; -webkit-border-radius: 29px; border-radius: 29px; border: none; -moz-box-shadow: 0 1px 0 #d8ad00; -webkit-box-shadow: 0 1px 0 #d8ad00; box-shadow: 0 1px 0 #d8ad00; text-transform: uppercase; font-family: "NotoSans-Bold", Arial, sans-serif; font-weight: normal; }
-body.is-home-new .user:before { left: 13px; background: url("../img/svg/new-user.svg") no-repeat 0 0; -moz-background-size: 11px 15px; -o-background-size: 11px 15px; -webkit-background-size: 11px 15px; background-size: 11px 15px; width: 11px; height: 15px; display: inline-block; }
+body.is-home-new .user { margin-top: 6px; padding: 6px 12px 6px 12px; font-size: 13px; line-height: 1.2; height: auto; border: none; -moz-box-shadow: 0 1px 0 #d8ad00; -webkit-box-shadow: 0 1px 0 #d8ad00; box-shadow: 0 1px 0 #d8ad00; text-transform: uppercase; font-family: "NotoSans-Bold", Arial, sans-serif; font-weight: normal; }
 body.is-home-new .lang { border: 1px solid transparent; }
 body.is-home-new .lang.is-open { background: #e6eaed; border-bottom: none; -moz-border-radius: 3px 3px 0 0; -webkit-border-radius: 3px; border-radius: 3px 3px 0 0; }
 body.is-home-new .lang.is-open .lang__chosen:before { -ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); transform: rotate(0deg); }
@@ -217,7 +216,7 @@ a:hover { text-decoration: underline; }
 .login .login__field { margin-bottom: 10px; }
 .login .login__sub { margin-top: 15px; }
 
-.logout { padding-left: 35px; font-family: "NotoSans-Bold", Arial, sans-serif; font-weight: normal; text-align: center; font-size: 11px; }
+.logout { font-family: "NotoSans-Bold", Arial, sans-serif; font-weight: normal; text-align: center; font-size: 11px; }
 .logout a { color: #68778e; text-decoration: underline; }
 .logout a:hover { text-decoration: none; }
 
@@ -340,13 +339,37 @@ button.btn-smsquare { letter-spacing: -0.8px; }
 .btn-star { background: url("../img/svg/nav-star.svg") no-repeat 0 0; -moz-background-size: 15px 14px; -o-background-size: 15px 14px; -webkit-background-size: 15px 14px; background-size: 15px 14px; width: 15px; height: 14px; display: inline-block; }
 .btn-star.is-active { background: url("../img/svg/nav-star-yellow.svg") no-repeat 0 0; -moz-background-size: 15px 14px; -o-background-size: 15px 14px; -webkit-background-size: 15px 14px; background-size: 15px 14px; width: 15px; height: 14px; display: inline-block; }
 
-.btn-radar { background: url("../img/svg/ico-field-green.svg") no-repeat 0 0; -moz-background-size: 40px 20px; -o-background-size: 40px 20px; -webkit-background-size: 40px 20px; background-size: 40px 20px; width: 40px; height: 20px; display: inline-block; }
-
 .btn-stat { background: url("../img/svg/ico-stat-big.svg") no-repeat 0 0; -moz-background-size: 40px 20px; -o-background-size: 40px 20px; -webkit-background-size: 40px 20px; background-size: 40px 20px; width: 40px; height: 20px; display: inline-block; }
 .btn-stat.is-gray { background: url("../img/svg/ico-stat-big-gray.svg") no-repeat 0 0; -moz-background-size: 40px 20px; -o-background-size: 40px 20px; -webkit-background-size: 40px 20px; background-size: 40px 20px; width: 40px; height: 20px; display: inline-block; }
 
-.btn-radar-tennis { background: url("../img/svg/ico-field-tennis.svg") no-repeat 0 0; -moz-background-size: 40px 22px; -o-background-size: 40px 22px; -webkit-background-size: 40px 22px; background-size: 40px 22px; width: 40px; height: 22px; display: inline-block; }
-.btn-radar-tennis.is-yellow { background: url("../img/svg/ico-field-tennis-yel.svg") no-repeat 0 0; -moz-background-size: 40px 22px; -o-background-size: 40px 22px; -webkit-background-size: 40px 22px; background-size: 40px 22px; width: 40px; height: 22px; display: inline-block; }
+.btn-radar { background: url("../img/svg/ico-field.svg") no-repeat 0 0; -moz-background-size: 40px 20px; -o-background-size: 40px 20px; -webkit-background-size: 40px 20px; background-size: 40px 20px; width: 40px; height: 20px; display: inline-block; }
+
+.btn-radar-tennis { background: url("../img/svg/ico-tennis-inactive.svg") no-repeat 0 0; -moz-background-size: 40px 20px; -o-background-size: 40px 20px; -webkit-background-size: 40px 20px; background-size: 40px 20px; width: 40px; height: 20px; display: inline-block; }
+.btn-radar-tennis.is-running { background: url("../img/svg/ico-tennis-active.svg") no-repeat 0 0; -moz-background-size: 40px 20px; -o-background-size: 40px 20px; -webkit-background-size: 40px 20px; background-size: 40px 20px; width: 40px; height: 20px; display: inline-block; }
+
+.btn-radar-soccer { background: url("../img/svg/ico-soccer-inactive.svg") no-repeat 0 0; -moz-background-size: 40px 20px; -o-background-size: 40px 20px; -webkit-background-size: 40px 20px; background-size: 40px 20px; width: 40px; height: 20px; display: inline-block; }
+.btn-radar-soccer.is-running { background: url("../img/svg/ico-soccer-active.svg") no-repeat 0 0; -moz-background-size: 40px 20px; -o-background-size: 40px 20px; -webkit-background-size: 40px 20px; background-size: 40px 20px; width: 40px; height: 20px; display: inline-block; }
+
+.btn-radar-amfootball { background: url("../img/svg/ico-amfootball-inactive.svg") no-repeat 0 0; -moz-background-size: 40px 20px; -o-background-size: 40px 20px; -webkit-background-size: 40px 20px; background-size: 40px 20px; width: 40px; height: 20px; display: inline-block; }
+.btn-radar-amfootball.is-running { background: url("../img/svg/ico-amfootball-active.svg") no-repeat 0 0; -moz-background-size: 40px 20px; -o-background-size: 40px 20px; -webkit-background-size: 40px 20px; background-size: 40px 20px; width: 40px; height: 20px; display: inline-block; }
+
+.btn-radar-badminton { background: url("../img/svg/ico-badminton-inactive.svg") no-repeat 0 0; -moz-background-size: 40px 20px; -o-background-size: 40px 20px; -webkit-background-size: 40px 20px; background-size: 40px 20px; width: 40px; height: 20px; display: inline-block; }
+.btn-radar-badminton.is-running { background: url("../img/svg/ico-badminton-active.svg") no-repeat 0 0; -moz-background-size: 40px 20px; -o-background-size: 40px 20px; -webkit-background-size: 40px 20px; background-size: 40px 20px; width: 40px; height: 20px; display: inline-block; }
+
+.btn-radar-basketball { background: url("../img/svg/ico-basketball-inactive.svg") no-repeat 0 0; -moz-background-size: 40px 20px; -o-background-size: 40px 20px; -webkit-background-size: 40px 20px; background-size: 40px 20px; width: 40px; height: 20px; display: inline-block; }
+.btn-radar-basketball.is-running { background: url("../img/svg/ico-basketball-active.svg") no-repeat 0 0; -moz-background-size: 40px 20px; -o-background-size: 40px 20px; -webkit-background-size: 40px 20px; background-size: 40px 20px; width: 40px; height: 20px; display: inline-block; }
+
+.btn-radar-futsal { background: url("../img/svg/ico-futsal-inactive.svg") no-repeat 0 0; -moz-background-size: 40px 20px; -o-background-size: 40px 20px; -webkit-background-size: 40px 20px; background-size: 40px 20px; width: 40px; height: 20px; display: inline-block; }
+.btn-radar-futsal.is-running { background: url("../img/svg/ico-futsal-active.svg") no-repeat 0 0; -moz-background-size: 40px 20px; -o-background-size: 40px 20px; -webkit-background-size: 40px 20px; background-size: 40px 20px; width: 40px; height: 20px; display: inline-block; }
+
+.btn-radar-handball { background: url("../img/svg/ico-handball-inactive.svg") no-repeat 0 0; -moz-background-size: 40px 20px; -o-background-size: 40px 20px; -webkit-background-size: 40px 20px; background-size: 40px 20px; width: 40px; height: 20px; display: inline-block; }
+.btn-radar-handball.is-running { background: url("../img/svg/ico-handball-active.svg") no-repeat 0 0; -moz-background-size: 40px 20px; -o-background-size: 40px 20px; -webkit-background-size: 40px 20px; background-size: 40px 20px; width: 40px; height: 20px; display: inline-block; }
+
+.btn-radar-hockey { background: url("../img/svg/ico-hockey-inactive.svg") no-repeat 0 0; -moz-background-size: 40px 20px; -o-background-size: 40px 20px; -webkit-background-size: 40px 20px; background-size: 40px 20px; width: 40px; height: 20px; display: inline-block; }
+.btn-radar-hockey.is-running { background: url("../img/svg/ico-hockey-active.svg") no-repeat 0 0; -moz-background-size: 40px 20px; -o-background-size: 40px 20px; -webkit-background-size: 40px 20px; background-size: 40px 20px; width: 40px; height: 20px; display: inline-block; }
+
+.btn-radar-volleyball { background: url("../img/svg/ico-volleyball-inactive.svg") no-repeat 0 0; -moz-background-size: 40px 20px; -o-background-size: 40px 20px; -webkit-background-size: 40px 20px; background-size: 40px 20px; width: 40px; height: 20px; display: inline-block; }
+.btn-radar-volleyball.is-running { background: url("../img/svg/ico-volleyball-active.svg") no-repeat 0 0; -moz-background-size: 40px 20px; -o-background-size: 40px 20px; -webkit-background-size: 40px 20px; background-size: 40px 20px; width: 40px; height: 20px; display: inline-block; }
 
 .button-more { position: relative; width: 40px; height: 20px; line-height: 20px; color: #fff; font-size: 12px; font-family: "NotoSans-Bold", Arial, sans-serif; font-weight: normal; background: #555F6D; display: inline-block; }
 .button-more.is-yellow { color: #555F6D; background: #FFCE00; }
@@ -815,10 +838,9 @@ ul.score li:first-child { margin-left: 0; }
 .search .input-white { padding-right: 34px; }
 .search .input-white:focus { border-color: #b9c0c9; }
 
-.user-wr { display: inline-block; vertical-align: top; }
+.user-wr { display: inline-block; vertical-align: top; margin-left: 10px; }
 
 .user { position: relative; padding: 8px 23px 0 14px; height: 36px; border: 1px solid #edbc00; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; vertical-align: top; background: #ffe87c; display: inline-block; }
-.user:before { position: absolute; content: ""; top: 50%; left: -20px; -moz-transform: translate(0, -50%); -ms-transform: translate(0, -50%); -webkit-transform: translate(0, -50%); transform: translate(0, -50%); background: url("../img/svg/ico-user.svg") no-repeat 0 0; -moz-background-size: 12px 15px; -o-background-size: 12px 15px; -webkit-background-size: 12px 15px; background-size: 12px 15px; width: 12px; height: 15px; display: inline-block; }
 .user .user__name { position: relative; padding: 0 10px 0 0; }
 .user .user__money { font-weight: bold; }
 .user .user__name, .user .user__money { display: inline-block; }

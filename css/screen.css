@@ -1040,7 +1040,7 @@ h1.title-bord span, h2.title-bord span, h3.title-bord span { position: relative;
 .slider .slick-next { right: 33px; background: url("../img/svg/slick-next.svg") no-repeat 0 0; -moz-background-size: 17px 28px; -o-background-size: 17px 28px; -webkit-background-size: 17px 28px; background-size: 17px 28px; width: 17px; height: 28px; display: inline-block; }
 .slider .slick-prev { left: 33px; background: url("../img/svg/slick-prev.svg") no-repeat 0 0; -moz-background-size: 17px 28px; -o-background-size: 17px 28px; -webkit-background-size: 17px 28px; background-size: 17px 28px; width: 17px; height: 28px; display: inline-block; }
 .slider .champ { font-size: 21px; }
-.slider .teams { margin: 12px 0 10px; font-size: 42px; }
+.slider .teams { margin: 12px 0 10px; font-size: 32px; white-space: nowrap; }
 .slider .team { line-height: 1; }
 .slider .vs { color: #FFCE00; font-size: 20px; line-height: 1; }
 .slider .col { margin-bottom: 22px; }

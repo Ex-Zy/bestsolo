@@ -1134,6 +1134,11 @@ h1.title-bord span, h2.title-bord span, h3.title-bord span { position: relative;
 .bet .bet__in:after { content: " "; display: table; clear: both; }
 .bet .bet__left { padding-left: 5px; overflow: hidden; *zoom: 1; }
 .bet .bet__left:after { content: " "; display: table; clear: both; }
+.bet .bet__left.is-tennis { width: 460px; }
+@media only screen and (max-width: 1420px) { .bet .bet__left.is-tennis { width: auto; } }
+.bet .bet__left.is-tennis .bet__stat { width: 100%; }
+.bet .bet__left.is-tennis .team, .bet .bet__left.is-tennis .team:first-child { width: 50%; }
+.bet .bet__left.is-tennis .score { margin-left: 35px; }
 .bet .bet__l { position: relative; text-align: right; padding-right: 8px; }
 .bet .bet__right { position: relative; float: right; width: 557px; padding-right: 88px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 @media only screen and (max-width: 1420px) { .bet .bet__right { width: 412px; } }

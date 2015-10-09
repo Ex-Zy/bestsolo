@@ -72,7 +72,6 @@ head.ready(function() {
 	$('.nav__item span').each(function() {
 		var this_ 	= $(this),
 		totalWords 	= this_.html().split(/[\s\.\?]+/).length;
-		console.log(totalWords);
 		if (totalWords > 1) {
 			this_.parent().addClass('is-break');
 		}

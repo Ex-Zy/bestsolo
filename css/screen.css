@@ -1011,6 +1011,7 @@ h1.title-bord span, h2.title-bord span, h3.title-bord span { position: relative;
 .hint { position: absolute; top: 100%; left: 0; right: 0; border: 1px solid #555f6d; z-index: 2; -moz-box-shadow: 0 2px 0 rgba(85, 95, 109, 0.3); -webkit-box-shadow: 0 2px 0 rgba(85, 95, 109, 0.3); box-shadow: 0 2px 0 rgba(85, 95, 109, 0.3); background: white; }
 .hint .hint__item { position: relative; padding: 7px 7px 7px 28px; font-size: 13px; color: #555f6d; font-family: "NotoSans", Arial, sans-serif; font-weight: normal; border-top: 1px solid #d6dadf; }
 .hint .hint__item:first-child { border-top: none; }
+.hint .hint__row { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .hint .hint__topic { text-transform: uppercase; font-family: "NotoSans-Bold", Arial, sans-serif; font-weight: normal; }
 .hint .hint__ico { position: absolute; top: 0; left: 0; bottom: 0; width: 28px; }
 .hint .is-search { color: #36a200; }

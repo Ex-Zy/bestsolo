@@ -69,4 +69,12 @@ head.ready(function() {
 		});
 	};
 
+	$('.nav__item span').each(function() {
+		var this_ 	= $(this),
+		totalWords 	= this_.html().split(/[\s\.\?]+/).length;
+		if (totalWords > 1) {
+			this_.parent().addClass('is-break');
+		}
+	});
+	
 });

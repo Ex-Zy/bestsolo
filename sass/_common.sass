@@ -687,6 +687,10 @@ a
 			text-decoration: none
 			background: $gray
 			color: #fff
+		span
+			line-height: 1.3
+			vertical-align: middle
+			display: inline-block
 
 // form elements
 .form
@@ -1192,7 +1196,8 @@ button.button-more
 			text-transform: uppercase
 			letter-spacing: -0.2px
 			+ns
-			&:hover,
+			&:hover
+				background: #f0f2f5
 			&.is-active
 				background: #dfe4ea
 		.checkbox
@@ -1215,9 +1220,16 @@ button.button-more
 			.amount
 				display: none
 		&:hover
-			background: #dfe4ea
+			background: #f0f2f5
+		&.is-break
+			span
+				white-space: normal
+				word-break: break-word
 		span
-			word-break: break-all
+			overflow: hidden
+			text-overflow: ellipsis
+			white-space: nowrap
+			display: block
 	.ico
 		position: absolute
 		left: 13px
@@ -1527,11 +1539,23 @@ button.button-more
 		background: $yellow
 	&.is-purple
 		background: $purple
+	&.is-pause
+		background: $gray
+		color: $yellow
 
 // minute
 .minute
 	color: $light-blue
 	font-size: 13px
+	&:before
+		content: "'"
+	&.is-addtime
+		&:before
+			display: none
+	span
+		margin-right: -5px
+		font-size: 7px
+		vertical-align: top
 
 // teams
 .teams
@@ -1804,6 +1828,7 @@ ul.score
 	position: relative
 	padding: 0 38px 7px 0
 	font-size: 0
+	+user-select(none)
 	+clr
 	.indicators__right
 		float: right
@@ -2472,11 +2497,8 @@ ul.score
 	tr
 		&.is-gray
 			background: #eaebee
-		&.is-m-width
+		&.tr-pad
 			padding: 0
-			display: none
-			+r(1431)
-				display: table-row
 			& > td
 				padding: 0
 			.table-stat
@@ -2527,6 +2549,8 @@ ul.score
 		line-height: 1.3
 	.btn-smsquare
 		margin-top: 16px
+	.table-stat td:first-child
+		max-width: 66px
 
 // table-legen
 .table-stat
@@ -3275,6 +3299,10 @@ h1.title-bord, h2.title-bord, h3.title-bord
 		border-top: 1px solid #d6dadf
 		&:first-child
 			border-top: none
+	.hint__row
+		white-space: nowrap
+		overflow: hidden
+		text-overflow: ellipsis
 	.hint__topic
 		text-transform: uppercase
 		+nsb
@@ -3430,7 +3458,6 @@ h1.title-bord, h2.title-bord, h3.title-bord
 				+box
 				&:first-child
 					width: 170px
-					text-align: left
 					padding: 0 55px 0 0
 					+r(1420)
 						width: 50%
@@ -3607,11 +3634,12 @@ h1.title-bord, h2.title-bord, h3.title-bord
 
 	.bet__in
 		position: relative
-		padding: 9px 12px
+		padding: 9px 12px 9px 7px
 		min-height: 78px
 		+box
 		+clr
 	.bet__left
+		padding-left: 5px
 		overflow: hidden
 		+clr
 	.bet__l
@@ -3650,9 +3678,12 @@ h1.title-bord, h2.title-bord, h3.title-bord
 	.bet__center
 		vertical-align: middle
 		display: inline-block
+		ƒbtn-radar,
+		.btn-radar-tennis,
 		.btn-radar,
-		.btn-radar-tennis
-			& + .btn-stat
+		button
+			& + .btn-stat,
+			& + button
 				margin-top: 6px
 	.bet__inf
 		float: left
@@ -3666,6 +3697,12 @@ h1.title-bord, h2.title-bord, h3.title-bord
 			color: $green
 			&:before
 				color: inherit
+		.status
+			position: relative
+			left: 50%
+			+translate(-50%,0)
+			font-size: 9px
+			+font-smoothing(antialiased)
 	.bet__stat
 		float: left
 		width: 243px
@@ -3747,6 +3784,7 @@ h1.title-bord, h2.title-bord, h3.title-bord
 		position: absolute
 		top: 0
 		left: 50%
+		width: 42px
 		height: inherit
 		line-height: inherit
 		font-size: 13px
@@ -4138,7 +4176,7 @@ $spinner-size: 29px !default
 	position: absolute
 	left: -2px
 	right: 6px
-	top: -16px
+	top: -10px
 	bottom: -10px
 	z-index: 2
 	+font-smoothing(antialiased)

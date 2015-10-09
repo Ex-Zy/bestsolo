@@ -225,6 +225,7 @@ a:hover { text-decoration: underline; }
 .menu .menu__iten { font-size: 13px; display: inline-block; }
 .menu a { padding: 0 10px; height: 77px; line-height: 77px; color: #555f6d; text-transform: uppercase; display: block; }
 .menu a:hover, .menu a.is-active { text-decoration: none; background: #555f6d; color: white; }
+.menu a span { line-height: 1.3; vertical-align: middle; display: inline-block; }
 
 .form .form__topic { margin-bottom: 25px; text-transform: uppercase; *zoom: 1; }
 .form .form__topic:after { content: " "; display: table; clear: both; }

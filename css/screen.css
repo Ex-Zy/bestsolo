@@ -556,7 +556,7 @@ ul.score li:first-child { margin-left: 0; }
 .legend .btn-stat { background: url("../img/svg/ico-stat-big.svg") no-repeat 0 0; -moz-background-size: 31px 16px; -o-background-size: 31px 16px; -webkit-background-size: 31px 16px; background-size: 31px 16px; width: 31px; height: 16px; display: inline-block; }
 .legend .button-more { width: 31px; height: 16px; line-height: 16px; font-size: 8px; }
 
-.indicators { position: relative; padding: 0 38px 7px 0; font-size: 0; *zoom: 1; }
+.indicators { position: relative; padding: 0 38px 7px 0; font-size: 0; -moz-user-select: -moz-none; -ms-user-select: none; -webkit-user-select: none; user-select: none; *zoom: 1; }
 .indicators:after { content: " "; display: table; clear: both; }
 .indicators .indicators__right { float: right; }
 .indicators .indicator { vertical-align: bottom; }

@@ -1149,7 +1149,7 @@ h1.title-bord span, h2.title-bord span, h3.title-bord span { position: relative;
 .bet .gen .set { position: absolute; top: 0; left: 0; }
 .bet .team, .bet .cards { padding-left: 23px; width: 50%; font-size: 14px; vertical-align: top; display: inline-block; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .bet .team:first-child, .bet .cards:first-child { padding: 0 23px 0 0; }
-.bet .score { position: absolute; top: 0; left: 50%; height: inherit; line-height: inherit; font-size: 13px; color: #555f6d; -moz-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); }
+.bet .score { position: absolute; top: 0; left: 50%; width: 42px; height: inherit; line-height: inherit; font-size: 13px; color: #555f6d; -moz-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); }
 .bet .score.is-goal { color: #36a200; }
 .bet .cards { font-size: 0; text-align: center; }
 .bet .card { margin: 0 0 0 4px; width: 6px; height: 13px; line-height: 13px; text-align: center; font-size: 10px; }

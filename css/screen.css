@@ -1056,7 +1056,7 @@ h1.title-bord span, h2.title-bord span, h3.title-bord span { position: relative;
 .bets.is-tennis .bet__l { margin-top: -1px; width: 100%; text-align: right; vertical-align: middle; display: inline-block; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .bets.is-tennis .teams { padding-left: 35px; }
 .bets.is-tennis .teams .team { padding-left: 82px; width: 202px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-.bets.is-tennis .teams .team:first-child { width: 170px; text-align: left; padding: 0 55px 0 0; }
+.bets.is-tennis .teams .team:first-child { width: 170px; padding: 0 55px 0 0; }
 @media only screen and (max-width: 1420px) { .bets.is-tennis .teams .team:first-child { width: 50%; } }
 @media only screen and (max-width: 1420px) { .bets.is-tennis .teams .team { width: 50%; } }
 .bets.is-tennis .score { margin: 0 0 0 -2px; width: 112px; }

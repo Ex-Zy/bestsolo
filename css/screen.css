@@ -507,7 +507,6 @@ button.button-more { line-height: 1; }
 .status.is-pause, .legend .is-pause.legend__left { background: #555F6D; color: #FFCE00; }
 
 .minute { color: #77A3BC; font-size: 13px; }
-.minute:before { content: "'"; }
 .minute.is-addtime:before { display: none; }
 .minute span { margin-right: -5px; font-size: 7px; vertical-align: top; }
 

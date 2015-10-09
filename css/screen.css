@@ -1266,7 +1266,7 @@ h1.title-bord span, h2.title-bord span, h3.title-bord span { position: relative;
 .accord .col__item { float: right; }
 .accord .accord__wrap { display: none; }
 
-.pause { position: absolute; left: -2px; right: 6px; top: -16px; bottom: -10px; z-index: 2; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -o-font-smoothing: antialiased; background: rgba(85, 95, 109, 0.8); text-align: center; font-size: 0; }
+.pause { position: absolute; left: -2px; right: 6px; top: -10px; bottom: -10px; z-index: 2; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -o-font-smoothing: antialiased; background: rgba(85, 95, 109, 0.8); text-align: center; font-size: 0; }
 .pause:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
 .pause .pause__in { color: white; font-size: 13px; vertical-align: middle; display: inline-block; }
 

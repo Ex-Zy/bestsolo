@@ -1124,7 +1124,7 @@ h1.title-bord span, h2.title-bord span, h3.title-bord span { position: relative;
 .bet .bet__radar { position: absolute; right: 0; top: 0; bottom: 0; width: 40px; font-size: 0; text-align: center; font-size: 0; }
 .bet .bet__radar:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
 .bet .bet__center { vertical-align: middle; display: inline-block; }
-.bet .bet__center ƒbtn-radar + .btn-stat, .bet .bet__center .btn-radar-tennis + .btn-stat { margin-top: 6px; }
+.bet .bet__center ƒbtn-radar + .btn-stat, .bet .bet__center ƒbtn-radar + button, .bet .bet__center .btn-radar-tennis + .btn-stat, .bet .bet__center .btn-radar-tennis + button, .bet .bet__center .btn-radar + .btn-stat, .bet .bet__center .btn-radar + button, .bet .bet__center button + .btn-stat, .bet .bet__center button + button { margin-top: 6px; }
 .bet .bet__inf { float: left; padding-top: 23px; width: 26px; }
 .bet .bet__inf .minute { position: relative; left: 50%; -moz-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); margin: 0 -5px; color: #36a200; }
 .bet .bet__inf .minute:before { color: inherit; }

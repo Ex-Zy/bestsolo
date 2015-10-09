@@ -478,6 +478,7 @@ button.button-more { line-height: 1; }
 .status.is-soon, .legend .is-soon.legend__left { color: #555f6d; background: #ffce00; }
 .status.is-yellow, .legend .is-yellow.legend__left { color: #555f6d; background: #ffce00; }
 .status.is-purple, .legend .is-purple.legend__left { background: #9b4576; }
+.status.is-pause, .legend .is-pause.legend__left { background: #555f6d; color: #ffce00; }
 
 .minute { color: #77a3bc; font-size: 13px; }
 
@@ -1122,6 +1123,7 @@ h1.title-bord span, h2.title-bord span, h3.title-bord span { position: relative;
 .bet .bet__inf { float: left; padding-top: 23px; width: 26px; }
 .bet .bet__inf .minute { position: relative; left: 50%; -moz-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); margin: 0 -5px; color: #36a200; }
 .bet .bet__inf .minute:before { color: inherit; }
+.bet .bet__inf .status, .bet .bet__inf .legend .legend__left, .legend .bet .bet__inf .legend__left { position: relative; width: 29px; font-size: 8px; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -o-font-smoothing: antialiased; }
 .bet .bet__stat { float: left; width: 243px; }
 @media only screen and (max-width: 1420px) { .bet .bet__stat { width: 78%; } }
 @media only screen and (max-width: 1304px) { .bet .bet__stat { width: 84%; } }

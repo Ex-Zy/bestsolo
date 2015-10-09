@@ -1501,6 +1501,9 @@ button.button-more
 		background: $yellow
 	&.is-purple
 		background: $purple
+	&.is-pause
+		background: $gray
+		color: $yellow
 
 // minute
 .minute
@@ -3651,6 +3654,11 @@ h1.title-bord, h2.title-bord, h3.title-bord
 			color: $green
 			&:before
 				color: inherit
+		.status
+			position: relative
+			width: 29px
+			font-size: 8px
+			+font-smoothing(antialiased)
 	.bet__stat
 		float: left
 		width: 243px

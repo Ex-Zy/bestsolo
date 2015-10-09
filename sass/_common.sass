@@ -2471,11 +2471,8 @@ ul.score
 	tr
 		&.is-gray
 			background: #eaebee
-		&.is-m-width
+		&.tr-pad
 			padding: 0
-			display: none
-			+r(1431)
-				display: table-row
 			& > td
 				padding: 0
 			.table-stat
@@ -2526,6 +2523,8 @@ ul.score
 		line-height: 1.3
 	.btn-smsquare
 		margin-top: 16px
+	.table-stat td:first-child
+		max-width: 66px
 
 // table-legen
 .table-stat

@@ -372,13 +372,14 @@ button.button-more { line-height: 1; }
 .nav li.is-check ul { display: block; }
 .nav li ul { display: none; }
 .nav li li { padding: 9px 8px 8px 35px; text-transform: uppercase; letter-spacing: -0.2px; font-family: "NotoSans", Arial, sans-serif; font-weight: normal; }
-.nav li li:hover, .nav li li.is-active { background: #dfe4ea; }
+.nav li li:hover { background: #f0f2f5; }
+.nav li li.is-active { background: #dfe4ea; }
 .nav li .checkbox { color: #7b8a9e; text-transform: initial; }
 .nav .nav__item { position: relative; padding: 9px 35px 8px 35px; line-height: 1; text-transform: uppercase; display: block; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .nav .nav__item:hover, .nav .nav__item.is-active { background: #cccfd3; }
 .nav .nav__item:hover .btn-check, .nav .nav__item:hover .btn-remove, .nav .nav__item:hover .btn-star, .nav .nav__item.is-active .btn-check, .nav .nav__item.is-active .btn-remove, .nav .nav__item.is-active .btn-star { display: block; }
 .nav .nav__item:hover .amount, .nav .nav__item.is-active .amount { display: none; }
-.nav .nav__item:hover { background: #dfe4ea; }
+.nav .nav__item:hover { background: #f0f2f5; }
 .nav .nav__item.is-break span { white-space: normal; word-break: break-word; }
 .nav .nav__item span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: block; }
 .nav .ico { position: absolute; left: 13px; top: 50%; -moz-transform: translate(0, -50%); -ms-transform: translate(0, -50%); -webkit-transform: translate(0, -50%); transform: translate(0, -50%); }

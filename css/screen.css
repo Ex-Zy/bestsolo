@@ -378,7 +378,8 @@ button.button-more { line-height: 1; }
 .nav .nav__item:hover .btn-check, .nav .nav__item:hover .btn-remove, .nav .nav__item:hover .btn-star, .nav .nav__item.is-active .btn-check, .nav .nav__item.is-active .btn-remove, .nav .nav__item.is-active .btn-star { display: block; }
 .nav .nav__item:hover .amount, .nav .nav__item.is-active .amount { display: none; }
 .nav .nav__item:hover { background: #dfe4ea; }
-.nav .nav__item span { word-break: break-all; }
+.nav .nav__item.is-break span { white-space: normal; word-break: break-word; }
+.nav .nav__item span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: block; }
 .nav .ico { position: absolute; left: 13px; top: 50%; -moz-transform: translate(0, -50%); -ms-transform: translate(0, -50%); -webkit-transform: translate(0, -50%); transform: translate(0, -50%); }
 .nav .btn-check, .nav .btn-remove, .nav .btn-star { position: absolute; top: 50%; -moz-transform: translate(0, -50%); -ms-transform: translate(0, -50%); -webkit-transform: translate(0, -50%); transform: translate(0, -50%); display: none; }
 .nav .btn-check { right: 26px; }

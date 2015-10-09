@@ -1190,8 +1190,15 @@ button.button-more
 				display: none
 		&:hover
 			background: #dfe4ea
+		&.is-break
+			span
+				white-space: normal
+				word-break: break-word
 		span
-			word-break: break-all
+			overflow: hidden
+			text-overflow: ellipsis
+			white-space: nowrap
+			display: block
 	.ico
 		position: absolute
 		left: 13px

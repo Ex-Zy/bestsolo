@@ -1133,7 +1133,7 @@ h1.title-bord span, h2.title-bord span, h3.title-bord span { position: relative;
 .bet .bet__center { vertical-align: middle; display: inline-block; }
 .bet .bet__center ƒbtn-radar + .btn-stat, .bet .bet__center ƒbtn-radar + button, .bet .bet__center .btn-radar-tennis + .btn-stat, .bet .bet__center .btn-radar-tennis + button, .bet .bet__center .btn-radar + .btn-stat, .bet .bet__center .btn-radar + button, .bet .bet__center button + .btn-stat, .bet .bet__center button + button { margin-top: 6px; }
 .bet .bet__inf { float: left; padding-top: 23px; width: 26px; }
-.bet .bet__inf .minute { position: relative; left: 50%; -moz-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); margin: 0 -5px; color: #36a200; }
+.bet .bet__inf .minute { position: relative; left: 50%; -moz-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); margin: 0 -5px; color: #36a200; width: 40px; text-align: center; }
 .bet .bet__inf .minute:before { color: inherit; }
 .bet .bet__inf .status, .bet .bet__inf .legend .legend__left, .legend .bet .bet__inf .legend__left { position: relative; left: 50%; -moz-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); margin-left: -5px; font-size: 9px; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -o-font-smoothing: antialiased; }
 .bet .bet__stat { float: left; width: 243px; }

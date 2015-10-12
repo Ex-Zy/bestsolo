@@ -1525,10 +1525,10 @@ button.button-more
 .minute
 	color: $light-blue
 	font-size: 13px
-	&:after
+	&:before
 		content: "'"
 	&.is-addtime
-		&:after
+		&:before
 			display: none
 	span
 		margin-right: -5px
@@ -3512,6 +3512,9 @@ h1.title-bord, h2.title-bord, h3.title-bord
 				padding: 0 30px 0 0
 		.score
 			width: 60px
+		.gen
+			.score
+				width: 100%
 	& + .bets
 		margin-top: 38px
 	.bets__in
@@ -3860,6 +3863,9 @@ h1.title-bord, h2.title-bord, h3.title-bord
 		top: -1px
 		bottom: -1px
 		border: 1px solid $gray
+	.minute
+		&:before
+			display: none
 
 // beginning
 .beginning

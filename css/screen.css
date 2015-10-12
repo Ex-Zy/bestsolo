@@ -486,8 +486,8 @@ button.button-more { line-height: 1; }
 .status.is-pause, .legend .is-pause.legend__left { background: #555f6d; color: #ffce00; }
 
 .minute { color: #77a3bc; font-size: 13px; }
-.minute:after { content: "'"; }
-.minute.is-addtime:after { display: none; }
+.minute:before { content: "'"; }
+.minute.is-addtime:before { display: none; }
 .minute span { margin-right: -5px; font-size: 9px; vertical-align: top; }
 
 .teams { position: relative; }
@@ -1084,6 +1084,7 @@ h1.title-bord span, h2.title-bord span, h3.title-bord span { position: relative;
 .bets.is-all .team { padding-left: 30px; }
 .bets.is-all .team:first-child { padding: 0 30px 0 0; }
 .bets.is-all .score { width: 60px; }
+.bets.is-all .gen .score { width: 100%; }
 .bets + .bets { margin-top: 38px; }
 .bets .bets__in { border: 1px solid #d6dadf; border-bottom: none; }
 .bets .bets__bot { padding-top: 12px; text-align: center; }
@@ -1185,6 +1186,7 @@ h1.title-bord span, h2.title-bord span, h3.title-bord span { position: relative;
 .bet .more { border-bottom: none; display: block; }
 .bet .more__field { border-top: 1px solid #b9c0c9; border-bottom: none; }
 .bet .preloader { top: -1px; bottom: -1px; border: 1px solid #555f6d; }
+.bet .minute:before { display: none; }
 
 .beginning { text-align: center; font-size: 14px; line-height: 14px; color: #7b8a9e; }
 .beginning.is-green { color: #36a200; }

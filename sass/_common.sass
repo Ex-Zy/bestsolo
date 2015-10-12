@@ -500,6 +500,7 @@ a
 .lang
 	position: relative
 	cursor: pointer
+	+user-select(none)
 	&.is-open
 		.lang__list
 			display: block
@@ -3409,16 +3410,16 @@ h1.title-bord, h2.title-bord, h3.title-bord
 		.bet__in
 			padding: 4px 7px
 		.bet__left
-			width: 456px
+			width: 468px
 			+r(1420)
-				margin-right: 315px
+				margin-right: 311px
 				width: auto
 			+r(1304)
-				margin-right: 208px
+				margin-right: 204px
 		.bet__stat
-			width: 427px
+			width: 410px
 			+r(1420)
-				width: 100%
+				width: 88%
 		.bet__right
 			position: absolute
 			top: 9px
@@ -3619,12 +3620,12 @@ h1.title-bord, h2.title-bord, h3.title-bord
 
 	.bet__in
 		position: relative
-		padding: 9px 12px 9px 7px
+		padding: 9px 12px 9px 0
 		min-height: 78px
 		+box
 		+clr
 	.bet__left
-		padding-left: 5px
+		padding-left: 12px
 		overflow: hidden
 		+clr
 		&.is-tennis
@@ -3697,6 +3698,7 @@ h1.title-bord, h2.title-bord, h3.title-bord
 			position: relative
 			left: 50%
 			+translate(-50%,0)
+			margin-left: -5px
 			font-size: 9px
 			+font-smoothing(antialiased)
 	.bet__stat

@@ -171,7 +171,7 @@ a:hover { text-decoration: underline; }
 .header .logo, .header .menu { float: left; }
 .header .menu { margin: -8px 0 -5px 15px; }
 
-.lang { position: relative; cursor: pointer; }
+.lang { position: relative; cursor: pointer; -moz-user-select: -moz-none; -ms-user-select: none; -webkit-user-select: none; user-select: none; }
 .lang.is-open .lang__list { display: block; }
 .lang.is-open .lang__chosen:before { -ms-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); }
 .lang .lang__chosen { position: relative; padding: 8px 24px 4px 4px; height: 34px; width: 60px; line-height: 1; *zoom: 1; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
@@ -1048,11 +1048,11 @@ h1.title-bord span, h2.title-bord span, h3.title-bord span { position: relative;
 
 .bets { margin-bottom: 30px; }
 .bets.is-tennis .bet__in { padding: 4px 7px; }
-.bets.is-tennis .bet__left { width: 456px; }
-@media only screen and (max-width: 1420px) { .bets.is-tennis .bet__left { margin-right: 315px; width: auto; } }
-@media only screen and (max-width: 1304px) { .bets.is-tennis .bet__left { margin-right: 208px; } }
-.bets.is-tennis .bet__stat { width: 427px; }
-@media only screen and (max-width: 1420px) { .bets.is-tennis .bet__stat { width: 100%; } }
+.bets.is-tennis .bet__left { width: 468px; }
+@media only screen and (max-width: 1420px) { .bets.is-tennis .bet__left { margin-right: 311px; width: auto; } }
+@media only screen and (max-width: 1304px) { .bets.is-tennis .bet__left { margin-right: 204px; } }
+.bets.is-tennis .bet__stat { width: 410px; }
+@media only screen and (max-width: 1420px) { .bets.is-tennis .bet__stat { width: 88%; } }
 .bets.is-tennis .bet__right { position: absolute; top: 9px; left: 462px; right: 12px; bottom: 9px; width: auto; overflow: initial; text-align: center; font-size: 0; }
 .bets.is-tennis .bet__right:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
 .bets.is-tennis .bet__l { margin-top: -1px; width: 100%; text-align: right; vertical-align: middle; display: inline-block; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
@@ -1113,9 +1113,9 @@ h1.title-bord span, h2.title-bord span, h3.title-bord span { position: relative;
 .bet.bet_not-started .teams .team:first-child { padding: 0 15px 0 0; }
 .bet.bet_not-started .bet__time { position: absolute; left: 50%; top: -12px; -moz-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); padding-left: 90px; }
 .bet.bet_not-started .date, .bet.bet_not-started .time { font-size: 14px; color: #7b8a9e; }
-.bet .bet__in { position: relative; padding: 9px 12px 9px 7px; min-height: 78px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; *zoom: 1; }
+.bet .bet__in { position: relative; padding: 9px 12px 9px 0; min-height: 78px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; *zoom: 1; }
 .bet .bet__in:after { content: " "; display: table; clear: both; }
-.bet .bet__left { padding-left: 5px; overflow: hidden; *zoom: 1; }
+.bet .bet__left { padding-left: 12px; overflow: hidden; *zoom: 1; }
 .bet .bet__left:after { content: " "; display: table; clear: both; }
 .bet .bet__left.is-tennis { width: 460px; }
 @media only screen and (max-width: 1420px) { .bet .bet__left.is-tennis { width: auto; } }
@@ -1135,7 +1135,7 @@ h1.title-bord span, h2.title-bord span, h3.title-bord span { position: relative;
 .bet .bet__inf { float: left; padding-top: 23px; width: 26px; }
 .bet .bet__inf .minute { position: relative; left: 50%; -moz-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); margin: 0 -5px; color: #36a200; }
 .bet .bet__inf .minute:before { color: inherit; }
-.bet .bet__inf .status, .bet .bet__inf .legend .legend__left, .legend .bet .bet__inf .legend__left { position: relative; left: 50%; -moz-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); font-size: 9px; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -o-font-smoothing: antialiased; }
+.bet .bet__inf .status, .bet .bet__inf .legend .legend__left, .legend .bet .bet__inf .legend__left { position: relative; left: 50%; -moz-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); margin-left: -5px; font-size: 9px; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -o-font-smoothing: antialiased; }
 .bet .bet__stat { float: left; width: 243px; }
 @media only screen and (max-width: 1420px) { .bet .bet__stat { width: 78%; } }
 @media only screen and (max-width: 1304px) { .bet .bet__stat { width: 84%; } }

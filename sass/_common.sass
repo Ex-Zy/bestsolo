@@ -1076,6 +1076,9 @@ button.btn-smsquare
 .btn-radar
 	+svg(ico-field-green,40,20)
 
+.btn-radar-basketball
+	+svg(ico-basketball-inactive,40,20)
+
 .btn-stat
 	+svg(ico-stat-big,40,20)
 	&.is-gray
@@ -1522,14 +1525,14 @@ button.button-more
 .minute
 	color: $light-blue
 	font-size: 13px
-	&:before
+	&:after
 		content: "'"
 	&.is-addtime
-		&:before
+		&:after
 			display: none
 	span
 		margin-right: -5px
-		font-size: 7px
+		font-size: 9px
 		vertical-align: top
 
 // teams
@@ -3450,7 +3453,7 @@ h1.title-bord, h2.title-bord, h3.title-bord
 				+r(1420)
 					width: 50%
 		.score
-			margin: 0 0 0 -2px
+			margin: 0 0 0 12px
 			width: 112px
 			+r(1420)
 				margin-left: 35px
@@ -3494,6 +3497,21 @@ h1.title-bord, h2.title-bord, h3.title-bord
 					width: 1px
 					z-index: 1
 					background: $gray
+	&.is-all
+		.bet__right
+			width: 505px
+			+r(1420)
+				width: 360px
+			+r(1304)
+				width: 252px
+		.bet__stat
+			width: calc(100% - 26px - 46px)
+		.team
+			padding-left: 30px
+			&:first-child
+				padding: 0 30px 0 0
+		.score
+			width: 60px
 	& + .bets
 		margin-top: 38px
 	.bets__in
@@ -3643,6 +3661,9 @@ h1.title-bord, h2.title-bord, h3.title-bord
 		position: relative
 		text-align: right
 		padding-right: 8px
+		+clr
+	.bet__wr
+		+clr
 	.bet__right
 		position: relative
 		float: right
@@ -3675,7 +3696,7 @@ h1.title-bord, h2.title-bord, h3.title-bord
 	.bet__center
 		vertical-align: middle
 		display: inline-block
-		ƒbtn-radar,
+		.btn-radar,
 		.btn-radar-tennis,
 		.btn-radar,
 		button
@@ -3686,10 +3707,13 @@ h1.title-bord, h2.title-bord, h3.title-bord
 		float: left
 		padding-top: 23px
 		width: 26px
-		.minute
+		.minute,
+		.status,
+		.set
 			position: relative
 			left: 50%
 			+translate(-50%,0)
+		.minute
 			margin: 0 -5px
 			color: $green
 			width: 40px
@@ -3697,12 +3721,14 @@ h1.title-bord, h2.title-bord, h3.title-bord
 			&:before
 				color: inherit
 		.status
-			position: relative
-			left: 50%
-			+translate(-50%,0)
 			margin-left: -5px
 			font-size: 9px
 			+font-smoothing(antialiased)
+		.set
+			margin: 5px 0 0 -5px
+			width: 40px
+			line-height: 14px
+			text-align: center
 	.bet__stat
 		float: left
 		width: 243px
@@ -3782,7 +3808,7 @@ h1.title-bord, h2.title-bord, h3.title-bord
 			padding: 0 23px 0 0
 	.score
 		position: absolute
-		top: 0
+		top: 1px
 		left: 50%
 		width: 42px
 		height: inherit

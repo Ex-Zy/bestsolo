@@ -877,7 +877,7 @@ h1.title-bord span, h2.title-bord span, h3.title-bord span { position: relative;
 .support .form__col { width: 457px; }
 
 .radar iframe #document .sr-widgets-lmts > .sr-content { min-width: 100% !important; }
-.radar .radar__in { margin: 0 auto 30px; width: 516px; }
+.radar .radar__in { margin: 0 0 30px; }
 
 .tickets .is-green { color: #36a200; }
 .tickets .is-mob { display: none; }

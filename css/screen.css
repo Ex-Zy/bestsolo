@@ -1109,13 +1109,14 @@ h1.title-bord span, h2.title-bord span, h3.title-bord span { position: relative;
 .bet.is-popen-more .team, .bet.is-popen-more .score, .bet.is-popen-more .teams__arr { line-height: 1; font-size: 22px; }
 .bet.is-popen-more .score { width: 60px; }
 .bet.is-popen-more .gen { min-height: 16px; }
-.bet.is-popen-more .minute { position: absolute; content: ""; top: 0; left: 0; color: #7b8a9e; font-size: 22px; line-height: 1; }
-.bet.is-popen-more .minute:before { content: "'"; }
+.bet.is-popen-more .gen .set { left: -55px; }
+.bet.is-popen-more .minute { position: absolute; content: ""; top: 0; left: -20px; width: 70px; text-align: center; color: #7b8a9e; font-size: 22px; line-height: 1; }
+.bet.is-popen-more .minute span { font-size: 12px; }
 .bet.is-popen-more .bet__in { padding-left: 0; }
-.bet.is-popen-more .bet__stat { position: relative; padding-left: 45px; width: 67%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-@media only screen and (max-width: 1426px) { .bet.is-popen-more .bet__stat { width: 62%; } }
-@media only screen and (max-width: 1333px) { .bet.is-popen-more .bet__stat { width: 59%; } }
-.bet.is-popen-more .bet__right { margin-top: 4px; padding: 0 0 0 20px; width: 20%; }
+.bet.is-popen-more .bet__stat { position: relative; padding: 0 0 2px 55px; width: 71%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+@media only screen and (max-width: 1426px) { .bet.is-popen-more .bet__stat { width: 67%; } }
+@media only screen and (max-width: 1333px) { .bet.is-popen-more .bet__stat { width: 64%; } }
+.bet.is-popen-more .bet__right { margin-top: 4px; padding: 0 0 0 20px; width: auto; }
 .bet.is-popen-more .bet__radar { position: relative; }
 .bet.bet_not-started { position: relative; }
 .bet.bet_not-started .teams { margin-top: -4px; }

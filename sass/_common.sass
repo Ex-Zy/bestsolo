@@ -3589,31 +3589,35 @@ h1.title-bord, h2.title-bord, h3.title-bord
 			width: 60px
 		.gen
 			min-height: 16px
+			.set
+				left: -55px
 		.minute
 			position: absolute
 			content: ''
 			top: 0
-			left: 0
+			left: -20px
+			width: 70px
+			text-align: center
 			color: #7B8A9E
 			font-size: 22px
 			line-height: 1
-			&:before
-				content: "'"
+			span
+				font-size: 12px
 		.bet__in
 			padding-left: 0
 		.bet__stat
 			position: relative
-			padding-left: 45px
-			width: 67%
+			padding: 0 0 2px 55px
+			width: 71%
 			+box
 			+r(1426)
-				width: 62%
+				width: 67%
 			+r(1333)
-				width: 59%
+				width: 64%
 		.bet__right
 			margin-top: 4px
 			padding: 0 0 0 20px
-			width: 20%
+			width: auto
 		.bet__radar
 			position: relative
 	&.bet_not-started

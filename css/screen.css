@@ -1102,7 +1102,7 @@ h1.title-bord span, h2.title-bord span, h3.title-bord span { position: relative;
 .bet { border-bottom: 1px solid #d6dadf; }
 .bet.is-popen-more { border-bottom: none; }
 .bet.is-popen-more .sort, .bet.is-popen-more .chemp { float: left; }
-.bet.is-popen-more .chemp { margin-left: 5px; width: 148px; font-size: 11px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.bet.is-popen-more .chemp { margin-left: 5px; width: 80%; font-size: 11px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .bet.is-popen-more .teams { margin-top: 0; }
 .bet.is-popen-more .team { padding-left: 32px; }
 .bet.is-popen-more .team:first-child { padding: 0 32px 0 0; }

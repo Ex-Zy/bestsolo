@@ -893,7 +893,7 @@ h1.title-bord span, h2.title-bord span, h3.title-bord span { position: relative;
 .support .form__col { width: 457px; }
 
 .radar iframe #document .sr-widgets-lmts > .sr-content { min-width: 100% !important; }
-.radar .radar__in { margin: 0 auto 30px; width: 516px; }
+.radar .radar__in { margin: 0 0 30px; }
 
 .tickets .is-green { color: #36A200; }
 .tickets .is-mob { display: none; }
@@ -1039,7 +1039,7 @@ h1.title-bord span, h2.title-bord span, h3.title-bord span { position: relative;
 
 .slider { margin-bottom: 20px; height: 370px; visibility: hidden; opacity: 0; }
 .slider.is-init { visibility: visible; opacity: 1; }
-.slider .slide { position: relative; width: 100%; height: 370px; background-size: cover !important; }
+.slider .slide { position: relative; width: 100%; height: 370px; background-size: contain !important; background-position: 100% 0 !important; }
 .slider .slide__bg { position: absolute; left: 0; top: 0; bottom: 0; width: 558px; background: url(../img/svg/slide-bg-in.svg) no-repeat 0 0; background-size: cover; }
 .slider .slide__in { margin-left: 106px; padding-top: 14px; width: 316px; color: #fff; text-align: center; font-family: "NotoSans-Bold", Arial, sans-serif; font-weight: normal; }
 .slider .slick-next, .slider .slick-prev { z-index: 2; }
@@ -1118,20 +1118,19 @@ h1.title-bord span, h2.title-bord span, h3.title-bord span { position: relative;
 .bet { border-bottom: 1px solid #d6dadf; }
 .bet.is-popen-more { border-bottom: none; }
 .bet.is-popen-more .sort, .bet.is-popen-more .chemp { float: left; }
-.bet.is-popen-more .chemp { margin-left: 5px; width: 148px; font-size: 11px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.bet.is-popen-more .chemp { margin-left: 5px; width: 80%; font-size: 11px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .bet.is-popen-more .teams { margin-top: 0; }
 .bet.is-popen-more .team { padding-left: 32px; }
 .bet.is-popen-more .team:first-child { padding: 0 32px 0 0; }
 .bet.is-popen-more .team, .bet.is-popen-more .score, .bet.is-popen-more .teams__arr { line-height: 1; font-size: 22px; }
 .bet.is-popen-more .score { width: 60px; }
 .bet.is-popen-more .gen { min-height: 16px; }
-.bet.is-popen-more .minute { position: absolute; content: ""; top: 0; left: 0; color: #7B8A9E; font-size: 22px; line-height: 1; }
-.bet.is-popen-more .minute:before { content: "'"; }
+.bet.is-popen-more .gen .set { left: -65px; }
+.bet.is-popen-more .minute { position: absolute; content: ""; top: 0; left: 0; width: 70px; color: #7B8A9E; font-size: 22px; line-height: 1; }
+.bet.is-popen-more .minute span { font-size: 12px; }
 .bet.is-popen-more .bet__in { padding-left: 0; }
-.bet.is-popen-more .bet__stat { position: relative; padding-left: 45px; width: 67%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-@media only screen and (max-width: 1426px) { .bet.is-popen-more .bet__stat { width: 62%; } }
-@media only screen and (max-width: 1333px) { .bet.is-popen-more .bet__stat { width: 59%; } }
-.bet.is-popen-more .bet__right { margin-top: 4px; padding: 0 0 0 20px; width: 20%; }
+.bet.is-popen-more .bet__stat { position: relative; padding: 0 0 2px 65px; width: 100%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.bet.is-popen-more .bet__right { margin-top: 4px; padding: 0 0 0 20px; width: auto; }
 .bet.is-popen-more .bet__radar { position: relative; }
 .bet.bet_not-started { position: relative; }
 .bet.bet_not-started .teams { margin-top: -4px; }
@@ -1155,6 +1154,7 @@ h1.title-bord span, h2.title-bord span, h3.title-bord span { position: relative;
 .bet .bet__right { position: relative; float: right; width: 557px; padding-right: 88px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 @media only screen and (max-width: 1420px) { .bet .bet__right { width: 412px; } }
 @media only screen and (max-width: 1304px) { .bet .bet__right { width: 252px; } }
+.bet .bet__top { float: left; width: 100%; }
 .bet .bet__more { position: absolute; top: 0; bottom: 0; right: 47px; width: 40px; }
 .bet .bet__more .button-more { position: absolute; left: 0; top: 50%; margin-top: -11px; }
 .bet .bet__radar { position: absolute; right: 0; top: 0; bottom: 0; width: 40px; font-size: 0; text-align: center; font-size: 0; }

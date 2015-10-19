@@ -1267,7 +1267,7 @@ h1.title-bord span, h2.title-bord span, h3.title-bord span { position: relative;
 .back .back__link { font-size: 11px; font-family: "NotoSans-Bold", Arial, sans-serif; font-weight: normal; color: #7b8a9e; text-decoration: underline; }
 
 .sort { font-size: 11px; color: #7b8a9e; }
-.sort .sort__name { width: 36px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; vertical-align: top; display: inline-block; }
+.sort .sort__name { width: auto; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; vertical-align: top; display: inline-block; }
 .sort .ico { margin-right: 5px; }
 
 .arr-more { width: 0px; height: 0px; border-style: solid; border-width: 2.5px 0 2.5px 4px; border-color: transparent transparent transparent #555f6d; }

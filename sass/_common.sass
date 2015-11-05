@@ -94,21 +94,29 @@ $yellow-dark: #edbc00
 $yellow-light: #ffe87c
 $purple: #9B4576
 
+.partners__icons
+	.ico
+		display: inline-block
+		&.ico_bank
+			+svg(bank-footer,53,15)
+		&.ico_paysafe
+			+svg(paysafe-footer,53,15)
+		&.ico_sofort
+			+svg(sofort-footer,53,15)
+		&.ico_paypal
+			+svg(paypal-footer,53,15)
+		&.ico_mc
+			+svg(mc-footer,64,10)
+		&.ico_visa
+			+svg(visa-footer,33,10)
+		&.ico_skrill
+			+svg(skrill-footer,29,10)
+		&.ico_neteller
+			+svg(neteller-footer,45,10)
+
 // ico
 .ico
 	display: inline-block
-	&.ico_bank
-		+svg(bank,53,15)
-	&.ico_paysafe
-		+svg(paysafe,53,15)
-	&.ico_sofort
-		+svg(sofort,53,15)
-	&.ico_pay
-		+svg(pay,53,15)
-	&.ico_mc
-		+svg(mc,64,10)
-	&.ico_visa
-		+svg(visa,33,10)
 	&.ico_am-footboll
 		+svg(am-football,16,12)
 	&.ico_au-rules

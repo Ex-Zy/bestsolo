@@ -26,6 +26,9 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 @font-face { font-family: OpenSans; src: url("fonts/OpenSans.eot"); src: url("fonts/OpenSans.eot?#iefix") format("embedded-opentype"), url("fonts/OpenSans.woff") format("woff"), url("fonts/OpenSans.woff") format("woff"), url("fonts/OpenSans.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 @font-face { font-family: Myriad-Pro; src: url("fonts/MyriadPro-Regular.eot"); src: url("fonts/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/MyriadPro-Regular.woff") format("woff"), url("fonts/MyriadPro-Regular.woff") format("woff"), url("fonts/MyriadPro-Regular.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 .ico { display: inline-block; }
+.ico.ico_bank { background: url("../img/svg/bank.svg") no-repeat 0 0; -moz-background-size: 53px 15px; -o-background-size: 53px 15px; -webkit-background-size: 53px 15px; background-size: 53px 15px; width: 53px; height: 15px; display: inline-block; }
+.ico.ico_paysafe { background: url("../img/svg/paysafe.svg") no-repeat 0 0; -moz-background-size: 53px 15px; -o-background-size: 53px 15px; -webkit-background-size: 53px 15px; background-size: 53px 15px; width: 53px; height: 15px; display: inline-block; }
+.ico.ico_sofort { background: url("../img/svg/sofort.svg") no-repeat 0 0; -moz-background-size: 53px 15px; -o-background-size: 53px 15px; -webkit-background-size: 53px 15px; background-size: 53px 15px; width: 53px; height: 15px; display: inline-block; }
 .ico.ico_pay { background: url("../img/svg/pay.svg") no-repeat 0 0; -moz-background-size: 53px 15px; -o-background-size: 53px 15px; -webkit-background-size: 53px 15px; background-size: 53px 15px; width: 53px; height: 15px; display: inline-block; }
 .ico.ico_mc { background: url("../img/svg/mc.svg") no-repeat 0 0; -moz-background-size: 64px 10px; -o-background-size: 64px 10px; -webkit-background-size: 64px 10px; background-size: 64px 10px; width: 64px; height: 10px; display: inline-block; }
 .ico.ico_visa { background: url("../img/svg/visa.svg") no-repeat 0 0; -moz-background-size: 33px 10px; -o-background-size: 33px 10px; -webkit-background-size: 33px 10px; background-size: 33px 10px; width: 33px; height: 10px; display: inline-block; }
@@ -151,7 +154,7 @@ body.is-home-new .header .menu a:before { position: absolute; content: ""; left:
 body.is-home-new .header .menu a.is-active, body.is-home-new .header .menu a:hover { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzU0NWY3MSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzM1M2M0NyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA=='); background-size: 100%; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #545f71), color-stop(100%, #353c47)); background-image: -moz-linear-gradient(#545f71, #353c47); background-image: -webkit-linear-gradient(#545f71, #353c47); background-image: linear-gradient(#545f71, #353c47); }
 body.is-home-new .header .menu a.is-active:before, body.is-home-new .header .menu a:hover:before { display: block; }
 body.is-home-new .footer { padding-top: 8px; background: #f3f3f3; }
-body.is-home-new .footer__nav { padding-left: 20px; background: none; }
+body.is-home-new .footer__nav { padding-left: 10px; background: none; }
 body.is-home-new .footer__nav li { margin-left: 23px; }
 
 a { color: #555F6D; text-decoration: none; }
@@ -428,11 +431,16 @@ button.button-more { line-height: 1; }
 .banner { display: block; margin: 13px 0 13px 2px; }
 .banner img { display: block; }
 
-.partners { padding-left: 10px; }
+.partners { width: 260px; padding-left: 10px; overflow: hidden; }
 .partners .partners__title { font-size: 10px; }
-.partners .partners__icons { margin-top: 15px; }
-.partners .partners__icons .ico { position: relative; margin-left: 25px; z-index: 1; }
-.partners .partners__icons .ico:first-child { position: relative; top: 4px; margin: 0; }
+.partners .partners__icons { margin-top: 15px; margin-left: -13px; }
+.partners .partners__icons .ico { position: relative; vertical-align: middle; display: inline-block; z-index: 1; }
+.partners .row { font-size: 0; margin: 0 0 20px; text-align: center; font-size: 0; }
+.partners .row:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
+.partners .row:first-child { margin-bottom: 20px; }
+.partners .row:last-child { margin-bottom: 0; }
+.partners .col { display: inline-block; width: 29.3%; vertical-align: middle; text-align: center; }
+.partners .col2 { margin: 0 6%; }
 
 .age { display: inline-block; background: url("../img/svg/age-2.svg") no-repeat 0 0; -moz-background-size: 44px 44px; -o-background-size: 44px 44px; -webkit-background-size: 44px 44px; background-size: 44px 44px; width: 44px; height: 44px; display: inline-block; }
 
@@ -986,7 +994,7 @@ h1.title-bord span, h2.title-bord span, h3.title-bord span { position: relative;
 .footer .footer__img { margin-top: 20px; text-align: center; font-size: 0; }
 .footer .age { position: relative; float: right; top: 7px; }
 .footer .partners { float: left; }
-.footer .copy { position: absolute; left: 108px; right: 0; bottom: 0; font-size: 10px; text-align: center; }
+.footer .copy { position: absolute; left: 108px; right: 0; top: 27px; font-size: 10px; text-align: center; }
 
 .is-sticky { position: fixed; z-index: 101; width: 292px; }
 
@@ -1283,7 +1291,7 @@ h1.title-bord span, h2.title-bord span, h3.title-bord span { position: relative;
 .back .back__link { font-size: 11px; font-family: "NotoSans-Bold", Arial, sans-serif; font-weight: normal; color: #7B8A9E; text-decoration: underline; }
 
 .sort { font-size: 11px; color: #7B8A9E; }
-.sort .sort__name { width: 36px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; vertical-align: top; display: inline-block; }
+.sort .sort__name { width: auto; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; vertical-align: top; display: inline-block; }
 .sort .ico { margin-right: 5px; }
 
 .arr-more { width: 0px; height: 0px; border-style: solid; border-width: 2.5px 0 2.5px 4px; border-color: transparent transparent transparent #555F6D; }

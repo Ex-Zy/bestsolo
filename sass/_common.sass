@@ -94,21 +94,29 @@ $yellow-dark: #edbc00
 $yellow-light: #ffe87c
 $purple: #9B4576
 
+.partners__icons
+	.ico
+		display: inline-block
+		&.ico_bank
+			+svg(bank-footer,88,25)
+		&.ico_paysafe
+			+svg(paysafe-footer,70,20)
+		&.ico_sofort
+			+svg(sofort-footer,53,15)
+		&.ico_paypal
+			+svg(paypal-footer,53,15)
+		&.ico_mc
+			+svg(mc-footer,64,10)
+		&.ico_visa
+			+svg(visa-footer,33,10)
+		&.ico_skrill
+			+svg(skrill-footer,44,15)
+		&.ico_neteller
+			+svg(neteller-footer,68,15)
+
 // ico
 .ico
 	display: inline-block
-	&.ico_bank
-		+svg(bank,53,15)
-	&.ico_paysafe
-		+svg(paysafe,53,15)
-	&.ico_sofort
-		+svg(sofort,53,15)
-	&.ico_pay
-		+svg(pay,53,15)
-	&.ico_mc
-		+svg(mc,64,10)
-	&.ico_visa
-		+svg(visa,33,10)
 	&.ico_am-footboll
 		+svg(am-football,16,12)
 	&.ico_au-rules
@@ -374,18 +382,14 @@ body
 			margin-right: 11px
 		.user
 			margin-top: 6px
-			padding: 6px 12px 6px 35px
+			padding: 6px 12px 6px 12px
 			font-size: 13px
 			line-height: 1.2
 			height: auto
-			+border-radius(29px)
 			border: none
 			+box-shadow(0 1px 0 #d8ad00)
 			text-transform: uppercase
 			+nsb
-			&:before
-				left: 13px
-				+svg(new-user,11,15)
 		.lang
 			border: 1px solid transparent
 			&.is-open
@@ -668,7 +672,6 @@ a
 
 // logout
 .logout
-	padding-left: 35px
 	+nsb
 	text-align: center
 	font-size: 11px
@@ -1079,9 +1082,6 @@ button.btn-smsquare
 	&.is-active
 		+svg(nav-star-yellow,15,14)
 
-.btn-radar
-	+svg(ico-field-green,40,20)
-
 .btn-radar-basketball
 	+svg(ico-basketball-inactive,40,20)
 
@@ -1090,11 +1090,45 @@ button.btn-smsquare
 	&.is-gray
 		+svg(ico-stat-big-gray,40,20)
 
+.btn-radar
+	+svg(ico-field,40,22)
+
 .btn-radar-tennis
-	+svg(ico-field-tennis,40,22) 
-	&.is-yellow
-		+svg(ico-field-tennis-yel,40,22) 
-		
+	+svg(ico-tennis-inactive,40,22) 
+	&.is-running
+		+svg(ico-tennis-active,40,22) 
+.btn-radar-soccer
+	+svg(ico-soccer-inactive,40,22) 
+	&.is-running
+		+svg(ico-soccer-active,40,22) 
+.btn-radar-amfootball
+	+svg(ico-amfootball-inactive,40,22) 
+	&.is-running
+		+svg(ico-amfootball-active,40,22) 
+.btn-radar-badminton
+	+svg(ico-badminton-inactive,40,22) 
+	&.is-running
+		+svg(ico-badminton-active,40,22) 
+.btn-radar-basketball
+	+svg(ico-basketball-inactive,40,22) 
+	&.is-running
+		+svg(ico-basketball-active,40,22) 
+.btn-radar-futsal
+	+svg(ico-futsal-inactive,40,22) 
+	&.is-running
+		+svg(ico-futsal-active,40,22) 
+.btn-radar-handball
+	+svg(ico-handball-inactive,40,22) 
+	&.is-running
+		+svg(ico-handball-active,40,22) 
+.btn-radar-hockey
+	+svg(ico-hockey-inactive,40,22) 
+	&.is-running
+		+svg(ico-hockey-active,40,22) 
+.btn-radar-volleyball
+	+svg(ico-volleyball-inactive,40,22) 
+	&.is-running
+		+svg(ico-volleyball-active,40,22) 				
 
 .button-more
 	position: relative
@@ -1551,8 +1585,6 @@ button.button-more
 .minute
 	color: $light-blue
 	font-size: 13px
-	&:before
-		content: "'"
 	&.is-addtime
 		&:before
 			display: none
@@ -1772,20 +1804,20 @@ ul.score
 	display: inline-block
 
 // operation
-.operation
-	padding: 26px 30px
-	text-align: center
-	font-size: 14px
-	border-top: 1px solid $light-gray2
-	+box
-	.btn.btn_yellow
-		margin: 0 0 15px
-		padding: 0 20px
-		width: 100%
-	a
-		text-decoration: underline
-		&:hover
-			text-decoration: none
+//.operation
+//	padding: 26px 30px
+//	text-align: center
+//	font-size: 14px
+//	border-top: 1px solid $light-gray2
+//	+box
+//	.btn.btn_yellow
+//		margin: 0 0 15px
+//		padding: 0 20px
+//		width: 100%
+//	a
+//		text-decoration: underline
+//		&:hover
+//			text-decoration: none
 
 // field
 .field
@@ -2102,12 +2134,6 @@ ul.score
 
 // preloader
 .preloader
-	position: absolute
-	top: 0
-	left: 0
-	right: 0
-	bottom: 0
-	z-index: 1
 	text-transform: uppercase
 	+nsb
 	background: #fff
@@ -2759,6 +2785,7 @@ ul.score
 .user-wr
 	display: inline-block
 	vertical-align: top
+	margin-left: 10px
 
 // user
 .user
@@ -2770,13 +2797,6 @@ ul.score
 	vertical-align: top
 	background: $yellow-light
 	display: inline-block
-	&:before
-		position: absolute
-		content: ''
-		top: 50%
-		left: -20px
-		+translate(0,-50%)
-		+svg(ico-user,12,15)
 	.user__name
 		position: relative
 		padding: 0 10px 0 0
@@ -3384,7 +3404,8 @@ h1.title-bord, h2.title-bord, h3.title-bord
 		font-size: 21px
 	.teams
 		margin: 12px 0 10px
-		font-size: 42px
+		font-size: 32px
+		white-space: nowrap
 	.team
 		line-height: 1
 	.vs

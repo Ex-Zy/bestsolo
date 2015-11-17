@@ -1690,6 +1690,14 @@ ul.score
 			left: 50%
 			+translate(-50%,-50%)
 			@extend .ico.ico_blocked
+	&.is-lock
+		position: relative
+		+hide-text
+		&:before
+			+vcenter
+			display: block
+			+svg(blocked, 20, 20)
+
 	&.is-down
 		&:before
 			+arr(7,4,$red,b)

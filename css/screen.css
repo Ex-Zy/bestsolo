@@ -36,6 +36,8 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 .partners__icons .ico.ico_neteller { background: url("../img/svg/neteller-footer.svg") no-repeat 0 0; -moz-background-size: 68px 15px; -o-background-size: 68px 15px; -webkit-background-size: 68px 15px; background-size: 68px 15px; width: 68px; height: 15px; display: inline-block; }
 
 .ico { display: inline-block; }
+.ico.ico_paysafe_white { background: url("../img/svg/paysafe.svg") no-repeat 0 0; -moz-background-size: 70px 20px; -o-background-size: 70px 20px; -webkit-background-size: 70px 20px; background-size: 70px 20px; width: 70px; height: 20px; display: inline-block; }
+.ico.ico_sofort_white { background: url("../img/svg/sofort.svg") no-repeat 0 0; -moz-background-size: 53px 15px; -o-background-size: 53px 15px; -webkit-background-size: 53px 15px; background-size: 53px 15px; width: 53px; height: 15px; display: inline-block; }
 .ico.ico_am-footboll { background: url("../img/svg/am-football.svg") no-repeat 0 0; -moz-background-size: 16px 12px; -o-background-size: 16px 12px; -webkit-background-size: 16px 12px; background-size: 16px 12px; width: 16px; height: 12px; display: inline-block; }
 .ico.ico_au-rules { background: url("../img/svg/ausiie-rules.svg") no-repeat 0 0; -moz-background-size: 16px 12px; -o-background-size: 16px 12px; -webkit-background-size: 16px 12px; background-size: 16px 12px; width: 16px; height: 12px; display: inline-block; }
 .ico.ico_badminton { background: url("../img/svg/badminton.svg") no-repeat 0 0; -moz-background-size: 14px 14px; -o-background-size: 14px 14px; -webkit-background-size: 14px 14px; background-size: 14px 14px; width: 14px; height: 14px; display: inline-block; }
@@ -879,7 +881,7 @@ ul.score li:first-child { margin-left: 0; }
 .user .user__money { font-weight: bold; }
 .user .user__name, .user .user__money { display: inline-block; }
 
-.cabinet { margin: 0 auto; max-width: 730px; }
+.cabinet { margin: 0 auto; max-width: 918px; }
 .cabinet .menu { margin-bottom: 25px; background: #555F6D; }
 .cabinet .menu__list { padding: 0; width: 100%; min-width: 0; display: table; }
 .cabinet .menu__list:after { display: none; }
@@ -1010,7 +1012,7 @@ h1.title-bord span, h2.title-bord span, h3.title-bord span { position: relative;
 .payments .btn { min-width: 143px; }
 
 .payment { margin-bottom: 60px; width: 100%; font-size: 0; display: table; }
-.payment li { position: relative; min-width: 145px; font-size: 13px; text-align: center; text-transform: uppercase; text-decoration: none; display: table-cell; }
+.payment li { position: relative; min-width: 130px; font-size: 13px; text-align: center; text-transform: uppercase; text-decoration: none; display: table-cell; background: #555F6D; }
 .payment .payment__item:hover, .payment .payment__item.is-active { color: #555F6D; text-decoration: none; background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IiIgcj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZTIwMCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZkYWUwMCIvPjwvcmFkaWFsR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA=='); background: -moz-radial-gradient(center, ellipse cover, #ffe200 0%, #fdae00 100%); background: -webkit-radial-gradient(center, ellipse cover, #ffe200 0%, #fdae00 100%); background: radial-gradient(ellipse cover at center, #ffe200 0%, #fdae00 100%); }
 .payment .payment__item:hover:after, .payment .payment__item.is-active:after { display: none; }
 .payment .payment__item:hover .ico_coupons, .payment .payment__item.is-active .ico_coupons { background: url("../img/svg/coupon-h.svg") no-repeat 0 0; -moz-background-size: 50px 32px; -o-background-size: 50px 32px; -webkit-background-size: 50px 32px; background-size: 50px 32px; width: 50px; height: 32px; display: inline-block; }
@@ -1020,11 +1022,14 @@ h1.title-bord span, h2.title-bord span, h3.title-bord span { position: relative;
 .payment .payment__item:hover .ico_web-money, .payment .payment__item.is-active .ico_web-money { background: url("../img/svg/web-money-h.svg") no-repeat 0 0; -moz-background-size: 25px 25px; -o-background-size: 25px 25px; -webkit-background-size: 25px 25px; background-size: 25px 25px; width: 25px; height: 25px; display: inline-block; }
 .payment .payment__item:hover .ico_neteller, .payment .payment__item.is-active .ico_neteller { background: url("../img/svg/neteller-h.svg") no-repeat 0 0; -moz-background-size: 90px 20px; -o-background-size: 90px 20px; -webkit-background-size: 90px 20px; background-size: 90px 20px; width: 90px; height: 20px; display: inline-block; }
 .payment .payment__item:hover .ico_bank, .payment .payment__item.is-active .ico_bank { background: url("../img/svg/bank-h.svg") no-repeat 0 0; -moz-background-size: 50px 35px; -o-background-size: 50px 35px; -webkit-background-size: 50px 35px; background-size: 50px 35px; width: 50px; height: 35px; display: inline-block; }
+.payment .payment__item:hover .ico_paysafe_white, .payment .payment__item.is-active .ico_paysafe_white { background: url("../img/svg/paysafe-h.svg") no-repeat 0 0; -moz-background-size: 70px 20px; -o-background-size: 70px 20px; -webkit-background-size: 70px 20px; background-size: 70px 20px; width: 70px; height: 20px; display: inline-block; }
+.payment .payment__item:hover .ico_sofort_white, .payment .payment__item.is-active .ico_sofort_white { background: url("../img/svg/sofort-h.svg") no-repeat 0 0; -moz-background-size: 53px 15px; -o-background-size: 53px 15px; -webkit-background-size: 53px 15px; background-size: 53px 15px; width: 53px; height: 15px; display: inline-block; }
 .payment .payment__item.is-active:before { position: absolute; content: ""; left: 50%; top: 100%; -moz-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); width: 0px; height: 0px; border-style: solid; border-width: 12px 12.5px 0 12.5px; border-color: #febe00 transparent transparent transparent; }
 .payment .payment__item:first-child:after { display: none; }
 .payment .payment__item:after { position: absolute; content: ""; top: 4px; left: 0; bottom: 4px; width: 1px; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80); opacity: 0.8; background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IiIgcj0iODAlIj48c3RvcCBvZmZzZXQ9IjQwJSIgc3RvcC1jb2xvcj0iIzcxNzg4NSIvPjxzdG9wIG9mZnNldD0iODAlIiBzdG9wLWNvbG9yPSIjNGE1MzYxIi8+PC9yYWRpYWxHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g'); background: -moz-radial-gradient(center, ellipse cover, #717885 40%, #4a5361 80%); background: -webkit-radial-gradient(center, ellipse cover, #717885 40%, #4a5361 80%); background: radial-gradient(ellipse cover at center, #717885 40%, #4a5361 80%); }
-.payment a { position: relative; padding: 25px 20px 0; height: 103px; color: #fff; background: #555F6D; display: block; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-.payment .payment__ico { margin-bottom: 8px; height: 33px; line-height: 33px; }
+.payment a { position: relative; padding: 25px 20px 0; height: 103px; color: #fff; display: block; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.payment .payment__ico { margin-bottom: 4px; height: 33px; line-height: 33px; }
+.payment .payment__ico.add_ico { -ms-transform: scale(1.4); -webkit-transform: scale(1.4); transform: scale(1.4); }
 .payment .ico { vertical-align: middle; }
 
 .successful { position: relative; padding: 20px 0; }

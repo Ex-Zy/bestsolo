@@ -759,9 +759,9 @@ ul.score li:first-child { margin-left: 0; }
 .date, .time { vertical-align: top; font-size: 10px; display: inline-block; }
 
 .game { position: relative; margin: 60px 31px 0 0; width: 185px; height: 135px; vertical-align: top; display: inline-block; }
-.game:hover .game__top { opacity: 1; }
+.game:hover .game__top { opacity: 1; top: 0; }
 .game img { width: 100%; display: block; }
-.game .game__top { -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; position: absolute; opacity: 0; padding: 10px 10px 7px; top: 0; left: 0; right: 0; color: #fff; font-size: 10px; text-transform: uppercase; z-index: 1; background: rgba(0, 0, 0, 0.7); }
+.game .game__top { -moz-transition: all 0.4s ease-in-out; -o-transition: all 0.4s ease-in-out; -webkit-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out; position: absolute; opacity: 0; padding: 10px 10px 7px; top: -24px; left: 0; right: 0; color: #fff; font-size: 10px; text-transform: uppercase; z-index: 1; background: rgba(0, 0, 0, 0.7); }
 .game .btn { position: absolute; left: 19px; right: 19px; bottom: -40px; width: auto; }
 
 .jackpot { display: block; *zoom: 1; }

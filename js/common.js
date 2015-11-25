@@ -76,5 +76,10 @@ head.ready(function() {
 			this_.parent().addClass('is-break');
 		}
 	});
+
+	$('.js-slider-games').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1
+	});
 	
 });

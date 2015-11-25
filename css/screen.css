@@ -301,6 +301,7 @@ a:hover { text-decoration: underline; }
 .btn.btn_green:hover { background: #36A200; }
 .btn.btn_green:hover:hover { background: #319300; }
 .btn.btn_small { font-size: 12px; height: 34px; line-height: 34px; }
+.btn.btn_med { width: 162px; }
 .btn.btn_mod { min-width: 75px; font-size: 10px; height: 25px; line-height: 25px; text-transform: uppercase; -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; font-family: "NotoSans-Bold", Arial, sans-serif; font-weight: normal; }
 .btn.btn_bets { padding-left: 34px; padding-right: 34px; height: 42px; line-height: 42px; font-size: 12px; }
 .btn.btn_log { height: 36px; line-height: 36px; font-size: 13px; text-transform: uppercase; font-family: "NotoSans-Bold", Arial, sans-serif; font-weight: normal; color: #555F6D; }
@@ -463,9 +464,15 @@ button.button-more { line-height: 1; }
 .wind .wind__top { position: relative; padding: 12px 48px 9px 15px; line-height: 1; color: #fff; font-family: "NotoSans", Arial, sans-serif; font-weight: normal; background: #555F6D; }
 .wind .wind__title { font-size: 10px; text-transform: uppercase; vertical-align: top; display: inline-block; }
 .wind .wind__wrap { padding: 22px 18px 36px; }
+.wind .wind__wrap.is-center { text-align: center; }
+.wind .wind__wrap.wind_gallery { padding-bottom: 0; }
 .wind .wind__in { padding: 12px; }
 .wind .wind__in .img { margin: 15px 10px 0 0; float: left; }
 .wind .wind__text { padding: 20px 0; font-family: "NotoSans", Arial, sans-serif; font-weight: normal; }
+.wind .slider-game__item { font: 0/0 a; text-shadow: none; color: transparent; }
+.wind .slider-game__block { width: 31%; display: inline-block; vertical-align: top; position: relative; min-height: 85px; background: url("http://lorempixel.com/400/200/sports/") no-repeat; margin: 0 1% 5px; overflow: hidden; }
+.wind .slider-game__block:hover .game-title { bottom: 0; opacity: 1; -moz-transition: all 0.4s linear; -o-transition: all 0.4s linear; -webkit-transition: all 0.4s linear; transition: all 0.4s linear; }
+.wind .slider-game__block > .game-title { padding: 3px 5px; line-height: 1.6; text-transform: uppercase; position: absolute; bottom: -36px; left: 0; right: 0; background-color: rgba(0, 0, 0, 0.6); opacity: 0; color: white; font-size: 8px; font-family: Arial, sans-serif; text-transform: uppercase; -ms-word-break: break-all; word-break: break-all; word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; }
 .wind .date { margin-left: 18px; }
 .wind .time { margin-left: 9px; }
 .wind .btn-turn, .wind .btn-close { position: absolute; top: 50%; -moz-transform: translate(0, -50%); -ms-transform: translate(0, -50%); -webkit-transform: translate(0, -50%); transform: translate(0, -50%); }
@@ -1469,6 +1476,11 @@ h1.title-bord span, h2.title-bord span, h3.title-bord span { position: relative;
 .slick-dots li:before { display: none; }
 .slick-dots button { display: block; width: 6px; height: 6px; background: #fff; -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25); -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25); box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25); cursor: pointer; font: 0/0 a; text-shadow: none; color: transparent; border-radius: 50%; }
 .slick-dots button:hover { box-shadow: none; }
+
+.slider-game.slick-slider .slick-prev, .slider-game.slick-slider .slick-next { top: inherit; bottom: -58px; font: 0/0 a; text-shadow: none; color: transparent; display: inline-block; }
+.slider-game.slick-slider .slick-prev:before, .slider-game.slick-slider .slick-next:before { display: none; }
+.slider-game.slick-slider .slick-prev { background: url("../img/svg/slick-prev.svg") no-repeat 0 0; -moz-background-size: 17px 28px; -o-background-size: 17px 28px; -webkit-background-size: 17px 28px; background-size: 17px 28px; width: 17px; height: 28px; display: inline-block; left: 0; }
+.slider-game.slick-slider .slick-next { background: url("../img/svg/slick-next.svg") no-repeat 0 0; -moz-background-size: 17px 28px; -o-background-size: 17px 28px; -webkit-background-size: 17px 28px; background-size: 17px 28px; width: 17px; height: 28px; display: inline-block; right: 0; }
 
 .lang .flag { -moz-background-size: 32px 32px; -o-background-size: 32px 32px; -webkit-background-size: 32px 32px; background-size: 32px 32px; background: no-repeat 0 0; background-size: cover; width: 32px; height: 22px; display: inline-block; }
 

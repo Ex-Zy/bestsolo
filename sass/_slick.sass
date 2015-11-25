@@ -133,3 +133,22 @@
 		&:hover
 			box-shadow: none
 	
+
+
+//slider-game
+.slider-game.slick-slider
+	.slick-prev,
+	.slick-next
+		top: inherit
+		bottom: -58px
+		+hide-text
+		display: inline-block
+		&:before
+			display: none
+
+	.slick-prev
+		+svg(slick-prev, 17, 28)
+		left: 0	
+	.slick-next
+		+svg(slick-next, 17, 28)
+		right: 0	

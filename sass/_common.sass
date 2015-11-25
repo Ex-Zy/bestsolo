@@ -933,6 +933,8 @@ a
 		font-size: 12px
 		height: 34px
 		line-height: 34px
+	&.btn_med 
+		width: 162px
 	&.btn_mod
 		min-width: 75px
 		font-size: 10px
@@ -1420,6 +1422,10 @@ button.button-more
 		display: inline-block
 	.wind__wrap
 		padding: 22px 18px 36px
+		&.is-center
+			text-align: center
+		&.wind_gallery	
+			padding-bottom: 0
 	.wind__in
 		padding: 12px
 		.img
@@ -1428,6 +1434,38 @@ button.button-more
 	.wind__text
 		padding: 20px 0
 		+ns
+	.slider-game__item
+		+hide-text
+	.slider-game__block
+		width: 31%
+		display: inline-block
+		vertical-align: top
+		position: relative
+		min-height: 85px
+		background: url("http://lorempixel.com/400/200/sports/") no-repeat
+		margin: 0 1% 5px
+		overflow: hidden
+		&:hover
+			.game-title
+				bottom: 0
+				opacity: 1
+				+tr(all .4s linear)
+		> .game-title
+			padding: 3px 5px
+			line-height: 1.6
+			text-transform: uppercase
+			position: absolute
+			bottom: -36px
+			left: 0
+			right: 0
+			background-color: rgba(0,0,0, .6)
+			opacity: 0
+			color: white
+			font-size: 8px
+			font-family: Arial, sans-serif
+			text-transform: uppercase
+			+prevent-text
+
 	.date
 		margin-left: 18px
 	.time

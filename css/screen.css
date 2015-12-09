@@ -472,7 +472,7 @@ button.button-more { line-height: 1; }
 .wind .slider-game__item { font: 0/0 a; text-shadow: none; color: transparent; text-align: center; }
 .wind .slider-game__block { width: 80px; display: inline-block; vertical-align: top; position: relative; height: 80px; margin: 0 1% 5px; overflow: hidden; }
 .wind .slider-game__block:hover .game-title { opacity: 1; z-index: 1; }
-.wind .slider-game__block > .game-title { padding: 3px 5px; line-height: 1.6; text-transform: uppercase; position: absolute; bottom: 0; left: 0; right: 0; background-color: rgba(0, 0, 0, 0.6); opacity: 0; z-index: -1; color: white; -moz-transition: opacity 0.2s linear; -o-transition: opacity 0.2s linear; -webkit-transition: opacity 0.2s linear; transition: opacity 0.2s linear; font-size: 8px; font-family: Arial, sans-serif; text-transform: uppercase; -ms-word-break: break-all; word-break: break-all; word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; }
+.wind .slider-game__block > .game-title { padding: 3px 4px; line-height: 1.6; text-transform: uppercase; position: absolute; bottom: 0; left: 0; right: 0; background-color: rgba(0, 0, 0, 0.6); opacity: 0; z-index: -1; color: white; -moz-transition: opacity 0.2s linear; -o-transition: opacity 0.2s linear; -webkit-transition: opacity 0.2s linear; transition: opacity 0.2s linear; font-size: 8px; font-family: Arial, sans-serif; text-transform: uppercase; -ms-word-break: break-all; word-break: break-all; word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; }
 .wind .slider-game__block img { display: block; }
 .wind .date { margin-left: 18px; }
 .wind .time { margin-left: 9px; }

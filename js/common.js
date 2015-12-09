@@ -53,7 +53,7 @@ head.ready(function() {
 		}
 		scrollLeftBar();
 	});
-	var slider = $('.js-slider');
+	var slider = $('.js-slider, .js-slider-games');
 	if (slider.length) {
 		slider.each(function() {
 			var this_ = $(this);
@@ -77,9 +77,9 @@ head.ready(function() {
 		}
 	});
 
-	$('.js-slider-games').slick({
-		slidesToShow: 1,
-		slidesToScroll: 1
-	});
+	// $('.js-slider-games').slick({
+	// 	slidesToShow: 1,
+	// 	slidesToScroll: 1
+	// });
 	
 });

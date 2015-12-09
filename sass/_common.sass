@@ -1423,6 +1423,7 @@ button.button-more
 	.wind__wrap
 		padding: 22px 18px 36px
 		&.is-center
+			padding: 22px 18px
 			text-align: center
 		&.wind_gallery	
 			padding-bottom: 0
@@ -1443,8 +1444,12 @@ button.button-more
 		vertical-align: top
 		position: relative
 		height: 80px
-		margin: 0 1% 5px
+		margin: 8px 0 0 8px
 		overflow: hidden
+		&:nth-child(-n+3)
+			margin-top: 0
+		&:nth-child(3n-2)
+			margin-left: 0
 		&:hover
 			.game-title
 				opacity: 1
@@ -4344,3 +4349,11 @@ $spinner-size: 29px !default
 		font-size: 13px
 		vertical-align: middle
 		display: inline-block
+
+// jump
+.jump
+	margin-top: 10px
+	+ns
+	font-size: 10px
+	text-align: center
+	display: block

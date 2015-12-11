@@ -1344,6 +1344,20 @@ h1.title-bord span, h2.title-bord span, h3.title-bord span { position: relative;
 
 .jump { margin-top: 10px; font-family: "NotoSans", Arial, sans-serif; font-weight: normal; font-size: 10px; display: block; }
 
+.play { padding: 20px; }
+.play .play__slider { overflow: hidden; }
+.play .play__slide { width: 100%; text-align: center; font-size: 0; }
+.play .play__item { position: relative; float: left; margin: 5px 0 0 5px; width: 80px; height: 80px; color: white; overflow: hidden; vertical-align: top; display: inline-block; }
+.play .play__item:hover .play__title { z-index: 1; visibility: visible; opacity: 1; }
+.play .play__item:nth-child(-n+3) { margin-top: 0; }
+.play .play__item:nth-child(3n-2) { margin-left: 0; }
+.play .play__title { position: absolute; left: 0; right: 0; bottom: 0; padding: 3px 4px; font-size: 8px; line-height: 1.6; z-index: -1; visibility: hidden; opacity: 0; will-change: opacity; -moz-transition: opacity 0.2s, visibility 0.2s; -o-transition: opacity 0.2s, visibility 0.2s; -webkit-transition: opacity 0.2s, visibility 0.2s; transition: opacity 0.2s, visibility 0.2s; text-transform: uppercase; background: rgba(0, 0, 0, 0.6); }
+.play .play__but { position: relative; margin-top: 20px; text-align: center; }
+.play .play__btn { position: absolute; top: 50%; -moz-transform: translate3d(0, 0, 0); -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); -moz-transform: translate(0, -50%); -ms-transform: translate(0, -50%); -webkit-transform: translate(0, -50%); transform: translate(0, -50%); will-change: opacity; -moz-transition: opacity 0.2s; -o-transition: opacity 0.2s; -webkit-transition: opacity 0.2s; transition: opacity 0.2s; opacity: 0.7; background: transparent; }
+.play .play__btn:hover { opacity: 1; }
+.play .play__btn.is-prev { left: 0; background: url("../img/svg/slick-prev.svg") no-repeat 0 0; -moz-background-size: 17px 28px; -o-background-size: 17px 28px; -webkit-background-size: 17px 28px; background-size: 17px 28px; width: 17px; height: 28px; display: inline-block; }
+.play .play__btn.is-next { right: 0; background: url("../img/svg/slick-next.svg") no-repeat 0 0; -moz-background-size: 17px 28px; -o-background-size: 17px 28px; -webkit-background-size: 17px 28px; background-size: 17px 28px; width: 17px; height: 28px; display: inline-block; }
+
 .l { margin: 24px auto 75px; *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
 @media only screen and (max-width: 1431px) { .l.is-wauto { max-width: 1440px; } }

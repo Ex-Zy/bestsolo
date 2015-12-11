@@ -4356,3 +4356,69 @@ $spinner-size: 29px !default
 	+ns
 	font-size: 10px
 	display: block
+
+// play
+.play
+	padding: 20px
+	.play__slider
+		overflow: hidden
+	.play__slide
+		width: 100%
+		text-align: center
+		font-size: 0
+	.play__item
+		position: relative
+		float: left
+		margin: 5px 0 0 5px
+		width: 80px
+		height: 80px
+		color: #fff
+		overflow: hidden
+		vertical-align: top
+		display: inline-block
+		&:hover
+			.play__title
+				z-index: 1
+				visibility: visible
+				opacity: 1
+		&:nth-child(-n+3)
+			margin-top: 0
+		&:nth-child(3n-2)
+			margin-left: 0
+	.play__title
+		position: absolute
+		left: 0
+		right: 0
+		bottom: 0
+		padding: 3px 4px
+		font-size: 8px
+		line-height: 1.6
+		z-index: -1
+		visibility: hidden
+		opacity: 0
+		will-change: opacity
+		+transition(opacity .2s, visibility .2s)
+		text-transform: uppercase
+		background: rgba(#000, .6)
+	.play__but
+		position: relative
+		margin-top: 20px
+		text-align: center
+	.play__btn
+		position: absolute
+		top: 50%
+		+translate3d(0,0,0)
+		+translate(0,-50%)
+		will-change: opacity
+		+transition(opacity .2s)
+		opacity: .7
+		background: transparent
+		&:hover
+			opacity: 1
+		&.is-prev
+			left: 0
+			+svg(slick-prev,17,28)
+		&.is-next
+			right: 0
+			+svg(slick-next,17,28)
+		
